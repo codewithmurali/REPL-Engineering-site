@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap");
+body {
+  height: 1000px;
+  background-color: blue;
+}
+.container {
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.logo {
+}
+.logo img {
+  width: 100px;
+  aspect-ratio: 3/4;
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  color: white;
+  font-family: prompt, sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.lastMenuItem {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+}
+
+@media (max-width: 957px) {
+  .container {
+    display: none;
+  }
+}

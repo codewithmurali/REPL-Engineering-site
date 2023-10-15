@@ -1,0 +1,13 @@
+
+
+
+@media (max-width:957px) {
+    .container {
+        width: 100vh;
+        height: 100vh;
+        background-color: darkblue;
+      }
+      .logoTopMenu {
+          display: flex;
+      }
+}
