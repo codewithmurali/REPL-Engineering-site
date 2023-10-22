@@ -4,10 +4,10 @@ import styles from "./style.module.css";
 import Logo from "../images/Logo.svg";
 
 export const DesktopNavBar = () => {
-  const [navSize, setnavSize] = useState("10rem");
+  const [navSize, setnavSize] = useState("");
   const [navColor, setnavColor] = useState("transparent");
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavColor("#07080f") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("110px") : setnavSize("90px");
   };
   useEffect(() => {

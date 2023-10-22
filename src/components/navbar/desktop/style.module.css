@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap");
-body {
-  height: 1000px;
-  background-color: blue;
-}
 .container {
   height: 100px;
   background: black;
@@ -14,6 +10,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
 }
 .logo {
 }
@@ -33,6 +30,7 @@ body {
   letter-spacing: 2px;
   padding: 6px 14px;
   cursor: pointer;
+  z-index: 100;
 }
 .lastMenuItem {
   background-color: white;
