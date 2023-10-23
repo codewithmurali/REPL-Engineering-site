@@ -9,11 +9,11 @@ const slides = [
   {
     city: "Paris",
     country: "France",
-    img: {Img1},
+    img: "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
   },
   {
     city: "Singapore",
-    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg",
+    img: "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
   }
 ];
 
