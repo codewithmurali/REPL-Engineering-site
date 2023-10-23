@@ -29,7 +29,7 @@
 .whoWeAreContainer {
   display: flex;
   justify-content: center;
-  background-color: #141414;
+  background-color: #0e0e0e;
 }
 
 .whoWeAreSubContainer {
@@ -41,6 +41,7 @@
 }
 
 .whoWeAreSubContainer .title {
+  min-width: 313px !important;
   width: 30%;
   display: flex;
   justify-content: flex-end;
@@ -49,17 +50,17 @@
 }
 .whoWeAreSubContainer .contentContainer {
   width: 70%;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 200;
   color: white;
 }
 .whoWeAreSubContainer .content1 {
   border-bottom: 1px solid white;
   padding-bottom: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .whoWeAreSubContainer .content2 {
   border-bottom: 1px solid white;
   padding-bottom: 20px;
-  line-height: 35px;
+  line-height: 42px;
 }

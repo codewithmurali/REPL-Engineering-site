@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./home.module.css";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
+import { Slider } from "../../components/slider";
 
 export const Home = () => {
   return (
@@ -38,6 +39,13 @@ export const Home = () => {
               what we do.
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* ------slider------ */}
+      <div>
+        <div>
+            <Slider/>
         </div>
       </div>
     </>
