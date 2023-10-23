@@ -1,9 +1,11 @@
 import React from "react";
 
+import { Slider } from "../../components/slider";
+
 import styles from "./home.module.css";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
-import { Slider } from "../../components/slider";
+import Img1989 from "./images/Img1989.jpeg";
 
 export const Home = () => {
   return (
@@ -27,7 +29,7 @@ export const Home = () => {
       {/* ------who-we-are------ */}
       <div className={styles.whoWeAreContainer}>
         <div className={styles.whoWeAreSubContainer}>
-          <div className={styles.title}>Who We Are</div>
+          <h1 className={styles.title}>Who We Are</h1>
           <div className={styles.contentContainer}>
             <div className={styles.content1}>
               We make, so the world can fly!
@@ -43,9 +45,56 @@ export const Home = () => {
       </div>
 
       {/* ------slider------ */}
-      <div>
-        <div>
-            <Slider/>
+      <Slider />
+
+      {/* ------our journey------ */}
+      <div className={styles.ourJourneyContainer}>
+        <div className={styles.ourJourneySubContainer}>
+          <h1 className={styles.title}>OUR JOURNEY</h1>
+          <table>
+            <tr>
+              <td>
+                <div className={styles.yearText}>1982</div>
+              </td>
+              <td>
+                Established in 1982 in Balanagar as SSI Unit.
+                <img src={Img1989} alt="Img1989"/>
+              </td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>
+                Registered as Ancillary Unit to BDL, Ministry of defence in
+                1996.
+              </td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>Best Vendor award obtained from BHEL in 1997.</td>
+            </tr>
+            <tr>
+              <td>1998 1999 2000</td>
+              <td>
+                Best import substitution award for the Products developed in
+                1998, 1999 & 2000 from Ministry of Defence.
+              </td>
+            </tr>
+            <tr>
+              <td>2001 2002</td>
+              <td>Best key Vendor award obtained from HAL in 2001-02.</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>Prime vendor award obtained from GTRE in 2008.</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>
+                ISO 9001:2015 Quality Management Systems implemented. Expansion
+                in 2008 with additional facilities at Balanagar , Hyderabad.
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </>

@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import classNames from "classnames";
 
-import Img1 from "./images/Img1.webp"
-
 import "./slider.css";
 
 const slides = [

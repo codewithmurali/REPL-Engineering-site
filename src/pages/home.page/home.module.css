@@ -64,3 +64,52 @@
   padding-bottom: 20px;
   line-height: 42px;
 }
+.ourJourneyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.ourJourneyContainer .title {
+  color: white;
+  font-size: 50px;
+}
+.ourJourneySubContainer {
+  width: 80%;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 10%;
+}
+
+.ourJourneySubContainer table {
+  border-collapse: collapse;
+  color: white;
+}
+.ourJourneySubContainer table tr td {
+  padding-bottom: 40px;
+  line-height: 33px;
+  font-size: 23px;
+}
+.ourJourneySubContainer table tr td:nth-child(1) {
+  border-right: 1px solid white;
+  padding-right: 10px;
+  position: relative;
+}
+.ourJourneySubContainer table tr td:nth-child(1) .yearText{
+    position: absolute;
+    top: 0px;
+
+}
+.ourJourneySubContainer table tr td:nth-child(2) {
+  display: grid;
+  padding-left: 45px;
+  line-height: 33px;
+  font-weight: 100;
+  font-size: 20px;
+}
+.ourJourneySubContainer table tr td:nth-child(2) img{
+    border-radius: 10px;
+    width: 350px;
+    margin-top: 20px;
+}
