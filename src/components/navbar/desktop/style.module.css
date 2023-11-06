@@ -31,6 +31,11 @@
   padding: 6px 14px;
   cursor: pointer;
   z-index: 100;
+  position: relative;
+}
+.menuItem:hover{
+  color: #3db1ff;
+  transition: color 1s;
 }
 .lastMenuItem {
   background-color: white;

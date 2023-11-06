@@ -1,0 +1,35 @@
+.subMenuWrapper {
+  background-color: #08151ebd;
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.subMenuWrapperItem {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 45px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 300;
+  width: max-content;
+  line-height: 50px;
+  color: #2e829d;
+  transition: color 1s;
+}
+.name:hover {
+  color: #65cdef;
+}
+.container {
+  width: max-content;
+}

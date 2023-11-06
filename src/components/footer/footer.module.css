@@ -1,0 +1,86 @@
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.footerContainer {
+  width: 90%;
+}
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.logoContainerInfo .logo {
+  width: 100px;
+}
+.logoContainerInfo .companyName {
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.logoContainerInfo .slogan {
+  color: rgb(216, 216, 216);
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.rightInfo {
+  display: flex;
+  gap: 20px;
+}
+.mediaIconContainer {
+  display: flex;
+  gap: 15px;
+}
+.mediaIconContainer a {
+  width: 37px;
+  height: 37px;
+  color: #112852;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.mediaIconContainer a svg {
+  font-size: 27px;
+}
+.menuLinksContainer {
+  margin-top: 30px;
+}
+.menuLinksContainer .title {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.menuLinksContainer .linkInfo {
+  color: #bfbfbf;
+  margin-bottom: 14px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+.copyRightsContainer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #6b6464;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  padding-top: 21px;
+}
+.copyRightsContainer .leftInfo {
+  color: #dfdfdf;
+  font-weight: 300;
+}
+.copyRightsContainer .rightInfo {
+  color: white;
+
+  font-weight: 100;
+  display: block;
+}
+.copyRightsContainer .rightInfo a {
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 14px;
+}

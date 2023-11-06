@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --home-title-font-family: "Exo 2", sans-serif;
+  --home-content-font-family: "Exo 2", sans-serif;
+  --home-font-color-white-light: #e4e4e4;
+}
+/* ------home-banner----- */
+.homeBannerContainer {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--home-title-font-family);
+  color: white;
+}
+.HomebannerTitleContainer {
+  position: absolute;
+  top: 25%;
+}
+.HomebannerTitleContainer .title1 {
+  font-size: 70px;
+  margin-left: 50px;
+  font-weight: 300;
+  font-family: var(--home-content-font-family);
+}
+.HomebannerTitleContainer .title2 {
+  margin-top: 45px;
+  margin-left: 50px;
+  font-size: 25px;
+  color: #d7d7d7;
+  font-weight: 200;
+  font-family: var(--home-content-font-family);
+}
+
+/* ------who-we-are------ */
+.whoWeAreContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+.whoWeAreSubContainer {
+  width: 85%;
+  display: flex;
+  gap: 20%;
+  padding: 50px 0;
+}
+.whoWeAreSubContainer .title {
+  min-width: 313px !important;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 50px;
+}
+.whoWeAreSubContainer .contentContainer {
+  width: 70%;
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+  font-family: var(--home-title-font-family);
+}
+.whoWeAreSubContainer .content1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  font-family: var(--home-content-font-family);
+}
+.whoWeAreSubContainer .content2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  line-height: 42px;
+  font-family: var(--home-content-font-family);
+}
+
+/* ------our journey------ */
+.ourJourneyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.ourJourneyContainer .title {
+  color: white;
+  font-size: 50px;
+}
+.ourJourneySubContainer {
+  width: 85%;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 10%;
+}
+
+.ourJourneySubContainer table {
+  border-collapse: collapse;
+}
+.ourJourneySubContainer table tr td {
+  padding-bottom: 50px;
+  line-height: 33px;
+  font-size: 25px;
+}
+.ourJourneySubContainer table tr td:nth-child(1) {
+  border-right: 1px solid white;
+  position: relative;
+  line-height: 35px;
+  min-width: 118px;
+  color: white;
+}
+.ourJourneySubContainer table tr td:nth-child(1) .yearText {
+  position: absolute;
+  top: 0px;
+}
+.ourJourneySubContainer table tr td:nth-child(2) {
+  display: grid;
+  padding-left: 60px;
+  line-height: 40px;
+  font-weight: 200;
+  font-size: 22px;
+  color: var(--home-font-color-white-light);
+  font-family: var(--home-content-font-family);
+}
+.ourJourneySubContainer table tr td:nth-child(2) img {
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 20px;
+}
+.ourJourneySubContainer table tr:last-child td:nth-child(2) {
+  padding-bottom: 0;
+}
+
+/* ------our vision------ */
+.ourVisionContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 70px 0;
+  margin-top: 90px;
+  background: #3f3f3f;
+}
+.ourVisionSubContainer {
+  width: 70%;
+  display: grid;
+}
+.ourVisionContainer .title {
+  color: white;
+  font-size: 50px;
+  font-family: var(--home-title-font-family);
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.ourVisionContainer .content1 {
+  color: var(--home-font-color-white-light);
+  font-family: var(--home-content-font-family);
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+/* ------core values------ */
+.coreValuesWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+.coreValuesWrapper .title {
+  color: white;
+  margin-bottom: 40px;
+}
+.coreValuesSubWrapper {
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+.coreValuesContainer {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  gap: 15px;
+}
+.coreValuesContainer .dataInfo {
+  display: grid;
+  grid-template-columns: max-content minmax(22rem, 35rem);
+  align-items: center;
+  gap: 20px;
+}
+.coreValuesContainer .dataInfo img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.circleContainer {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.coreValuesContainer .dataInfo .circle1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: #00345d;
+  animation: cicle 5s infinite linear;
+  display: grid;
+  place-items: center;
+}
+.coreValuesContainer .dataInfo .circle2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: transparent;
+  border-left-color: #00345d;
+  border-right-color: #00345d;
+  animation: cicle 5s infinite linear;
+}
+@keyframes cicle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.coreValuesContainer .dataInfo .infoContent {
+  height: 80px;
+  background-color: #02223b;
+  color: #c8c8c8;
+  display: grid;
+  place-items: center;
+  transform: skew(-20deg);
+  border-radius: 5px;
+}
+.coreValuesContainer .dataInfo .infoContent .content {
+  transform: skew(20deg);
+  font-size: 19px;
+}
+
+/* ------clients------ */
+.clientsWrapper {
+  display: grid;
+  place-items: center;
+}
+.clientsWrapper .title {
+  color: white;
+  margin-bottom: 50px;
+}
+.clientsContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.clientsContainer .cardInfoContainer {
+  width: 200px;
+  height: 230px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.clientsContainer .cardInfoContainer img {
+  width: 100%;
+}
+.clientsContainer .cardInfoContainer .textInfo {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 18px;
+  margin-top: 15px;
+}
