@@ -253,10 +253,12 @@
 }
 .clientsContainer .cardInfoContainer {
   width: 200px;
-  height: 230px;
+  height: 245px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 10px;
+  display: grid;
+  grid-template-rows: max-content;
 }
 .clientsContainer .cardInfoContainer img {
   width: 100%;
@@ -264,6 +266,11 @@
 .clientsContainer .cardInfoContainer .textInfo {
   text-align: center;
   margin-top: 14px;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 15px;
+  line-height: 25px;
+  display: grid;
+  align-items: center;
+  color: #043b56;
 }
+

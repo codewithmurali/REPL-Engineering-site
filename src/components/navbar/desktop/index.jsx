@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
+import { Link } from "react-router-dom";
+
+import { MENU_LIST } from "../constant";
+import { SubMenuItem } from "./submenu";
+
 import styles from "./style.module.css";
 
 import Logo from "../images/Logo.svg";
-import { MENU_LIST } from "../constant";
-import { SubMenuItem } from "./submenu";
-import { Link } from "react-router-dom";
 
 export const DesktopNavBar = () => {
   const [navSize, setnavSize] = useState("");
@@ -52,7 +54,9 @@ export const DesktopNavBar = () => {
                 <React.Fragment>
                   <div
                     className={styles.menuItemInfo}
-                    onMouseEnter={handleParentMouseEnter}
+                    onMouseEnter={
+                      item["menuItem"]?.subMenuList && handleParentMouseEnter
+                    }
                   >
                     <div className={styles.menuItem}>
                       <Link to={item["menuItem"]?.path}>
@@ -81,5 +85,13 @@ export const DesktopNavBar = () => {
         </div>
       </div>
     </>
+  );
+};
+
+export const TopContainer = () => {
+  return (
+    <Fragment>
+      <div className={styles.navbarTopContainer}></div>
+    </Fragment>
   );
 };

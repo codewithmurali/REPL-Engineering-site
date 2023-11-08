@@ -29,12 +29,12 @@ export const CORE_VALUES = [
 ];
 
 export const CLIENTS_DATA = [
-  { img: client1, name: "DRDL" },
-  { img: client1, name: "RCI" },
-  { img: client1, name: "GTRE" },
-  { img: client1, name: "BDL" },
-  { img: client1, name: "HAL" },
-  { img: client1, name: "BHEL" },
-  { img: client1, name: "Ordinance Factories" },
-  { img: client1, name: "Heavy vehicle Factory" },
+  { img: client1, name: "REPL - DRDL" },
+  { img: client1, name: "REPL - RCI" },
+  { img: client1, name: "REPL - GTRE" },
+  { img: client1, name: "REPL - BDL" },
+  { img: client1, name: "REPL - HAL" },
+  { img: client1, name: "REPL - BHEL" },
+  { img: client1, name: "REPL - Ordinance Factories" },
+  { img: client1, name: "REPL - Heavy vehicle Factory" },
 ];

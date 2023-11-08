@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 export const Profile = () => {
-  return <div></div>;
+  return <Fragment></Fragment>;
 };
