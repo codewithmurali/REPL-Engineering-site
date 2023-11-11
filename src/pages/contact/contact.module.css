@@ -1,7 +1,7 @@
 .formWrapper {
   display: grid;
   justify-content: center;
-  background: #181819;
+  background: var(--sui-color-black-200);
   padding: 70px 0;
 }
 .formContainer {

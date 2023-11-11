@@ -12,22 +12,25 @@ a {
 
 /* css variable */
 
-html{
+html {
   --sui-font-family-100: "Exo 2", sans-serif;
 
   --sui-color-white: white;
   --sui-color-white-100: #e4e4e4;
   --sui-color-white-200: #d7d7d7;
+  --sui-color-white-300: #a4a4a4;
 
   --sui-color-black: black;
   --sui-color-black-100: #0e0e0e;
+  --sui-color-black-200: #181819;
 
   --sui-color-gray: gray;
-  --sui-color-gray-100: #3f3f3f;
+  --sui-color-gray-100: #151515;
 
   --sui-color-blue: blue;
-  --sui-color-blue-100: #00345d;
+  --sui-color-blue-100: #133c5c;
+  --sui-color-blue-200: #206883;
 
-  --sui-color-red:red;
-  --sui-color-red-100:#b41c01;
+  --sui-color-red: red;
+  --sui-color-red-100: #b41c01;
 }

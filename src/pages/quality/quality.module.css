@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 70px;
-  background-color: #181819;
+  background-color: var(--sui-color-black-200);
 }
 .overviewContainer {
   width: 80%;

@@ -13,7 +13,7 @@ import { Quality } from "./pages/quality";
 import { Careers } from "./pages/careers";
 import { Contact } from "./pages/contact";
 
-import "./app.css";
+import "./style.constant.css";
 
 function App() {
   const location = useLocation();

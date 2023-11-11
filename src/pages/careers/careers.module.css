@@ -16,7 +16,7 @@
   margin-bottom: 60px;
 }
 .FormWrapper {
-  background-color: #181819;
+  background-color: var(--sui-color-black-200);
   width: 100%;
   padding: 50px 150px;
 

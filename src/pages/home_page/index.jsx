@@ -7,6 +7,7 @@ import styles from "./home.module.css";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
+import { GradiantAnimatedText } from "../../components/text/gradiant_animated";
 
 export const Home = () => {
   return (
@@ -30,7 +31,12 @@ export const Home = () => {
       {/* ------who-we-are------ */}
       <div className={styles.whoWeAreContainer}>
         <div className={styles.whoWeAreSubContainer}>
-          <h1 className={styles.title}>Who We Are</h1>
+          <GradiantAnimatedText
+            text="Who We Are"
+            className={styles.title}
+            type="h1"
+          />
+
           <div className={styles.contentContainer}>
             <div className={styles.content1}>
               We make, so the world can fly!
@@ -51,7 +57,11 @@ export const Home = () => {
       {/* ------our journey------ */}
       <div className={styles.ourJourneyContainer}>
         <div className={styles.ourJourneySubContainer}>
-          <h1 className={styles.title}>OUR JOURNEY</h1>
+          <GradiantAnimatedText
+            text="OUR JOURNEY"
+            className={styles.title}
+            type="h1"
+          />
           <table>
             <tr>
               <td>
@@ -126,7 +136,7 @@ export const Home = () => {
       {/* ------our vision------ */}
       <div className={styles.ourVisionContainer}>
         <div className={styles.ourVisionSubContainer}>
-          <div className={styles.title}>OUR VISION</div>
+          <h1 className={styles.title}>OUR VISION</h1>
           <p className={styles.content1}>
             " To become the first choice of major PSUs, Aero Space and defense
             establishments in India for manufacture of components and sub
@@ -139,7 +149,12 @@ export const Home = () => {
       {/* ------core values------ */}
       <div className={styles.coreValuesWrapper}>
         <div className={styles.coreValuesSubWrapper}>
-          <h1 className={styles.title}>CORE VALUES</h1>
+
+          <GradiantAnimatedText
+            text="CORE VALUES"
+            className={styles.title}
+            type="h1"
+          />
           <div className={styles.coreValuesContainer}>
             {CORE_VALUES.map((item) => {
               return (
@@ -162,7 +177,11 @@ export const Home = () => {
 
       {/* ------clients------ */}
       <div className={styles.clientsWrapper}>
-        <h1 className={styles.title}>OUR CLIENTS</h1>
+        <GradiantAnimatedText
+          text="OUR CLIENTS"
+          className={styles.title}
+          type="h1"
+        />
         <div className={styles.clientsContainer}>
           {CLIENTS_DATA.map((item) => {
             return (
