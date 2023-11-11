@@ -1,0 +1,39 @@
+/* ------clients------ */
+.clientsWrapper {
+    display: grid;
+    place-items: center;
+  }
+  .clientsWrapper .title {
+    color: var(--sui-color-white);
+    margin-bottom: 50px;
+  }
+  .clientsContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .clientsContainer .cardInfoContainer {
+    width: 200px;
+    height: 245px;
+    background-color: var(--sui-color-white);
+    border-radius: 7px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: max-content;
+  }
+  .clientsContainer .cardInfoContainer img {
+    width: 100%;
+  }
+  .clientsContainer .cardInfoContainer .textInfo {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 25px;
+    display: grid;
+    align-items: center;
+    color: var(--sui-color-blue-100);
+  }

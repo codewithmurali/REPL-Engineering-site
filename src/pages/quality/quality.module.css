@@ -1,0 +1,46 @@
+.overviewWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  background-color: #181819;
+}
+.overviewContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.overviewContainer .text {
+  color: var(--sui-color-white-200);
+  line-height: 30px;
+  font-size: 18px;
+  display: grid;
+  gap: 15px;
+}
+.doubleQuotesIcon {
+  width: 17px;
+}
+.certificateWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+.certificateWrapper img {
+}
+.certificateContainer {
+  display: flex;
+  width: 90%;
+}
+.galleryWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+}
+.galleryContainer img {
+  width: 100%;
+}

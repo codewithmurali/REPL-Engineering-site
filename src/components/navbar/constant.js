@@ -9,20 +9,20 @@ export const MENU_LIST = [
           container: [
             {
               label: "Steam & Gas Turbine Blades",
-              path: "/steam-gas-turbine-blades",
+              path: "/products/steam-gas-turbine-blades",
             },
-            { label: "Precision Components", path: "/precision-components" },
+            { label: "Precision Components", path: "/products/precision-components" },
           ],
         },
         {
           container: [
-            { label: "Heavy Fabrication", path: "/heavy-fabrication" },
-            { label: "Dies & Tools", path: "/dies-tools" },
+            { label: "Heavy Fabrication", path: "/products/heavy-fabrication" },
+            { label: "Dies & Tools", path: "/products/dies-tools" },
           ],
         },
         {
           container: [
-            { label: "Aero Sub Assemblies", path: "/aero-sub-assemblies" },
+            { label: "Aero Sub Assemblies", path: "/products/aero-sub-assemblies" },
           ],
         },
       ],

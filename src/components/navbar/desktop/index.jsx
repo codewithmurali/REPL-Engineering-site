@@ -80,7 +80,7 @@ export const DesktopNavBar = () => {
             );
           })}
           <div className={`${styles.menuItem} ${styles.lastMenuItem}`}>
-            CONTACT US
+            <Link to="contact"> CONTACT US</Link>
           </div>
         </div>
       </div>

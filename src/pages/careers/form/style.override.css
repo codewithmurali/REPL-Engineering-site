@@ -1,0 +1,30 @@
+.formValidation-Wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.formValidation-multigroup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 250px));
+  column-gap: 25px;
+  justify-content: center;
+}
+
+.formValidation-Wrapper .ant-form-item input {
+  height: 38px;
+  border-radius: 3px;
+}
+.formValidation-Wrapper .ant-form-item textarea {
+  height: 65px;
+  border-radius: 3px;
+}
+.formValidation-Wrapper .ant-form-item button {
+  width: auto;
+  background-color: #b41c01;
+  width: 150px;
+  height: 35px;
+  border-radius: 3px;
+}
+.formValidation-Wrapper .ant-form-item .ant-btn-primary:hover {
+  background-color: #b41c01 !important;
+}

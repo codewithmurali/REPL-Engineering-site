@@ -1,16 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-:root {
-  --home-title-font-family: "Exo 2", sans-serif;
-  --home-content-font-family: "Exo 2", sans-serif;
-  --home-font-color-white-light: #e4e4e4;
-}
 /* ------home-banner----- */
 .homeBannerContainer {
   width: 100%;
   height: 100vh;
-  font-family: var(--home-title-font-family);
-  color: white;
+  font-family: var(--sui-font-family-100);
+  color: var(--sui-color-white);
 }
 .HomebannerTitleContainer {
   position: absolute;
@@ -20,22 +13,22 @@
   font-size: 70px;
   margin-left: 50px;
   font-weight: 300;
-  font-family: var(--home-content-font-family);
+  font-family: var(--sui-font-family-100);
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
   margin-left: 50px;
   font-size: 25px;
-  color: #d7d7d7;
+  color: var(--sui-color-white-200);
   font-weight: 200;
-  font-family: var(--home-content-font-family);
+  font-family: var(--sui-font-family-100);
 }
 
 /* ------who-we-are------ */
 .whoWeAreContainer {
   display: flex;
   justify-content: center;
-  background-color: #0e0e0e;
+  background-color: var(--sui-color-black);
 }
 .whoWeAreSubContainer {
   width: 85%;
@@ -48,27 +41,27 @@
   width: 30%;
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: var(--sui-color-white);
   font-size: 50px;
 }
 .whoWeAreSubContainer .contentContainer {
   width: 70%;
   font-size: 22px;
   font-weight: 200;
-  color: white;
-  font-family: var(--home-title-font-family);
+  color: var(--sui-color-white);
+  font-family: var(--sui-font-family-100);
 }
 .whoWeAreSubContainer .content1 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--sui-color-white);
   padding-bottom: 20px;
   margin-bottom: 40px;
-  font-family: var(--home-content-font-family);
+  font-family: var(--sui-font-family-100);
 }
 .whoWeAreSubContainer .content2 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--sui-color-white);
   padding-bottom: 20px;
   line-height: 42px;
-  font-family: var(--home-content-font-family);
+  font-family: var(--sui-font-family-100);
 }
 
 /* ------our journey------ */
@@ -76,10 +69,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: var(--sui-color-black);
 }
 .ourJourneyContainer .title {
-  color: white;
+  color: var(--sui-color-white);
   font-size: 50px;
 }
 .ourJourneySubContainer {
@@ -99,11 +92,11 @@
   font-size: 25px;
 }
 .ourJourneySubContainer table tr td:nth-child(1) {
-  border-right: 1px solid white;
+  border-right: 1px solid var(--sui-color-white);
   position: relative;
   line-height: 35px;
   min-width: 118px;
-  color: white;
+  color: var(--sui-color-white);
 }
 .ourJourneySubContainer table tr td:nth-child(1) .yearText {
   position: absolute;
@@ -115,8 +108,8 @@
   line-height: 40px;
   font-weight: 200;
   font-size: 22px;
-  color: var(--home-font-color-white-light);
-  font-family: var(--home-content-font-family);
+  color: var(--sui-color-white-100);
+  font-family: var(--sui-font-family-100);
 }
 .ourJourneySubContainer table tr td:nth-child(2) img {
   border-radius: 10px;
@@ -134,23 +127,23 @@
   width: 100%;
   padding: 70px 0;
   margin-top: 90px;
-  background: #3f3f3f;
+  background: var(--sui-color-gray-100);
 }
 .ourVisionSubContainer {
   width: 70%;
   display: grid;
 }
 .ourVisionContainer .title {
-  color: white;
+  color: var(--sui-color-white);
   font-size: 50px;
-  font-family: var(--home-title-font-family);
+  font-family: var(--sui-font-family-100);
   margin-bottom: 25px;
   font-weight: 600;
 }
 
 .ourVisionContainer .content1 {
-  color: var(--home-font-color-white-light);
-  font-family: var(--home-content-font-family);
+  color: var(--sui-color-white-100);
+  font-family: var(--sui-font-family-100);
   font-size: 25px;
   line-height: 50px;
   font-weight: 300;
@@ -163,7 +156,7 @@
   padding: 80px 0;
 }
 .coreValuesWrapper .title {
-  color: white;
+  color: var(--sui-color-white);
   margin-bottom: 40px;
 }
 .coreValuesSubWrapper {
@@ -201,7 +194,7 @@
   height: 150px;
   border-radius: 50%;
   border: 5px solid;
-  border-color: #00345d;
+  border-color: var(--sui-color-blue-100);
   animation: cicle 5s infinite linear;
   display: grid;
   place-items: center;
@@ -212,8 +205,8 @@
   border-radius: 50%;
   border: 5px solid;
   border-color: transparent;
-  border-left-color: #00345d;
-  border-right-color: #00345d;
+  border-left-color: var(--sui-color-blue-100);
+  border-right-color: var(--sui-color-blue-100);
   animation: cicle 5s infinite linear;
 }
 @keyframes cicle {
@@ -223,8 +216,8 @@
 }
 .coreValuesContainer .dataInfo .infoContent {
   height: 80px;
-  background-color: #02223b;
-  color: #c8c8c8;
+  background-color: var(--sui-color-blue-100);
+  color: var(--sui-color-white-200);
   display: grid;
   place-items: center;
   transform: skew(-20deg);
@@ -241,7 +234,7 @@
   place-items: center;
 }
 .clientsWrapper .title {
-  color: white;
+  color: var(--sui-color-white);
   margin-bottom: 50px;
 }
 .clientsContainer {
@@ -254,7 +247,7 @@
 .clientsContainer .cardInfoContainer {
   width: 200px;
   height: 245px;
-  background-color: white;
+  background-color: var(--sui-color-white);
   border-radius: 7px;
   padding: 10px;
   display: grid;
@@ -271,6 +264,5 @@
   line-height: 25px;
   display: grid;
   align-items: center;
-  color: #043b56;
+  color: var(--sui-color-blue-100);
 }
-

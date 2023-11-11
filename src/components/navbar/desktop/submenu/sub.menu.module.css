@@ -19,7 +19,7 @@
   justify-content: flex-start;
   gap: 45px;
 }
-.name {
+.name a{
   font-size: 20px;
   font-weight: 300;
   width: max-content;

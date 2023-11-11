@@ -1,0 +1,19 @@
+.formValidation :global(.ant-form-item input) {
+  height: 45px;
+  border-radius: 3px;
+  width: 100%;
+}
+.formValidation :global(.ant-form-item textarea) {
+  height: 65px;
+  border-radius: 3px;
+}
+.formValidation :global(.ant-form-item button) {
+  width: auto;
+  background-color: var(--sui-color-red-100);
+  width: 150px;
+  height: 40px;
+  border-radius: 0px;
+}
+.formValidation :global(.ant-form-item .ant-btn-primary:hover) {
+  background-color: var(--sui-color-red-100) !important;
+}

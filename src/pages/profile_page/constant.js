@@ -1,0 +1,7 @@
+export const PROFILE_DATA = [
+  "We started out as an engineering industry way back in 1982, and have since worked our way through the field. Today, we manufacture high precision assemblies and components for the Aerospace sector.",
+  "We have been here for nearly 4 decades and are one of the prime suppliers of components and assemblies to most of the Defense and Aerospace establishments in India.",
+  "Over the years we have managed to build a strong work force with professionals who come from core manufacturing and designs background and have expanded creative potential of the company. Our competence and long experience ensure that we deliver excellent services and products to our customers. At every stage of a process, the highest quality standards are maintained, and the needs of the customers are always catered to. Our extensive communication facilities allow us to keep in touch with our customers 24 hrs a day.",
+  "REPL always guarantees to provide quality services to meet best interest of clients maintaining total confidentiality of their subject matters.",
+  "We acknowledge and accept that in pursuing our goals, we never compromise on the quality of our products and services. We are keenly aware of our responsibilities towards our clients to achieve and maintain the highest level of quality in all our operations. We always look continually for ways to improve the process through which we drive our quality management systems.",
+];

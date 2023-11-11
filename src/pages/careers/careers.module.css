@@ -1,0 +1,23 @@
+.appointmentWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.titleWrapper {
+}
+.title {
+  color: var(--sui-color-white);
+  font-size: 40px;
+}
+.description {
+  color: var(--sui-color-white-100);
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.FormWrapper {
+  background-color: #181819;
+  width: 100%;
+  padding: 50px 150px;
+
+}
