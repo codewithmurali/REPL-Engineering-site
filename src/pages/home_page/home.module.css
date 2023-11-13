@@ -70,7 +70,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url(http://localhost:3000/static/media/backgroundImage1.f973a856fa736218c59b.jpeg);
+    background-image: url(../../common/backgroundImage1.jpeg);;
   background-size: cover;
   background-position: center;
   padding-bottom: 90px;

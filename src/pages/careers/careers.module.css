@@ -3,7 +3,7 @@
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 150px;
-  background-image: url(http://localhost:3000/static/media/backgroundImage1.f973a856fa736218c59b.jpeg);
+  background-image: url(../../common/backgroundImage1.jpeg);
   background-size: cover;
   background-position: center;
 }
