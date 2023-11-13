@@ -47,7 +47,7 @@ export const Footer = () => {
             All Rights Reserved Revathi Engineering
           </div>
           <div className={styles.rightInfo}>
-            Designed by<a href="skynoveau.in"> Skynoveau Technology</a>
+            Designed by<a href="https://skynoveau.in/"> Skynoveau Technology</a>
           </div>
         </div>
       </div>

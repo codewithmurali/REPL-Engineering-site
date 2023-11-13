@@ -7,7 +7,7 @@
 .formContainer {
   display: grid;
   grid-template-columns: minmax(150px, 350px) minmax(200px, 311px);
-  gap: 50px;
+  gap: 150px;
   margin-top: 50px;
 }
 .contentContainer .title {
@@ -15,6 +15,11 @@
   font-size: 25px;
   margin-top: 35px;
   font-weight: 100;
+}
+.formWrapper {
+  background-image: url(http://localhost:3000/static/media/backgroundImage1.f973a856fa736218c59b.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .contactWrapper .contentContainer:first-child .title {
   margin-top: 0;
@@ -51,14 +56,14 @@
 }
 .topTitleContainer .description {
   color: var(--sui-color-white-100);
-  font-size: 27px;
+  font-size: 24px;
   margin-top: 16px;
   font-weight: 100;
 }
-.mapWrapper{
-    display: flex;
-    justify-content: center;
+.mapWrapper {
+  display: flex;
+  justify-content: center;
 }
-.mapContainer{
-    width:100%;
+.mapContainer {
+  width: 100%;
 }

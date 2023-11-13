@@ -149,7 +149,6 @@ export const Home = () => {
       {/* ------core values------ */}
       <div className={styles.coreValuesWrapper}>
         <div className={styles.coreValuesSubWrapper}>
-
           <GradiantAnimatedText
             text="CORE VALUES"
             className={styles.title}

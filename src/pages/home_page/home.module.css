@@ -240,6 +240,7 @@
 .clientsWrapper {
   display: grid;
   place-items: center;
+  padding-bottom: 150px;
 }
 .clientsContainer {
   width: 80%;

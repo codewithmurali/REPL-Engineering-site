@@ -2,6 +2,7 @@
 .clientsWrapper {
     display: grid;
     place-items: center;
+    padding-bottom: 150px;
   }
   .clientsWrapper .title {
     color: var(--sui-color-white);
