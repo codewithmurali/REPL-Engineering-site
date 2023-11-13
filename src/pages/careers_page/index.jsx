@@ -2,8 +2,10 @@ import { FormValidation } from "./form";
 import { SingleBanner } from "../../components/single_banner";
 
 import styles from "./careers.module.css";
+import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Careers = () => {
+  ScrollToTop();
   return (
     <>
       <SingleBanner

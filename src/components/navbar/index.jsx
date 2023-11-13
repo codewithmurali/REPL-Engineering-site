@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <>
       <DesktopNavBar />
-      <MobileNavbar/>
+      <MobileNavbar />
     </>
   );
 };

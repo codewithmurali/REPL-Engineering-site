@@ -17,7 +17,7 @@
   font-weight: 100;
 }
 .formWrapper {
-    background-image: url(../../common/backgroundImage1.jpeg);;
+  background-image: url(../../common/backgroundImage1.jpeg);
   background-size: cover;
   background-position: center;
 }

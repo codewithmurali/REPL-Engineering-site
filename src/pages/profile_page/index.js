@@ -1,9 +1,11 @@
+import { ScrollToTop } from "../../components/scrollto_top";
 import { Slider } from "../../components/slider";
 import { PROFILE_DATA } from "./constant";
 
 import styles from "./profile.module.css";
 
 export const Profile = () => {
+  ScrollToTop()
   return (
     <>
       <Slider className={styles.slider} />

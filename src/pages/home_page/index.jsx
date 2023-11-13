@@ -8,8 +8,10 @@ import styles from "./home.module.css";
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
 import { GradiantAnimatedText } from "../../components/text/gradiant_animated";
+import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Home = () => {
+  ScrollToTop();
   return (
     <>
       {/* ------home-banner----- */}

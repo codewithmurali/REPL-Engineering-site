@@ -20,11 +20,16 @@
 }
 .formValidation-Wrapper .ant-form-item button {
   width: auto;
-  background-color: #b41c01;
+  background: var(--sui-gradient-color);
+  background-size: 200% 100%;
+  background-position: right center;
+  border-radius: 25px;
   width: 150px;
-  height: 35px;
-  border-radius: 3px;
+  height: 40px;
 }
-.formValidation-Wrapper .ant-form-item .ant-btn-primary:hover {
-  background-color: #b41c01 !important;
+.formValidation-Wrapper .ant-form-item button:hover {
+  transition: all 0.5s;
+  background: var(--sui-gradient-color-100);
+  background-size: 200% 100%;
+  background-position: right center;
 }

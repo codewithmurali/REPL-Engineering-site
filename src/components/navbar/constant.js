@@ -11,7 +11,10 @@ export const MENU_LIST = [
               label: "Steam & Gas Turbine Blades",
               path: "/products/steam-gas-turbine-blades",
             },
-            { label: "Precision Components", path: "/products/precision-components" },
+            {
+              label: "Precision Components",
+              path: "/products/precision-components",
+            },
           ],
         },
         {
@@ -22,7 +25,10 @@ export const MENU_LIST = [
         },
         {
           container: [
-            { label: "Aero Sub Assemblies", path: "/products/aero-sub-assemblies" },
+            {
+              label: "Aero Sub Assemblies",
+              path: "/products/aero-sub-assemblies",
+            },
           ],
         },
       ],

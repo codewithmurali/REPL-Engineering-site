@@ -7,8 +7,10 @@ import DoubleQuotesEndIcon from "./images/doubleQuotesEndIcon.png";
 import Certifcate from "./images/certifcate.jpeg";
 import product1 from "./images/product1.jpeg";
 import product2 from "./images/product2.jpeg";
+import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Quality = () => {
+  ScrollToTop()
   return (
     <>
       <SingleBanner

@@ -1,7 +1,7 @@
 .footerWrapper {
   display: flex;
   justify-content: center;
-  background: linear-gradient(194deg, #082e4b 0%, #000000 100%);
+  background: var(--sui-gradient-color-200);
   padding-top: 50px;
   padding-bottom: 15px;
 }

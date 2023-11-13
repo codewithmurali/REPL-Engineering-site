@@ -2,9 +2,11 @@ import { Fragment, useEffect, useState } from "react";
 import { SingleBanner } from "../../components/single_banner";
 import styles from "./style.module.css";
 import { PRODUCT_PAGE_DATA, PRODUCT_PAGE_URL } from "./constant";
+import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Product = ({ path }) => {
   const [matchedData, setMatchedData] = useState("");
+  ScrollToTop();
   useEffect(() => {
     switch (path) {
       case PRODUCT_PAGE_URL.STEAM_GAS:

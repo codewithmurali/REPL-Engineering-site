@@ -6,8 +6,10 @@ import styles from "./contact.module.css";
 import PhoneIcon from "./images/phoneIcon.png";
 import MailIcon from "./images/MailIcon.png";
 import GoogleMap from "../../components/map";
+import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Contact = () => {
+  ScrollToTop();
   return (
     <>
       <SingleBanner

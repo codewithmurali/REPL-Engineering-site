@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { Navbar } from "./components/navbar";
@@ -9,14 +9,18 @@ import { TopContainer } from "./components/navbar/desktop";
 import { PRODUCT_PAGE_URL } from "./pages/product_page/constant";
 import { Product } from "./pages/product_page";
 import { Client } from "./pages/client_page";
-import { Quality } from "./pages/quality";
-import { Careers } from "./pages/careers";
-import { Contact } from "./pages/contact";
+import { Quality } from "./pages/quality_page";
+import { Careers } from "./pages/careers_page";
+import { Contact } from "./pages/contact_page";
 
 import "./style.constant.css";
 
 function App() {
   const location = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  }, [])
 
   const productPageUrl = useMemo(() => {
     let matchedUrl = "";

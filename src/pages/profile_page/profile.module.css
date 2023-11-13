@@ -5,6 +5,9 @@
   display: flex;
   justify-content: center;
   padding: 80px 0;
+  /* background-image: url(../../common/backgroundImage1.jpeg);;
+  background-size: cover;
+  background-position: center; */
 }
 .profileSubWrapper {
   width: 80%;

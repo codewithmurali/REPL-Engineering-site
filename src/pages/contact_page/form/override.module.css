@@ -10,19 +10,22 @@
 .formValidation :global(.ant-form-item button) {
   background-color: var(--sui-color-red-100);
   background: #47b1ff;
-  background: linear-gradient(41deg, #2da1f6 0%, #cb34bc 100%);
-  background-size: 101%;
+  background: var(--sui-gradient-color);
+  background-size: 200% 100%;
+  background-position: right center;
   width: 150px;
   height: 40px;
   border-radius: 0px;
   transition: all 0.5s;
+  border-radius: 25px;
 }
-.formValidation button:hover {
+.formValidation :global(.ant-btn-primary:hover) {
   transition: all 0.5s;
-  background: linear-gradient(41deg, #2da1f6d4 0%, #cb34bcba 100%);
-  background-size: 101%;
+  background: var(--sui-gradient-color-100);
+  background-size: 200% 100%;
+  background-position: right center;
 }
 
-.formValidation :global(.ant-form-item .ant-form-item-explain-error){
+.formValidation :global(.ant-form-item .ant-form-item-explain-error) {
   font-size: 12px;
 }

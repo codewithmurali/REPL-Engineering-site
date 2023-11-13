@@ -1,9 +1,11 @@
+import { ScrollToTop } from "../../components/scrollto_top";
 import { SingleBanner } from "../../components/single_banner";
 import { CLIENTS_DATA } from "../home_page/constant";
 
 import styles from "./client.module.css";
 
 export const Client = () => {
+  ScrollToTop();
   return (
     <>
       <SingleBanner

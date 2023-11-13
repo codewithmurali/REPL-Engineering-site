@@ -37,7 +37,7 @@
 .menuItem a:hover {
 }
 .lastMenuItem a {
-  background: linear-gradient(41deg, #2da1f6 0%, #cb34bc 100%);
+  background: #ffffff30;
   background-size: 101%;
   border-radius: 25px;
 }
