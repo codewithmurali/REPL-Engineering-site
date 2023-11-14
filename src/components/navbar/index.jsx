@@ -1,5 +1,5 @@
-import { SUIDeskNavbar } from "./Desktop"
-import { SUIMobileNavbar } from "./mobile"
+import { SUIDeskNavbar } from "./Desktop/index.jsx"
+import { SUIMobileNavbar } from "./mobile/index.jsx"
 
 import styles from "./navbar.module.css"
 
