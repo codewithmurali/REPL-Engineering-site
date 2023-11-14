@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from "./style.module.css"
 
-import Logo from "../images/Logo.svg";
+ 
 
 export const MobileNavbar = () => {
   return (
@@ -10,7 +10,7 @@ export const MobileNavbar = () => {
       className={styles.container}
     >
       <div className={styles.logoTopMenu}>
-        <img src={Logo} alt="logo" />
+ 
         <div>
             x
         </div>

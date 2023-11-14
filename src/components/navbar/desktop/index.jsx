@@ -1,22 +1,30 @@
-import React, { useState, useEffect, Fragment } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-import { MENU_LIST } from "../constant";
-import { SubMenuItem } from "./submenu";
+import { Menu } from "antd";
 
-import styles from "./style.module.css";
+import { IoIosArrowDown } from "react-icons/io";
+
+import "./style.css";
 
 import Logo from "../images/Logo.svg";
 
-export const DesktopNavBar = () => {
-  const [navSize, setnavSize] = useState("");
-  const [navColor, setnavColor] = useState("transparent");
+export const SUIDeskNavbar = ({ className }) => {
+  const [current, setCurrent] = useState("home");
+  const onClick = (e) => {
+    console.log("click ", e);
+    setCurrent(e.key);
+  };
+  const navigate = useNavigate();
 
-  const [isChildVisible, setIsChildVisible] = useState(false);
+  const [navSize, setNavSize] = useState("");
+  const [navColor, setNavColor] = useState("transparent");
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#07080f") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("110px") : setnavSize("90px");
+    window.scrollY > 10
+      ? setNavColor("transparent")
+      : setNavColor("transparent");
+    window.scrollY > 10 ? setNavSize("115px") : setNavSize("100px");
   };
 
   useEffect(() => {
@@ -26,72 +34,94 @@ export const DesktopNavBar = () => {
     };
   }, []);
 
-  const handleParentMouseEnter = () => {
-    setIsChildVisible(true);
-  };
-
-  const handleParentMouseLeave = () => {
-    setIsChildVisible(false);
-  };
-
   return (
-    <>
+    <div className={className}>
       <div
-        className={styles.container}
+        className="SUIDeskNavbar"
         style={{
           backgroundColor: navColor,
+          backdropFilter: "blur(51px)",
           height: navSize,
           transition: "all 0.5s",
         }}
       >
-        <div className={styles.logo}>
-          <img src={Logo} alt="logo" />
-        </div>
-        <div className={styles.menuItems}>
-          {MENU_LIST.map((item) => {
-            return (
-              item?.menuItem && (
-                <React.Fragment>
-                  <div
-                    className={styles.menuItemInfo}
-                    onMouseEnter={
-                      item["menuItem"]?.subMenuList && handleParentMouseEnter
-                    }
-                  >
-                    <div className={styles.menuItem}>
-                      <Link to={item["menuItem"]?.path}>
-                        {item["menuItem"].label}
-                      </Link>
-                    </div>
-
-                    {item["menuItem"]?.subMenuList && isChildVisible && (
-                      <div
-                        className={styles.subMenuList}
-                        onMouseLeave={handleParentMouseLeave}
-                      >
-                        <SubMenuItem
-                          subMenuList={item["menuItem"].subMenuList}
-                        />
-                      </div>
-                    )}
-                  </div>
-                </React.Fragment>
-              )
-            );
-          })}
-          <div className={`${styles.menuItem} ${styles.lastMenuItem}`}>
-            <Link to="contact"> CONTACT US</Link>
+        <div className="SUIDeskNavbarContainer">
+          <div className="SUIDeskLogo">
+            {/* <p>Logo</p> */}
+            <img
+              src={Logo}
+              alt="logo"
+              onClick={() => {
+                navigate("/");
+              }}
+            />
           </div>
+          <Menu
+            onClick={onClick}
+            selectedKeys={[current]}
+            mode="horizontal"
+            className="SUIDeskNavbarContainerBox"
+          >
+            <Menu.Item key="HOME">
+              <Link to="/"> HOME</Link>
+            </Menu.Item>
+            <Menu.Item key="PROFILE">
+              <Link to="/profile"> PROFILE</Link>
+            </Menu.Item>
+            <Menu.SubMenu
+              className="SUIDeskNavbarSubMenuContainer"
+              key="PRODUCTS"
+              title={
+                <span>
+                  PRODUCTS{" "}
+                  <IoIosArrowDown className="SUIDeskNavbarDownArrowIcon" />
+                </span>
+              }
+            >
+              <Menu.ItemGroup className="SUIDeskNavbarSubMenuLink">
+                <Menu.Item key="setting:1">
+                  <Link to="/products/steam-gas-turbine-blades">
+                    {" "}
+                    Steam & Gas Turbine Blades
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="setting:2">
+                  <Link to="/products/precision-components">
+                    {" "}
+                    Precision Components
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="setting:3">
+                  <Link to="/products/heavy-fabrication">
+                    {" "}
+                    Heavy Fabrication
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="setting:4">
+                  <Link to="/products/dies-tools"> Dies & Tools</Link>
+                </Menu.Item>
+                <Menu.Item key="setting:5">
+                  <Link to="/products/aero-sub-assemblies">
+                    Aero Sub Assemblies
+                  </Link>
+                </Menu.Item>
+              </Menu.ItemGroup>
+            </Menu.SubMenu>
+            <Menu.Item key="clients">
+              <Link to="/clients">CLIENTS</Link>
+            </Menu.Item>
+            <Menu.Item key="quality">
+              <Link to="/quality">QUALITY</Link>
+            </Menu.Item>
+            <Menu.Item key="careers">
+              <Link to="/careers">CAREERS</Link>
+            </Menu.Item>
+            <Menu.Item key="Contact" className="SUIDeskNavbarLastMenuItem">
+              <Link to="/contact"> CONTACT US</Link>
+            </Menu.Item>
+          </Menu>
         </div>
       </div>
-    </>
-  );
-};
-
-export const TopContainer = () => {
-  return (
-    <Fragment>
-      <div className={styles.navbarTopContainer}></div>
-    </Fragment>
+    </div>
   );
 };

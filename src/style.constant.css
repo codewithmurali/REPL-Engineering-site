@@ -26,12 +26,13 @@ html {
 
   --sui-color-gray: gray;
   --sui-color-gray-100: #151515;
-  --sui-color-gray-200:#222222;
-  --sui-color-gray-300:#595959;
+  --sui-color-gray-200: #222222;
+  --sui-color-gray-300: #595959;
 
   --sui-color-blue: blue;
   --sui-color-blue-100: #133c5c;
   --sui-color-blue-200: #206883;
+  --sui-color-blue-300: #1e86a6;
 
   --sui-color-red: red;
   --sui-color-red-100: #b41c01;

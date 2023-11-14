@@ -1,11 +1,10 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import { Navbar } from "./components/navbar";
+import { SUINavbar, TopContainer } from "./components/navbar";
 import { Home } from "./pages/home_page";
 import { Footer } from "./components/footer";
 import { Profile } from "./pages/profile_page";
-import { TopContainer } from "./components/navbar/desktop";
 import { PRODUCT_PAGE_URL } from "./pages/product_page/constant";
 import { Product } from "./pages/product_page";
 import { Client } from "./pages/client_page";
@@ -41,7 +40,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <SUINavbar />
       <TopContainer />
       <Routes>
         <Route path="/" element={<Home />} />
