@@ -1,13 +1,12 @@
 .slider {
-  height: 350px;
+  height: 500px;
 }
 .profileWrapper {
   display: flex;
   justify-content: center;
   padding: 80px 0;
-  /* background-image: url(../../common/backgroundImage1.jpeg);;
-  background-size: cover;
-  background-position: center; */
+  background: #000000;
+  background: linear-gradient(132deg, #000000 0%, #0f1c28 100%);
 }
 .profileSubWrapper {
   width: 80%;
@@ -22,7 +21,7 @@
   margin-top: 40px;
 }
 .content {
-  color: var(--sui-color-white-100);
+  color: var(--sui-color-white-300);
   line-height: 34px;
   font-size: 18px;
   font-weight: 100;

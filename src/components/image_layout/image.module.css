@@ -1,0 +1,54 @@
+.container {
+  --sui-border-width: 1px;
+  --sui-border-color: gray;
+}
+
+.container {  
+  width: 600px;
+  height: 400px;
+  border: var(--sui-border-width) solid var(--sui-border-color);
+  position: relative;
+}
+.corner1 {
+  height: 1px;
+  width: 194px;
+  background-color: black;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.corner2 {
+  width: 163px;
+  border-top: var(--sui-border-width) solid var(--sui-border-color);
+  position: absolute;
+  top: 58px;
+  right: 0;
+}
+.corner3 {
+  width: 178px;
+  height: 60px;
+  border-left: var(--sui-border-width) solid var(--sui-border-color);
+  position: absolute;
+  top: -2px;
+  right: 0;
+  transform: skew(29deg);
+  background-color: black;
+}
+
+.corner4 {
+  height: 50px;
+  width: 18px;
+  background-color: black;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

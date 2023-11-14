@@ -29,7 +29,7 @@
   font-family: prompt, sans-serif;
   font-weight: 200;
   letter-spacing: 2px;
-  padding: 6px 14px;
+  padding: 8px 14px;
   cursor: pointer;
   z-index: 100;
   position: relative;
@@ -37,9 +37,10 @@
 .menuItem a:hover {
 }
 .lastMenuItem a {
-  background: #ffffff30;
+  /* background: #ffffff30; */
   background-size: 101%;
   border-radius: 25px;
+  border: 1px solid #2cc0ee;
 }
 
 @media (max-width: 957px) {

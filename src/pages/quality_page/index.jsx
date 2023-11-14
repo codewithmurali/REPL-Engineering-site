@@ -2,15 +2,15 @@ import { SingleBanner } from "../../components/single_banner";
 
 import styles from "./quality.module.css";
 
-import DoubleQuotesStartIcon from "./images/doubleQuotesStartIcon.png";
-import DoubleQuotesEndIcon from "./images/doubleQuotesEndIcon.png";
+import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
+import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
 import Certifcate from "./images/certifcate.jpeg";
 import product1 from "./images/product1.jpeg";
 import product2 from "./images/product2.jpeg";
 import { ScrollToTop } from "../../components/scrollto_top";
 
 export const Quality = () => {
-  ScrollToTop()
+  ScrollToTop();
   return (
     <>
       <SingleBanner

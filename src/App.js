@@ -18,10 +18,6 @@ import "./style.constant.css";
 function App() {
   const location = useLocation();
 
-  useEffect(()=>{
-    window.scrollTo(0, 0);
-  }, [])
-
   const productPageUrl = useMemo(() => {
     let matchedUrl = "";
     switch (location.pathname) {

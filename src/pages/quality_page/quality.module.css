@@ -17,15 +17,13 @@
   display: grid;
   gap: 15px;
 }
-.doubleQuotesIcon {
+.doubleQuotesIcon { 
   width: 17px;
 }
 .certificateWrapper {
   display: flex;
   justify-content: center;
   margin: 60px;
-}
-.certificateWrapper img {
 }
 .certificateContainer {
   display: flex;
@@ -44,4 +42,8 @@
 }
 .galleryContainer img {
   width: 100%;
+}
+.productImage .container {  
+  width: 100%;
+height: auto;
 }

@@ -31,13 +31,13 @@ export const Contact = () => {
               <div className={styles.title}>Call us</div>
               <div className={styles.discription}>
                 <img src={PhoneIcon} alt="phone" className={styles.phoneIcon} />
-                040-23771229
+                <span>040-23771229</span>
               </div>
               <div
                 className={` ${styles.discription} ${styles.MailDescription} `}
               >
                 <img src={MailIcon} alt="phone" className={styles.mailIcon} />
-                info@revathiengineering.com
+                <span>info@revathiengineering.com</span>
               </div>
             </div>
 

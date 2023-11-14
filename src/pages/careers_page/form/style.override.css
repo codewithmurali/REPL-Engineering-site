@@ -5,27 +5,27 @@
 }
 .formValidation-multigroup {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 250px));
+  grid-template-columns: repeat(2, minmax(150px, 300px));
   column-gap: 25px;
   justify-content: center;
 }
 
 .formValidation-Wrapper .ant-form-item input {
-  height: 38px;
+  height: 45px;
   border-radius: 3px;
 }
 .formValidation-Wrapper .ant-form-item textarea {
-  height: 65px;
+  height: 75px;
   border-radius: 3px;
 }
 .formValidation-Wrapper .ant-form-item button {
-  width: auto;
   background: var(--sui-gradient-color);
   background-size: 200% 100%;
   background-position: right center;
   border-radius: 25px;
   width: 150px;
-  height: 40px;
+  height: 45px;
+  font-size: 20px;
 }
 .formValidation-Wrapper .ant-form-item button:hover {
   transition: all 0.5s;

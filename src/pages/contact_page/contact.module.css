@@ -1,8 +1,10 @@
 .formWrapper {
   display: grid;
   justify-content: center;
-  background: var(--sui-color-black-200);
-  padding: 70px 0;
+  padding: 70px 0 20px 0;
+  background-image: url(../../common/backgroundImage1.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .formContainer {
   display: grid;
@@ -15,11 +17,6 @@
   font-size: 25px;
   margin-top: 35px;
   font-weight: 100;
-}
-.formWrapper {
-  background-image: url(../../common/backgroundImage1.jpeg);
-  background-size: cover;
-  background-position: center;
 }
 .contactWrapper .contentContainer:first-child .title {
   margin-top: 0;
@@ -36,7 +33,6 @@
   position: relative;
   top: 2px;
 }
-
 .mailIcon {
   width: 19px;
   margin-right: 10px;
@@ -65,5 +61,6 @@
   justify-content: center;
 }
 .mapContainer {
-  width: 100%;
+  width: 80%;
+  padding: 50px 0 80px 0;
 }

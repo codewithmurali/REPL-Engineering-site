@@ -8,16 +8,14 @@
   border-radius: 3px;
 }
 .formValidation :global(.ant-form-item button) {
-  background-color: var(--sui-color-red-100);
-  background: #47b1ff;
   background: var(--sui-gradient-color);
   background-size: 200% 100%;
   background-position: right center;
   width: 150px;
-  height: 40px;
-  border-radius: 0px;
+  height: 45px;
   transition: all 0.5s;
   border-radius: 25px;
+  font-size: 19px;
 }
 .formValidation :global(.ant-btn-primary:hover) {
   transition: all 0.5s;

@@ -2,13 +2,15 @@ import React from "react";
 
 import { Slider } from "../../components/slider";
 import { CORE_VALUES, CLIENTS_DATA } from "./constant";
+import { ScrollToTop } from "../../components/scrollto_top";
+import { GradiantAnimatedText } from "../../components/text/gradiant_animated";
 
 import styles from "./home.module.css";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
-import { GradiantAnimatedText } from "../../components/text/gradiant_animated";
-import { ScrollToTop } from "../../components/scrollto_top";
+import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
+import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
 
 export const Home = () => {
   ScrollToTop();
@@ -70,7 +72,7 @@ export const Home = () => {
                 <div className={styles.yearText}>1982</div>
               </td>
               <td>
-                Established in 1982 in Balanagar as SSI Unit.
+                <span>Established in 1982 in Balanagar as SSI Unit.</span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -79,8 +81,10 @@ export const Home = () => {
                 <div className={styles.yearText}>1996</div>
               </td>
               <td>
-                Registered as Ancillary Unit to BDL, Ministry of defence in
-                1996.
+                <span>
+                  Registered as Ancillary Unit to BDL, Ministry of defence in
+                  1996.
+                </span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -89,7 +93,7 @@ export const Home = () => {
                 <div className={styles.yearText}>1997</div>
               </td>
               <td>
-                Best Vendor award obtained from BHEL in 1997.
+                <span> Best Vendor award obtained from BHEL in 1997.</span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -98,8 +102,11 @@ export const Home = () => {
                 <div className={styles.yearText}>1998 1999 2000</div>
               </td>
               <td>
-                Best import substitution award for the Products developed in
-                1998, 1999 & 2000 from Ministry of Defence.
+                <span>
+                  {" "}
+                  Best import substitution award for the Products developed in
+                  1998, 1999 & 2000 from Ministry of Defence.
+                </span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -108,7 +115,7 @@ export const Home = () => {
                 <div className={styles.yearText}>2001 2002</div>
               </td>
               <td>
-                Best key Vendor award obtained from HAL in 2001-02.
+                <span>Best key Vendor award obtained from HAL in 2001-02.</span>
                 <img src={Img1989} alt="Img1989" />{" "}
               </td>
             </tr>
@@ -117,7 +124,7 @@ export const Home = () => {
                 <div className={styles.yearText}>2008</div>
               </td>
               <td>
-                Prime vendor award obtained from GTRE in 2008.
+                <span>Prime vendor award obtained from GTRE in 2008.</span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -126,8 +133,11 @@ export const Home = () => {
                 <div className={styles.yearText}>2015</div>
               </td>
               <td>
-                ISO 9001:2015 Quality Management Systems implemented. Expansion
-                in 2008 with additional facilities at Balanagar , Hyderabad.
+                <span>
+                  ISO 9001:2015 Quality Management Systems implemented.
+                  Expansion in 2008 with additional facilities at Balanagar ,
+                  Hyderabad.
+                </span>
                 <img src={Img1989} alt="Img1989" />
               </td>
             </tr>
@@ -140,10 +150,20 @@ export const Home = () => {
         <div className={styles.ourVisionSubContainer}>
           <h1 className={styles.title}>OUR VISION</h1>
           <p className={styles.content1}>
-            " To become the first choice of major PSUs, Aero Space and defense
+            <img
+              src={DoubleQuotesStartIcon}
+              alt="double quotes"
+              className={styles.doubleQuotesIcon}
+            />
+            To become the first choice of major PSUs, Aero Space and defense
             establishments in India for manufacture of components and sub
             assemblies. Top most priority to Customer satisfaction. Focus on
-            continual improvement, innovation and creativity. "
+            continual improvement, innovation and creativity.{" "}
+            <img
+              src={DoubleQuotesEndIcon}
+              alt="double quotes"
+              className={styles.doubleQuotesIcon}
+            />
           </p>
         </div>
       </div>
@@ -159,7 +179,7 @@ export const Home = () => {
           <div className={styles.coreValuesContainer}>
             {CORE_VALUES.map((item) => {
               return (
-                <div className={styles.dataInfo}>
+                <div className={styles.dataInfo} key="core values">
                   <div className={styles.circleContainer}>
                     <div className={styles.circle1}>
                       <div className={styles.circle2}></div>
@@ -186,7 +206,7 @@ export const Home = () => {
         <div className={styles.clientsContainer}>
           {CLIENTS_DATA.map((item) => {
             return (
-              <div className={styles.cardInfoContainer}>
+              <div className={styles.cardInfoContainer} key="text">
                 <img src={item.img} alt={item.name} />
                 <div className={styles.textInfo}>{item.name}</div>
               </div>
@@ -194,8 +214,6 @@ export const Home = () => {
           })}
         </div>
       </div>
-
-      {/* ------footer------ */}
     </>
   );
 };
