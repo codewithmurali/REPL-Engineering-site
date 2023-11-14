@@ -1,4 +1,4 @@
-import { SUIDeskNavbar } from "./Desktop/index.jsx"
+import { SUIDeskNavbar } from "./desktop/index.jsx"
 import { SUIMobileNavbar } from "./mobile/index.jsx"
 
 import styles from "./navbar.module.css"
