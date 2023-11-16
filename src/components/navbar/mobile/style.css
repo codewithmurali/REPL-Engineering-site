@@ -12,7 +12,7 @@
 }
 
 .SUIMobileNavbarDrawer {
-  --DrawerbgColor: var(--MenuBarbgColor);
+  --DrawerbgColor: var(--sui-color-black  );
 
   --menuItemColor: #00798d;
   --menuItemFontSize: 16px;
@@ -30,6 +30,14 @@
 }
 
 /* mobile navigation container bar */
+.SUIMobileNavbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .SUIMobileNavbarContainer {
   width: 100%;
   height: var(--height);
@@ -38,7 +46,7 @@
   align-items: center;
   background-color: var(--MenuBarbgColor);
   padding: var(--padding);
-  box-shadow: 0px 6px 15px -6px #dbdbdb;
+  backdrop-filter: "blur(51px)";
 }
 
 .SUIMobileNavbarContainerBox {

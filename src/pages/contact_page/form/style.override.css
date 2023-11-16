@@ -1,52 +1,54 @@
-.formValidation-Wrapper {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
+.formValidation :global(.ant-form-item input) {
+  height: 45px;
+  border-radius: 3px;
+  width: 100%;
 }
-.formValidation-multigroup {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 300px));
-  column-gap: 25px;
-  justify-content: center;
+.formValidation :global(.ant-form-item textarea) {
+  height: 65px;
+  border-radius: 3px;
 }
-
-.formValidation-Wrapper .ant-form-item input {
+.formValidation .ant-form-item input {
   height: 45px;
   border-radius: 3px;
   background-color: var(--sui-color-gray-400) !important;
   color: var(--sui-color-white-300);
   border-color: var(--sui-color-white-500) !important;
 }
-.formValidation-Wrapper .ant-form-item input::placeholder,
-.formValidation-Wrapper .ant-form-item textarea::placeholder {
+.formValidation .ant-form-item input::placeholder,
+.formValidation .ant-form-item textarea::placeholder {
   color: var(--sui-color-white-500);
 }
-.formValidation-Wrapper .ant-form-item textarea {
+.formValidation .ant-form-item textarea {
   height: 75px;
   border-radius: 3px;
   background-color: var(--sui-color-gray-400) !important;
   color: var(--sui-color-white-400);
   border-color: var(--sui-color-white-500) !important;
 }
-.formValidation-Wrapper .ant-input:hover{
+.formValidation .ant-input:hover {
   border-color: var(--sui-color-blue-200) !important;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.formValidation-Wrapper .ant-input:focus{
+.formValidation .ant-input:focus {
   border-color: var(--sui-color-blue-200) !important;
 }
-.formValidation-Wrapper .ant-form-item button {
+.formValidation .ant-form-item button {
   background: var(--sui-gradient-color);
   background-size: 200% 100%;
   background-position: right center;
-  border-radius: 25px;
   width: 150px;
   height: 45px;
-  font-size: 20px;
+  transition: all 0.5s;
+  border-radius: 25px;
+  font-size: 19px;
 }
-.formValidation-Wrapper .ant-form-item button:hover {
+.formValidation .ant-btn-primary:hover {
   transition: all 0.5s;
   background: var(--sui-gradient-color-100);
   background-size: 200% 100%;
   background-position: right center;
+}
+
+.formValidation .ant-form-item .ant-form-item-explain-error {
+  font-size: 12px;
 }

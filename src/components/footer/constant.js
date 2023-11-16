@@ -24,7 +24,7 @@ export const FOOTER_MENU_LINKS = [
     links: [
       { name: "Feel free to call", isUrl: false },
       { name: "040-23771229", isUrl: false },
-      { name: "info@revathiengineering.com", isUrl: false },
+      { name: "chat us", isUrl: false },
     ],
   },
   {

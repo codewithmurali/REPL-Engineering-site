@@ -2,7 +2,6 @@
 .homeBannerContainer {
   width: 100%;
   height: 100vh;
-  font-family: var(--sui-font-family-100);
   color: var(--sui-color-white);
   position: relative;
 }
@@ -14,7 +13,7 @@
   font-size: 70px;
   margin-left: 50px;
   font-weight: 300;
-  font-family: var(--sui-font-family-100);
+  font-family: var(--sui-font-family-s200);
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
@@ -22,7 +21,7 @@
   font-size: 25px;
   color: var(--sui-color-white-200);
   font-weight: 200;
-  font-family: var(--sui-font-family-100);
+  font-family: var(--sui-font-family-s200);
 }
 
 /* ------who-we-are------ */
@@ -30,39 +29,40 @@
   display: flex;
   justify-content: center;
   background-color: var(--sui-color-black);
+  padding-bottom: 100px;
 }
 .whoWeAreSubContainer {
   width: 80%;
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 20%;
+  gap: 35px;
   padding: 50px 0;
 }
 .title {
-  width: 30%;
   width: max-content;
   display: flex;
   justify-content: flex-end;
-  color: var(--sui-color-white);
-  font-size: 50px;
+  color: var(--sui-color-white-100);
+  font-size: 45px;
+  font-family: var(--sui-font-family-c300);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .whoWeAreSubContainer .contentContainer {
-  font-size: 22px;
-  font-weight: 200;
-  color: var(--sui-color-white);
-  font-family: var(--sui-font-family-100);
+  font-size: 20px;
+  font-family: var(--sui-font-family-s600);
+  font-weight: 300;
+  line-height: var(--sui-line-height);
+  letter-spacing: var(--sui-letter-spacing);
+  color: var(--sui-color-white-300);
 }
 .whoWeAreSubContainer .content1 {
-  border-bottom: 1px solid var(--sui-color-white);
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-  font-family: var(--sui-font-family-100);
+  border-bottom: 1px solid var(--sui-color-black-300);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
 }
 .whoWeAreSubContainer .content2 {
-  border-bottom: 1px solid var(--sui-color-white);
+  border-bottom: 1px solid var(--sui-color-black-300);
   padding-bottom: 20px;
-  line-height: 42px;
-  font-family: var(--sui-font-family-100);
 }
 
 /* ------our journey------ */
@@ -77,34 +77,45 @@
 }
 
 .ourJourneySubContainer {
-  width: 85%;
+  width: 80%;
   margin-top: 111px;
   display: grid;
-  grid-template-columns: max-content auto;
-  gap: 10%;
+  /* grid-template-columns: max-content auto; */
+  gap: 80px;
+}
+
+.tableWrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .ourJourneySubContainer table {
   border-collapse: collapse;
+  width: 75%;
 }
 .ourJourneySubContainer table tr td {
   padding-bottom: 50px;
-  line-height: 33px;
-  font-size: 25px;
+  font-weight: 600;
+  line-height: var(--sui-line-height);
+  letter-spacing: 1.5px;
 }
 .ourJourneySubContainer table tr td:nth-child(1) {
   border-right: 1px solid var(--sui-color-white-200);
   position: relative;
-  line-height: 35px;
-  min-width: 118px;
+  min-width: 100px;
   color: var(--sui-color-white);
+  font-family: var(--sui-font-family-n100);
+  line-height: var(--sui-line-height);
+  font-size: 20px;
+  letter-spacing: var(--sui-letter-spacing);
+  font-weight: 400;
 }
 .ourJourneySubContainer table tr td:nth-child(1)::before {
   content: "";
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: var(--sui-color-white-200);
+  background-color: var(--sui-color-white-400);
   position: absolute;
   top: 0px;
   right: -18px;
@@ -117,11 +128,12 @@
 .ourJourneySubContainer table tr td:nth-child(2) {
   display: grid;
   padding-left: 60px;
-  line-height: 40px;
-  font-weight: 200;
-  font-size: 22px;
-  color: var(--sui-color-white-100);
-  font-family: var(--sui-font-family-100);
+  color: var(--sui-color-white-300);
+  font-family: var(--sui-font-family-s600);
+  font-weight: 400;
+  line-height: var(--sui-line-height);
+  font-size: 21px;
+  letter-spacing: var(--sui-letter-spacing);
 }
 .ourJourneySubContainer table tr td:nth-child(2) img {
   border-radius: 10px;
@@ -138,21 +150,24 @@
   justify-content: center;
   width: 100%;
   padding: 70px 0;
+  border-top: 1.5px solid var(--sui-color-blue-200);
+  border-bottom: 1.5px solid var(--sui-color-blue-200);
 }
 .ourVisionSubContainer {
-  width: 70%;
+  width: 80%;
   display: grid;
 }
 .ourVisionSubContainer .title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .ourVisionContainer .content1 {
+  font-size: 20px;
+  font-family: var(--sui-font-family-s600);
+  font-weight: 400;
+  line-height: var(--sui-line-height);
+  letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
-  font-family: var(--sui-font-family-100);
-  font-size: 25px;
-  line-height: 50px;
-  font-weight: 300;
 }
 .doubleQuotesIcon {
   width: 17px;
@@ -165,30 +180,36 @@
 .coreValuesWrapper {
   display: flex;
   justify-content: center;
-  padding: 100px 0;
+  padding: 80px 0;
   background: black url(../../common/backgroundImage4.jpeg) no-repeat;
   background-size: cover;
+  border-bottom: 1.5px solid var(--sui-color-blue-200);
 }
 
 .coreValuesSubWrapper {
-  width: 90%;
+  width: 80%;
   display: grid;
-  place-items: center;
+  grid-template-columns: max-content 1fr;
+  gap: 100px;
 }
 .coreValuesContainer {
   grid-gap: 15px;
   display: grid;
   gap: 15px;
-  place-items: center;
-  width: 80%;
-  margin-right: 165px;
+
+  width: 100%;
+}
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 .coreValuesSubWrapper .title {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .coreValuesContainer .dataInfo {
   display: grid;
-  grid-template-columns: max-content minmax(22rem, 35rem);
+  grid-template-columns: max-content minmax(max-content, 1fr);
   align-items: center;
   gap: 40px;
 }
@@ -211,9 +232,10 @@
   border-radius: 50%;
   border: 2px solid;
   border-color: var(--sui-color-gray-300);
-  animation: cicle 5s infinite linear;
+  animation: circle 5s infinite linear;
   display: grid;
   place-items: center;
+  background-color: var(--sui-color-blue-400);
 }
 .coreValuesContainer .dataInfo .circle2 {
   width: 120px;
@@ -232,8 +254,8 @@
 }
 .coreValuesContainer .dataInfo .infoContent {
   height: 80px;
-  background-color: var(--sui-color-gray-200);
-  color: var(--sui-color-white-200);
+  background-color: var(--sui-color-blue-400);
+  color: var(--sui-color-white-300);
   display: grid;
   place-items: center;
   transform: skew(-20deg);
@@ -244,6 +266,8 @@
 .coreValuesContainer .dataInfo .infoContent .content {
   transform: skew(20deg);
   font-size: 19px;
+  font-family: var(--sui-font-family-s500);
+  font-weight: 600;
 }
 
 /* ------clients------ */
@@ -251,8 +275,8 @@
   display: grid;
   place-items: center;
   padding-bottom: 150px;
+  padding-top: 70px;
   background-color: var(--sui-color-black);
-  padding-top: 20px;
 }
 .clientsContainer {
   width: 80%;
@@ -284,4 +308,161 @@
   display: grid;
   align-items: center;
   color: var(--sui-color-blue-100);
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .coreValuesSubWrapper {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coreValuesContainer .dataInfo .infoContent {
+    height: auto;
+    padding: 17px 0;
+  }
+  .circleContainer {
+    width: 110px;
+    height: 110px;
+  }
+  .coreValuesContainer .dataInfo img {
+    width: 33px;
+    height: 33px;
+  }
+  .coreValuesContainer .dataInfo .circle1 {
+    width: 110px;
+    height: 110px;
+  }
+  .coreValuesContainer .dataInfo .circle2 {
+    width: 89px;
+    height: 89px;
+  }
+  .doubleQuotesIcon {
+    top: -1px;
+  }
+  .ourVisionContainer .content1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(1) .yearText {
+    top: -6px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(1)::before {
+    width: 20px;
+    height: 20px;
+    right: -10px;
+  }
+  .whoWeAreContainer {
+    padding-bottom: 10px;
+  }
+  .whoWeAreSubContainer .contentContainer {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .HomebannerTitleContainer {
+    padding: 0 10px;
+  }
+  .HomebannerTitleContainer .title1 {
+    font-size: 50px;
+  }
+  .HomebannerTitleContainer .title2 {
+    font-size: 21px;
+  }
+  .ourJourneySubContainer {
+    width: 90%;
+    margin-top: 60px;
+    padding-bottom: 0px;
+    gap: 50px;
+  }
+  .ourJourneySubContainer table {
+    width: 95%;
+  }
+  .ourJourneySubContainer table tr td:nth-child(1) {
+    min-width: 70px;
+    font-size: 14px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(2) {
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(2) img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .clientsWrapper {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .ourVisionSubContainer {
+    width: 90%;
+  }
+  .whoWeAreSubContainer {
+    width: 90%;
+  }
+  .coreValuesWrapper {
+    padding: 50px 0;
+  }
+  .coreValuesSubWrapper .title {
+    margin-bottom: 40px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(2) img {
+    width: 90%;
+  }
+  .ourVisionContainer {
+    padding: 50px 0;
+  }
+  .ourJourneyContainer {
+    padding-bottom: 50px;
+  }
+  .ourVisionContainer .content1 {
+    font-size: 15px;
+  }
+  .circleContainer {
+    width: 90px;
+    height: 90px;
+  }
+  .coreValuesContainer .dataInfo {
+    gap: 20px;
+    grid-template-columns: max-content 1fr;
+  }
+  .coreValuesContainer .dataInfo img {
+    width: 35px;
+    height: 35px;
+  }
+  .coreValuesContainer .dataInfo .circle1 {
+    width: 90px;
+    height: 90px;
+    border-width: 1.5px;
+  }
+  .coreValuesContainer .dataInfo .circle2 {
+    width: 75px;
+    height: 75px;
+    border-width: 1.5px;
+  }
+
+  .coreValuesContainer .dataInfo .infoContent .content {
+    margin: 0 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .coreValuesContainer .dataInfo .infoContent {
+    height: auto;
+    padding: 15px 0;
+  }
+  .coreValuesSubWrapper {
+    width: 90%;
+    padding-right: 3%;
+  }
 }

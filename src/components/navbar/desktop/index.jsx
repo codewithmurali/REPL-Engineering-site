@@ -22,9 +22,9 @@ export const SUIDeskNavbar = ({ className }) => {
 
   const listenScrollEvent = () => {
     window.scrollY > 10
-      ? setNavColor("transparent")
-      : setNavColor("transparent");
-    window.scrollY > 10 ? setNavSize("115px") : setNavSize("100px");
+      ? setNavColor("black")
+      : setNavColor("black");
+    window.scrollY > 10 ? setNavSize("110px") : setNavSize("100px");
   };
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export const SUIDeskNavbar = ({ className }) => {
         className="SUIDeskNavbar"
         style={{
           backgroundColor: navColor,
-          backdropFilter: "blur(51px)",
           height: navSize,
           transition: "all 0.5s",
         }}
@@ -73,7 +72,7 @@ export const SUIDeskNavbar = ({ className }) => {
               key="PRODUCTS"
               title={
                 <span>
-                  PRODUCTS{" "}
+                  PRODUCTS
                   <IoIosArrowDown className="SUIDeskNavbarDownArrowIcon" />
                 </span>
               }
@@ -81,28 +80,25 @@ export const SUIDeskNavbar = ({ className }) => {
               <Menu.ItemGroup className="SUIDeskNavbarSubMenuLink">
                 <Menu.Item key="setting:1">
                   <Link to="/products/steam-gas-turbine-blades">
-                    {" "}
-                    Steam & Gas Turbine Blades
+                    STEAM & GAS TURBINE BLADES
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="setting:2">
                   <Link to="/products/precision-components">
-                    {" "}
-                    Precision Components
+                    PRECISION COMPONENTS
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="setting:3">
                   <Link to="/products/heavy-fabrication">
-                    {" "}
-                    Heavy Fabrication
+                    HEAVY FABRICATION
                   </Link>
                 </Menu.Item>
                 <Menu.Item key="setting:4">
-                  <Link to="/products/dies-tools"> Dies & Tools</Link>
+                  <Link to="/products/dies-tools"> DIES & TOOLS</Link>
                 </Menu.Item>
                 <Menu.Item key="setting:5">
                   <Link to="/products/aero-sub-assemblies">
-                    Aero Sub Assemblies
+                    AERO SUB ASSEMBLIES
                   </Link>
                 </Menu.Item>
               </Menu.ItemGroup>

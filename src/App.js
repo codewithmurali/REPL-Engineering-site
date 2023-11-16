@@ -13,6 +13,7 @@ import { Careers } from "./pages/careers_page";
 import { Contact } from "./pages/contact_page";
 
 import "./style.constant.css";
+import { DropdownMenu } from "./components/navbar/mobile/mobile";
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
     <>
       <SUINavbar />
       <TopContainer />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
@@ -54,6 +56,8 @@ function App() {
         <Route path="/quality" element={<Quality />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/dd" element={<DropdownMenu />} />
       </Routes>
       <Footer />
     </>

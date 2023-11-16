@@ -1,42 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Gruppo&family=NTR&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@100;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
 /* override the default value */
 
 body {
   margin: 0;
+  background-color: white;
 }
 a {
   text-decoration: none !important;
   color: unset;
 }
+.ant-form-item-explain-error {
+  color: var(--sui-color-red-100) !important;
+}
 
-/* css variable */
+/*  ---------css variable--------- */
 
 html {
-  --sui-font-family-100: "Exo 2", sans-serif;
+  /* --------font family--------*/
+  --sui-font-family-s100: "Exo 2", sans-serif;
+  --sui-font-family-s200: "Ubuntu", sans-serif;
+  --sui-font-family-s300: "NTR", sans-serif;
+  /* all font weight added */
+  --sui-font-family-s500: "Sarabun", sans-serif;
+  --sui-font-family-s600: "Poppins", sans-serif;
 
+  --sui-font-family-c100: "Ubuntu", sans-serif;
+  --sui-font-family-c200: "NTR", sans-serif;
+  --sui-font-family-c300: "Gruppo", sans-serif;
+  --sui-font-family-c400: "Audiowide", sans-serif;
+
+  --sui-font-family-n100: "Saira", sans-serif;
+
+  /* --------spacings--------*/
+  --sui-letter-spacing: 1px;
+  --sui-line-height: 40px;
+
+  /* -------font color------------  */
   --sui-color-white: white;
   --sui-color-white-100: #e4e4e4;
   --sui-color-white-200: #d7d7d7;
-  --sui-color-white-300: #a4a4a4;
+  --sui-color-white-300: #c1c1c1;
+  --sui-color-white-400: #a4a4a4;
+  --sui-color-white-500: #979797;
+  --sui-color-white-600: #757272;
 
   --sui-color-black: black;
   --sui-color-black-100: #0e0e0e;
   --sui-color-black-200: #181819;
+  --sui-color-black-300: #363636;
+  --sui-color-black-400: #191818;
+  --sui-color-black-500: #010100;
 
   --sui-color-gray: gray;
   --sui-color-gray-100: #151515;
   --sui-color-gray-200: #222222;
   --sui-color-gray-300: #595959;
+  --sui-color-gray-400: #a4a4a433;
 
   --sui-color-blue: blue;
   --sui-color-blue-100: #133c5c;
   --sui-color-blue-200: #206883;
   --sui-color-blue-300: #1e86a6;
+  --sui-color-blue-400: #40546025;
 
   --sui-color-red: red;
-  --sui-color-red-100: #b41c01;
+  --sui-color-red-100: #a4301b;
 
+  /* -------gradient font color------------  */
   --sui-gradient-color: linear-gradient(
     to right,
     rgb(3 76 94) 0%,
@@ -51,5 +81,5 @@ html {
     rgb(66 33 94) 50%,
     rgb(0 103 128) 100%
   );
-  --sui-gradient-color-200: linear-gradient(194deg, #082e4b, #000);
+  --sui-gradient-color-200: linear-gradient(194deg, #051722, #032433);
 }

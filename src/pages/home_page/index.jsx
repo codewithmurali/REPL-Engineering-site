@@ -35,21 +35,26 @@ export const Home = () => {
       {/* ------who-we-are------ */}
       <div className={styles.whoWeAreContainer}>
         <div className={styles.whoWeAreSubContainer}>
-          <GradiantAnimatedText
-            text="Who We Are"
-            className={styles.title}
-            type="h1"
-          />
+          <h1 className={styles.title}>WHO WE ARE</h1>
 
           <div className={styles.contentContainer}>
             <div className={styles.content1}>
-              We make, so the world can fly!
+              We manufacture precision assemblies and components for the aero
+              space sector.
+            </div>
+            <div className={styles.content1}>
+              We have been here for nearly 4 decades and are one of the prime
+              suppliers to the Defense and Aerospace establishments in India.
+            </div>
+            <div className={styles.content1}>
+              Strong work force with professionals who come from core
+              manufacturing and designs background and have expanded creative
+              potential of the company.
             </div>
             <div className={styles.content2}>
-              We are manufacturers, innovators and creators of the some of the
-              most precise components, assemblies and sub assemblies that go
-              into aircrafts and aerospace vehicles and carriers. And we love
-              what we do.
+              We acknowledge and accept that in pursuing our goals, never
+              compromise on the quality. Sticking to delivery schedules is our
+              priority
             </div>
           </div>
         </div>
@@ -61,87 +66,88 @@ export const Home = () => {
       {/* ------our journey------ */}
       <div className={styles.ourJourneyContainer}>
         <div className={styles.ourJourneySubContainer}>
-          <GradiantAnimatedText
-            text="OUR JOURNEY"
-            className={styles.title}
-            type="h1"
-          />
-          <table>
-            <tr>
-              <td>
-                <div className={styles.yearText}>1982</div>
-              </td>
-              <td>
-                <span>Established in 1982 in Balanagar as SSI Unit.</span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>1996</div>
-              </td>
-              <td>
-                <span>
-                  Registered as Ancillary Unit to BDL, Ministry of defence in
-                  1996.
-                </span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>1997</div>
-              </td>
-              <td>
-                <span> Best Vendor award obtained from BHEL in 1997.</span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>1998 1999 2000</div>
-              </td>
-              <td>
-                <span>
-                  {" "}
-                  Best import substitution award for the Products developed in
-                  1998, 1999 & 2000 from Ministry of Defence.
-                </span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>2001 2002</div>
-              </td>
-              <td>
-                <span>Best key Vendor award obtained from HAL in 2001-02.</span>
-                <img src={Img1989} alt="Img1989" />{" "}
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>2008</div>
-              </td>
-              <td>
-                <span>Prime vendor award obtained from GTRE in 2008.</span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className={styles.yearText}>2015</div>
-              </td>
-              <td>
-                <span>
-                  ISO 9001:2015 Quality Management Systems implemented.
-                  Expansion in 2008 with additional facilities at Balanagar ,
-                  Hyderabad.
-                </span>
-                <img src={Img1989} alt="Img1989" />
-              </td>
-            </tr>
-          </table>
+          <h1 className={styles.title}>OUR JOURNEY</h1>
+
+          <div className={styles.tableWrapper}>
+            <table>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>1982</div>
+                </td>
+                <td>
+                  <span>Established in 1982 in Balanagar as SSI Unit.</span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>1996</div>
+                </td>
+                <td>
+                  <span>
+                    Registered as Ancillary Unit to BDL, Ministry of defence in
+                    1996.
+                  </span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>1997</div>
+                </td>
+                <td>
+                  <span> Best Vendor award obtained from BHEL in 1997.</span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>1998 1999 2000</div>
+                </td>
+                <td>
+                  <span>
+                    {" "}
+                    Best import substitution award for the Products developed in
+                    1998, 1999 & 2000 from Ministry of Defence.
+                  </span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>2001 2002</div>
+                </td>
+                <td>
+                  <span>
+                    Best key Vendor award obtained from HAL in 2001-02.
+                  </span>
+                  <img src={Img1989} alt="Img1989" />{" "}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>2008</div>
+                </td>
+                <td>
+                  <span>Prime vendor award obtained from GTRE in 2008.</span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className={styles.yearText}>2015</div>
+                </td>
+                <td>
+                  <span>
+                    ISO 9001:2015 Quality Management Systems implemented.
+                    Expansion in 2008 with additional facilities at Balanagar,
+                    Hyderabad.
+                  </span>
+                  <img src={Img1989} alt="Img1989" />
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -171,11 +177,10 @@ export const Home = () => {
       {/* ------core values------ */}
       <div className={styles.coreValuesWrapper}>
         <div className={styles.coreValuesSubWrapper}>
-          <GradiantAnimatedText
-            text="CORE VALUES"
-            className={styles.title}
-            type="h1"
-          />
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>CORE VALUES</h1>
+          </div>
+
           <div className={styles.coreValuesContainer}>
             {CORE_VALUES.map((item) => {
               return (
@@ -198,11 +203,7 @@ export const Home = () => {
 
       {/* ------clients------ */}
       <div className={styles.clientsWrapper}>
-        <GradiantAnimatedText
-          text="OUR CLIENTS"
-          className={styles.title}
-          type="h1"
-        />
+        <h1 className={styles.title}>OUR CLIENTS</h1>
         <div className={styles.clientsContainer}>
           {CLIENTS_DATA.map((item) => {
             return (
