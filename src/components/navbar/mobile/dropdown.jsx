@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 
 import styles from "./dropdown.module.css";
 import "./csstransition.override.css";
-import { Link } from "react-router-dom";
 
 export const DropDown = ({ setIsOpen }) => {
   const [activeMenu, setActiveMenu] = useState("main");
