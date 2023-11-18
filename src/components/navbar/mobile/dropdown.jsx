@@ -46,6 +46,9 @@ export const DropDown = ({ setIsOpen }) => {
           <DropdownItem to="clients">CLIENTS</DropdownItem>
           <DropdownItem to="quality">QUALITY</DropdownItem>
           <DropdownItem to="careers">CAREERS</DropdownItem>
+          <div className={styles.lastMenuItemWrapper}>
+            <div className={styles.lastMenuItem}>CONTACT</div>
+          </div>
         </div>
       </CSSTransition>
 
