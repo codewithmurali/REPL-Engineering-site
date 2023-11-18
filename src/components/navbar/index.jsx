@@ -17,12 +17,7 @@ export const SUINavbar = ({
         menuItemHoverColor={menuItemHoverColor}
         DesktopBgColor={bgColor}
       />
-      <SUIMobileNavbar
-        className={className}
-        menuItemColor={menuItemColor}
-        menuItemHoverColor={menuItemHoverColor}
-        MobileBgColor={bgColor}
-      />
+      <SUIMobileNavbar />
     </div>
   );
 };
