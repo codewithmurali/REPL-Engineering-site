@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import React,{ useEffect, useMemo, useState, lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { SUINavbar, TopContainer } from "./components/navbar";
@@ -13,9 +13,12 @@ import { Careers } from "./pages/careers_page";
 import { Contact } from "./pages/contact_page";
 
 import "./style.constant.css";
+import { BorderTextLoader } from "./components/loader/border_text_loader";
 
 function App() {
   const location = useLocation();
+
+  const [isTextLoader, setIsTextLoader] = useState(true);
 
   const productPageUrl = useMemo(() => {
     let matchedUrl = "";
@@ -38,25 +41,36 @@ function App() {
     return matchedUrl;
   }, [location]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsTextLoader(false);
+    }, 4500);
+  }, [isTextLoader]);
+
   return (
     <>
-      <SUINavbar />
-      <TopContainer />
+      {isTextLoader && <BorderTextLoader text="REPL" />}
+      {!isTextLoader && (
+        <>
+          <SUINavbar />
+          <TopContainer />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route
-          path={productPageUrl}
-          element={<Product path={productPageUrl} />}
-        />
-        <Route path="/clients" element={<Client />} />
-        <Route path="/clients" element={<Client />} />
-        <Route path="/quality" element={<Quality />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route
+              path={productPageUrl}
+              element={<Product path={productPageUrl} />}
+            />
+            <Route path="/clients" element={<Client />} />
+            <Route path="/clients" element={<Client />} />
+            <Route path="/quality" element={<Quality />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </>
   );
 }

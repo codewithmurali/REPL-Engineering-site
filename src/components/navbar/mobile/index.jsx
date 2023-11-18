@@ -16,7 +16,7 @@ export const SUIMobileNavbar = () => {
   const [navColor, setNavColor] = useState("transparent");
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setNavColor("black") : setNavColor("black");
+    window.scrollY > 10 && setNavColor("black");
     window.scrollY > 10 ? setNavSize("70px") : setNavSize("60px");
   };
 
