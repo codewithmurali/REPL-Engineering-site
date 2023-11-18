@@ -4,6 +4,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import { DropDown } from "./dropdown";
 
 import styles from "./navbar.module.css";
+import "./hamburger.override.css";
 
 import Logo from "../images/Logo.svg";
 import { Link } from "react-router-dom";
@@ -19,11 +20,11 @@ export const SUIMobileNavbar = () => {
               <img src={Logo} alt="logo" />
             </Link>
           </div>
-          <div className={styles.rightInfo}>
+          <div className={`${styles.rightInfo} hamburgerMenu`}>
             <Hamburger
               direction="right"
               duration={0.7}
-              size={30}
+              size={29.2}
               toggled={isOpen}
               toggle={() => setIsOpen(!isOpen)}
             />

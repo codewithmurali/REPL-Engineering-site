@@ -2,17 +2,17 @@
 .SUIDeskNavbar {
   --navbarWidth: 95%;
   --navbarHeight: 100px;
-  --navbarBgColor: white;
+  --navbarBgColor: var(--sui-color-black);
 
   --logoWidth: 100px;
   --logoFontSize: 32px;
   --logoFontWeight: 500;
   --logoColor: #397fe0;
 
-  --menuItemFontSize: 18px;
-  --menuItemFontFamily: var(--sui-font-family-c200);
-  --menuItemFontWeight: 300;
-  --menuItemColor: #ffffff;
+  --menuItemFontSize: 16px;
+  --menuItemFontFamily: var(--sui-font-family-s200);
+  --menuItemFontWeight: 100;
+  --menuItemColor: var(--sui-color-white-200);
   --menuItemHoverColor: var(--sui-color-blue-300);
 
   --menuItemBorderColor: transparent;
@@ -59,7 +59,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 150;
 }
 
 .SUIDeskNavbarContainerBox.ant-menu-horizontal {
@@ -118,7 +118,7 @@
   font-size: var(--menuItemFontSize);
   font-weight: var(--menuItemFontWeight);
   font-family: var(--menuItemFontFamily);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .SUIDeskNavbar .ant-menu-item-selected::after {
@@ -237,7 +237,7 @@
   background-color: var(--lastMenuItemBgColor) !important;
   border-radius: 25px !important;
   color: var(--lastMenuItemColor);
-  padding: 0px 17px !important;
+  padding: 10px 17px !important;
   border: 2px solid var(--lastMenuItemBorderColor);
 }
 

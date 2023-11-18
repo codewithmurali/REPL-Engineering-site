@@ -29,13 +29,13 @@
   top: 60px;
   right: 0;
   left: 0;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 .leftInfo {
   display: grid;
   align-items: center;
   width: auto;
-  height: 100%; 
+  height: 100%;
 }
 .leftInfo img {
   width: 70px;
@@ -46,4 +46,12 @@
 
 .rightInfo :global(.hamburger-react div) {
   height: 2px !important;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (min-width: 1023.5px) {
+  .navbrWrapper {
+    display: none;
+  }
 }
