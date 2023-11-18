@@ -3,6 +3,7 @@
   display: grid;
   place-items: center;
   padding-bottom: 150px;
+  background-color: var(--sui-color-black);
 }
 .clientsWrapper .title {
   color: var(--sui-color-white);

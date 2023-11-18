@@ -23,7 +23,7 @@ export const Quality = () => {
           <div className={styles.text}>
             <div>
               <img
-                src={DoubleQuotesStartIcon} 
+                src={DoubleQuotesStartIcon}
                 alt="double quotes"
                 className={styles.doubleQuotesIcon}
               />{" "}

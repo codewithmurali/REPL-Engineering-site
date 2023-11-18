@@ -20,9 +20,7 @@ export const Footer = () => {
             <div className={styles.textInfo2}>info@revathiengineering.com</div>
           </div>
           <div className={styles.rightInfo}>
-            <div className={styles.textInfo}>
-              Sign up for Rocket Lab updates
-            </div>
+            <div className={styles.textInfo}>Sign up for more updates</div>
             <Form
               name="basic"
               initialValues={{

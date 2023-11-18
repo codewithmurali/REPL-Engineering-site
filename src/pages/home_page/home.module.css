@@ -152,6 +152,7 @@
   padding: 70px 0;
   border-top: 1.5px solid var(--sui-color-blue-200);
   border-bottom: 1.5px solid var(--sui-color-blue-200);
+  background-color: var(--sui-color-black);
 }
 .ourVisionSubContainer {
   width: 80%;

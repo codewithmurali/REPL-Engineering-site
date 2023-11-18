@@ -160,20 +160,22 @@
   padding-top: 21px;
   font-family: var(--sui-font-family-s600);
   letter-spacing: var(--sui-letter-spacing);
-  font-weight: 400;
+  font-weight: 300;
 }
 .copyRightsContainer .leftInfo {
   color: var(--sui-color-white-500);
+  font-size: 14px;
 }
 .copyRightsContainer .rightInfo {
   color: var(--sui-color-white-500);
   display: block;
+  font-size: 14px;
 }
 .copyRightsContainer .rightInfo a {
   text-decoration: none;
   color: var(--sui-color-white-500);
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 200;
   transition: all 0.5s;
 }
 .copyRightsContainer .rightInfo a:hover {
@@ -240,7 +242,7 @@
     display: block;
     text-align: center;
     width: 100%;
-    font-size: 12px;
+    font-size: 13px;
   }
   .copyRightsContainer .rightInfo {
     margin-top: 10px;
@@ -249,11 +251,11 @@
     gap: 5px;
   }
   .copyRightsContainer .rightInfo span {
-    font-size: 10px;
+    font-size: 11px;
     color: var(--sui-color-white-600);
   }
   .copyRightsContainer .rightInfo a {
-    font-size: 11px;
+    font-size: 12px;
   }
   .logoContainerInfo {
     font-family: var(--sui-font-family-s600);
@@ -280,7 +282,6 @@
 }
 
 @media (max-width: 425px) {
-
   .copyRightsContainer {
     flex-direction: column;
     margin-bottom: 10px;
