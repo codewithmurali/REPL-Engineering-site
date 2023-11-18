@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 
 import { DropDown } from "./dropdown";
@@ -11,9 +11,32 @@ import { Link } from "react-router-dom";
 
 export const SUIMobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [navSize, setNavSize] = useState("");
+  const [navColor, setNavColor] = useState("transparent");
+
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setNavColor("black") : setNavColor("black");
+    window.scrollY > 10 ? setNavSize("70px") : setNavSize("60px");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
   return (
     <>
-      <div className={styles.navbrWrapper}>
+      <div
+        className={styles.navbrWrapper}
+        style={{
+          backgroundColor: navColor,
+          height: navSize,
+          transition: "all 0.5s",
+        }}
+      >
         <div className={styles.navbrContainer}>
           <div className={styles.leftInfo}>
             <Link to="/" toggle={() => setIsOpen(false)}>
