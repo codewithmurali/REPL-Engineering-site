@@ -11,7 +11,7 @@ export const Profile = () => {
       <Slider className={styles.slider} />
       <div className={styles.profileWrapper}>
         <div className={styles.profileSubWrapper}>
-          <div className={styles.title}>Profile</div>
+          <div className={styles.title}>PROFILE</div>
           <div className={styles.contentContainer}>
             {PROFILE_DATA.map((item) => {
               return (

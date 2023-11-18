@@ -22,7 +22,7 @@
   height: 75px;
   border-radius: 3px;
   background-color: var(--sui-color-gray-400) !important;
-  color: var(--sui-color-white-400);
+  color: var(--sui-color-white-300);
   border-color: var(--sui-color-white-500) !important;
 }
 .formValidation .ant-input:hover {
@@ -51,4 +51,14 @@
 
 .formValidation .ant-form-item .ant-form-item-explain-error {
   font-size: 12px;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (max-width: 425px) {
+  .formValidation .ant-form-item button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+  }
 }

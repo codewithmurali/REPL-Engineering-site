@@ -23,7 +23,7 @@ export const Quality = () => {
           <div className={styles.text}>
             <div>
               <img
-                src={DoubleQuotesStartIcon}
+                src={DoubleQuotesStartIcon} 
                 alt="double quotes"
                 className={styles.doubleQuotesIcon}
               />{" "}
@@ -53,8 +53,12 @@ export const Quality = () => {
 
       <div className={styles.galleryWrapper}>
         <div className={styles.galleryContainer}>
-          <img src={product1} alt="product" />
-          <img src={product2} alt="product" />
+          <div className={styles.imgWrapper}>
+            <img src={product1} alt="product" />
+          </div>
+          <div className={styles.imgWrapper}>
+            <img src={product2} alt="product" />
+          </div>
         </div>
       </div>
     </>

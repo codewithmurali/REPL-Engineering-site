@@ -1,8 +1,9 @@
 .overviewWrapper {
   display: flex;
   justify-content: center;
-  padding: 70px;
+  padding: 100px 0;
   background-color: var(--sui-color-black-200);
+  border-bottom: 1.5px solid var(--sui-color-blue-200);
 }
 .overviewContainer {
   width: 80%;
@@ -11,13 +12,15 @@
   gap: 50px;
 }
 .overviewContainer .text {
-  color: var(--sui-color-white-200);
-  line-height: 30px;
+  color: var(--sui-color-white-300);
+  font-family: var(--sui-font-family-s600);
+  line-height: 40px;
+  letter-spacing: 0.5px;
   font-size: 18px;
   display: grid;
   gap: 15px;
 }
-.doubleQuotesIcon { 
+.doubleQuotesIcon {
   width: 17px;
 }
 .certificateWrapper {
@@ -32,8 +35,8 @@
 .galleryWrapper {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
-  padding-bottom: 150px;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 .galleryContainer {
   display: grid;
@@ -43,7 +46,86 @@
 .galleryContainer img {
   width: 100%;
 }
-.productImage .container {  
+.productImage .container {
   width: 100%;
-height: auto;
+  height: auto;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (max-width: 1440px) {
+  .overviewContainer {
+    width: 80%;
+  }
+  .overviewContainer .text {
+    color: var(--sui-color-white-300);
+    font-family: var(--sui-font-family-s600);
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .overviewContainer {
+    width: 90%;
+  }
+  .overviewContainer .text {
+    color: var(--sui-color-white-300);
+    font-family: var(--sui-font-family-s600);
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 950px) {
+  .overviewContainer {
+    flex-direction: column;
+    width: 85%;
+  }
+  .overviewWrapper {
+  }
+  .galleryContainer {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .overviewContainer {
+    flex-direction: column;
+  }
+  .galleryContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .galleryContainer .imgWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .galleryContainer img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .overviewWrapper {
+    padding: 50px 0;
+  }
+  .overviewContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+  .galleryContainer img {
+    width: 100%;
+  }
+  .galleryContainer {
+    gap: 20px;
+  }
+  .galleryWrapper {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
 }

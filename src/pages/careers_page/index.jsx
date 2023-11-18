@@ -22,7 +22,9 @@ export const Careers = () => {
           </div>
 
           <div className={styles.FormWrapper}>
-            <FormValidation />
+            <div className={styles.FormContainer}>
+              <FormValidation />
+            </div>
           </div>
         </div>
       </div>

@@ -6,9 +6,7 @@ function GoogleMap({ latitude, longitude }) {
     ifameData.src = `https://maps.google.com/maps?q=${latitude},${longitude}&hl=es;&output=embed`;
   });
   return (
-    <div>
-      <iframe id="iframeId" height="480px" width="100%" title="map"></iframe>
-    </div>
+    <iframe id="iframeId" height="480px" width="100%" title="map"></iframe>
   );
 }
 export default GoogleMap;

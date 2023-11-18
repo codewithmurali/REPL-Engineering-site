@@ -2,8 +2,6 @@ import { Button, Form, Input } from "antd";
 
 import "./style.override.css";
 
-import styles from "./form.module.css";
-
 export const FormValidation = ({ className }) => {
   const onFinish = (values) => {};
   const onFinishFailed = (errorInfo) => {};
@@ -125,7 +123,7 @@ export const FormValidation = ({ className }) => {
         <Input.TextArea placeholder="Tell us about yourself..." />
       </Form.Item>
 
-      <Form.Item className={styles.btn}>
+      <Form.Item className="btn">
         <Button type="primary" htmlType="submit">
           Submit
         </Button>

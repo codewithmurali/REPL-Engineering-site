@@ -12,14 +12,24 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.5);
+  filter: brightness(0.35);
 }
 .text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 100;
-  font-size: 45px;
-  color: var(--sui-color-white-100);
+  color: var(--sui-color-white-200);
+  font-size: 70px;
+  font-family: var(--sui-font-family-s500);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+@media (max-width: 425px) {
+  .text {
+    font-size: 45px;
+  }
 }

@@ -7,21 +7,93 @@
   background-size: cover;
   background-position: center;
 }
-.titleWrapper {
-}
 .title {
-  color: var(--sui-color-white);
-  font-size: 40px;
+  color: var(--sui-color-white-100);
+  font-size: 45px;
+  font-family: var(--sui-font-family-c300);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .description {
-  color: var(--sui-color-white-100);
-  font-weight: 100;
+  color: var(--sui-color-white-300);
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 60px;
+  font-size: 19px;
+  font-family: var(--sui-font-family-s600);
 }
 .FormWrapper {
   background-color: var(--sui-color-black-200);
   width: 100%;
-  padding: 50px 150px;
+  padding: 70px 120px 60px 120px;
+}
 
+/* ----------------media quries----------------
+  --------------------------------------------- */
+
+@media (max-width: 950px) {
+  .titleWrapper {
+    width: 100%;
+    display: grid;
+  }
+  .appointmentWrapper {
+    width: 100%;
+  }
+  .appointmentContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+  .FormWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 25px 0;
+  }
+  .FormContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+  .titleWrapper {
+    width: 100%;
+    display: grid;
+  }
+  .appointmentWrapper {
+    width: 100%;
+    padding-top: 35px;
+  }
+  .appointmentContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 92%;
+  }
+  .FormWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 25px 0;
+  }
+  .FormContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 30px;
+  }
+  .description {
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+  .appointmentWrapper {
+    padding-bottom: 70px;
+  }
 }

@@ -22,6 +22,27 @@ export const Slider = ({ className = "" }) => {
     };
   }, []);
 
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const handleTouchStart = (e) => {
+    touchStartX = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchEndX < touchStartX) {
+      handleControlClick(1); // Swiped left, move to the next slide
+    } else if (touchEndX > touchStartX) {
+      handleControlClick(-1); // Swiped right, move to the previous slide
+    }
+    touchStartX = 0;
+    touchEndX = 0;
+  };
+
   const startAutoPlay = () => {
     changeTO.current = setTimeout(() => {
       changeSlides(1);
@@ -48,6 +69,9 @@ export const Slider = ({ className = "" }) => {
       className={`${classNames("slider", {
         "s--ready": sliderReady,
       })} ${className}`}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {/* <p className="slider__top-heading">Travelers</p> */}
       <div className="slider__slides">
@@ -56,18 +80,20 @@ export const Slider = ({ className = "" }) => {
             className={classNames("slider__slide", {
               "s--active": activeSlide === index,
             })}
-            key={slide.city}
+            key={slide.product}
           >
             <div className="slider__slide-content">
-              <h3 className="slider__slide-subheading">
-                {slide.country || slide.city}
-              </h3>
               <h2 className="slider__slide-heading">
-                {slide.city.split("").map((l, i) => (
-                  <span key={i}>{l}</span>
-                ))}
+                {slide.product.split("").map((l, i) => {
+                  return (
+                    <span key={i}>
+                      {l === " " ? <span style={{ width: "10px" }}></span> : l}
+                    </span>
+                  );
+                })}
               </h2>
-              <p className="slider__slide-readmore">read more</p>
+              <h3 className="slider__slide-subheading">{slide.name}</h3>
+              {/* <p className="slider__slide-readmore">read more</p> */}
             </div>
             <div className="slider__slide-parts">
               {[...Array(IMAGE_PARTS).fill()].map((x, i) => (
@@ -82,7 +108,10 @@ export const Slider = ({ className = "" }) => {
           </div>
         ))}
       </div>
-      <div className="slider__control" onClick={() => handleControlClick(-1)} />
+      <div
+        className="slider__control slider__control--left"
+        onClick={() => handleControlClick(-1)}
+      />
       <div
         className="slider__control slider__control--right"
         onClick={() => handleControlClick(1)}

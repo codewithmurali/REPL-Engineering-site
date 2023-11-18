@@ -164,7 +164,7 @@
 .ourVisionContainer .content1 {
   font-size: 20px;
   font-family: var(--sui-font-family-s600);
-  font-weight: 400;
+  font-weight: 300;
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
@@ -189,19 +189,20 @@
 .coreValuesSubWrapper {
   width: 80%;
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 100px;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 .coreValuesContainer {
   grid-gap: 15px;
   display: grid;
   gap: 15px;
-
+  /* padding-left: 10%; */
   width: 100%;
+  justify-content: center;
 }
 .titleContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 .coreValuesSubWrapper .title {
@@ -214,23 +215,23 @@
   gap: 40px;
 }
 .coreValuesContainer .dataInfo img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
 }
 .circleContainer {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   position: relative;
 }
 .coreValuesContainer .dataInfo .circle1 {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 2px solid;
+  border: 1.5px solid;
   border-color: var(--sui-color-gray-300);
   animation: circle 5s infinite linear;
   display: grid;
@@ -238,10 +239,10 @@
   background-color: var(--sui-color-blue-400);
 }
 .coreValuesContainer .dataInfo .circle2 {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 2px solid;
+  border: 1.5px solid;
   border-color: transparent;
   border-left-color: var(--sui-color-gray-300);
   border-right-color: var(--sui-color-gray-300);
@@ -254,20 +255,21 @@
 }
 .coreValuesContainer .dataInfo .infoContent {
   height: 80px;
-  background-color: var(--sui-color-blue-400);
+  background-color: var(--sui-color-black-600);
   color: var(--sui-color-white-300);
   display: grid;
   place-items: center;
   transform: skew(-20deg);
   /* border-radius: 5px; */
   border: 1px solid var(--sui-color-gray-300);
+  padding: 0 100px;
 }
 
 .coreValuesContainer .dataInfo .infoContent .content {
   transform: skew(20deg);
   font-size: 19px;
   font-family: var(--sui-font-family-s500);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* ------clients------ */
@@ -407,6 +409,9 @@
   }
   .ourVisionSubContainer {
     width: 90%;
+  }
+  .title {
+    font-size: 30px;
   }
   .whoWeAreSubContainer {
     width: 90%;

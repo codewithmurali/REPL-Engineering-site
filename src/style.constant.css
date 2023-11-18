@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Gruppo&family=NTR&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@100;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Gruppo&family=Montserrat:wght@100&family=NTR&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@100;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
 /* override the default value */
 
 body {
@@ -28,6 +28,7 @@ html {
   --sui-font-family-c200: "NTR", sans-serif;
   --sui-font-family-c300: "Gruppo", sans-serif;
   --sui-font-family-c400: "Audiowide", sans-serif;
+  --sui-font-family-c500: "Montserrat", sans-serif;
 
   --sui-font-family-n100: "Saira", sans-serif;
 
@@ -50,12 +51,14 @@ html {
   --sui-color-black-300: #363636;
   --sui-color-black-400: #191818;
   --sui-color-black-500: #010100;
+  --sui-color-black-600: #33333375;
 
   --sui-color-gray: gray;
   --sui-color-gray-100: #151515;
   --sui-color-gray-200: #222222;
   --sui-color-gray-300: #595959;
   --sui-color-gray-400: #a4a4a433;
+  --sui-color-gray-500: #4a4a4a;
 
   --sui-color-blue: blue;
   --sui-color-blue-100: #133c5c;

@@ -25,14 +25,14 @@
   height: 75px;
   border-radius: 3px;
   background-color: var(--sui-color-gray-400) !important;
-  color: var(--sui-color-white-400);
+  color: var(--sui-color-white-300);
   border-color: var(--sui-color-white-500) !important;
 }
-.formValidation-Wrapper .ant-input:hover{
+.formValidation-Wrapper .ant-input:hover {
   border-color: var(--sui-color-blue-200) !important;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.formValidation-Wrapper .ant-input:focus{
+.formValidation-Wrapper .ant-input:focus {
   border-color: var(--sui-color-blue-200) !important;
 }
 .formValidation-Wrapper .ant-form-item button {
@@ -49,4 +49,31 @@
   background: var(--sui-gradient-color-100);
   background-size: 200% 100%;
   background-position: right center;
+}
+
+/* ----------------media quries----------------
+  --------------------------------------------- */
+
+@media (max-width: 600px) {
+  .formValidation-multigroup {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 300px));
+    column-gap: 25px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .formValidation-multigroup {
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+  }
+  .formValidation-Wrapper {
+    grid-template-columns: 1fr;
+  }
+  .formValidation-Wrapper .ant-form-item button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+  }
 }
