@@ -1,8 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
 import { SingleBanner } from "../../components/single_banner";
-import styles from "./style.module.css";
+import styles from "./product.module.css";
 import { PRODUCT_PAGE_DATA, PRODUCT_PAGE_URL } from "./constant";
 import { ScrollToTop } from "../../components/scrollto_top";
+import ImageLayout from "../../components/image_layout";
 
 export const Product = ({ path }) => {
   const [matchedData, setMatchedData] = useState("");
@@ -41,8 +42,11 @@ export const Product = ({ path }) => {
             <div className={styles.productSubWrapper}>
               {PRODUCT_PAGE_DATA[matchedData]["data"].map((data) => {
                 return (
-                  <div className={styles.itemWrapper}>
-                    <img src={data["image"]} alt="product" />
+                  <div className={styles.itemWrapper} key="product">
+                    <ImageLayout
+                      image={data["image"]}
+                      className={styles.imageLayout}
+                    />
                     <div className={styles.productName}>{data["name"]}</div>
                   </div>
                 );

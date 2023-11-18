@@ -205,7 +205,7 @@ export const Home = () => {
       <div className={styles.clientsWrapper}>
         <h1 className={styles.title}>OUR CLIENTS</h1>
         <div className={styles.clientsContainer}>
-          {CLIENTS_DATA.map((item) => {
+          {false && CLIENTS_DATA.map((item) => {
             return (
               <div className={styles.cardInfoContainer} key="text">
                 <img src={item.img} alt={item.name} />

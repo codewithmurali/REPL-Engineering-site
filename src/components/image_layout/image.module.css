@@ -3,15 +3,15 @@
   --sui-border-color: gray;
 }
 
-.container {  
-  width: 600px;
-  height: 400px;
+.container {
+  width: 800px;
+  height: 500px;
   border: var(--sui-border-width) solid var(--sui-border-color);
   position: relative;
 }
 .corner1 {
   height: 1px;
-  width: 194px;
+  width: 192px;
   background-color: black;
   position: absolute;
   top: -1px;
@@ -20,18 +20,18 @@
   border-right: 1px solid black;
 }
 .corner2 {
-  width: 163px;
+  width: 164px;
   border-top: var(--sui-border-width) solid var(--sui-border-color);
   position: absolute;
-  top: 58px;
+  top: 48px;
   right: 0;
 }
 .corner3 {
   width: 178px;
-  height: 60px;
+  height: 50px;
   border-left: var(--sui-border-width) solid var(--sui-border-color);
   position: absolute;
-  top: -2px;
+  top: 0px;
   right: 0;
   transform: skew(29deg);
   background-color: black;
@@ -51,4 +51,52 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 300px;
+  }
+  .corner3 {
+    width: 178px;
+    height: 35px;
+  }
+  .corner1 {
+    width: 188px;
+  }
+  .corner2 {
+    width: 168px;
+    top: 35px;
+  }
+  .corner4 {
+    height: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 100%;
+    height: 250px;
+  }
+  .corner3 {
+    width: 168px;
+    height: 25px;
+  }
+  .corner1 {
+    width: 175.011px;
+  }
+  .corner2 {
+    width: 161px;
+    top: 24.5px;
+  }
+  .corner4 {
+    height: 25px;
+  }
 }
