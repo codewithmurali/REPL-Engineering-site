@@ -4,7 +4,7 @@ import { SingleBanner } from "../../components/single_banner";
 import styles from "./careers.module.css";
 import { ScrollToTop } from "../../components/scrollto_top";
 
-export const Careers = () => {
+export default function Careers() {
   ScrollToTop();
   return (
     <>
@@ -30,4 +30,4 @@ export const Careers = () => {
       </div>
     </>
   );
-};
+}

@@ -8,7 +8,7 @@ import MailIcon from "./images/MailIcon.png";
 import GoogleMap from "../../components/map";
 import { ScrollToTop } from "../../components/scrollto_top";
 
-export const Contact = () => {
+export default function Contact() {
   ScrollToTop();
   return (
     <>
@@ -75,4 +75,4 @@ export const Contact = () => {
       </div>
     </>
   );
-};
+}

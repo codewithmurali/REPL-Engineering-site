@@ -4,7 +4,7 @@ import { PROFILE_DATA } from "./constant";
 
 import styles from "./profile.module.css";
 
-export const Profile = () => {
+export default function Profile() {
   ScrollToTop();
   return (
     <>
@@ -25,4 +25,4 @@ export const Profile = () => {
       </div>
     </>
   );
-};
+}

@@ -1,24 +1,32 @@
-import React,{ useEffect, useMemo, useState, lazy, Suspense } from "react";
+import React, { useEffect, useMemo, useState, lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { SUINavbar, TopContainer } from "./components/navbar";
-import { Home } from "./pages/home_page";
-import { Footer } from "./components/footer";
-import { Profile } from "./pages/profile_page";
 import { PRODUCT_PAGE_URL } from "./pages/product_page/constant";
-import { Product } from "./pages/product_page";
-import { Client } from "./pages/client_page";
-import { Quality } from "./pages/quality_page";
-import { Careers } from "./pages/careers_page";
-import { Contact } from "./pages/contact_page";
+import { Footer } from "./components/footer";
+import { BorderTextLoader } from "./components/loader/border_text_loader";
 
 import "./style.constant.css";
-import { BorderTextLoader } from "./components/loader/border_text_loader";
+
+const Home = lazy(() => import("./pages/home_page"));
+const Profile = lazy(() => import("./pages/profile_page"));
+const Product = lazy(() => import("./pages/product_page"));
+const Client = lazy(() => import("./pages/client_page"));
+const Quality = lazy(() => import("./pages/quality_page"));
+const Careers = lazy(() => import("./pages/careers_page"));
+const Contact = lazy(() => import("./pages/contact_page"));
 
 function App() {
   const location = useLocation();
 
-  const [isTextLoader, setIsTextLoader] = useState(true);
+  const [isTextLoader, setIsTextLoader] = useState(false);
+
+  useEffect(() => {
+    setIsTextLoader(true);
+    setTimeout(() => {
+      setIsTextLoader(false);
+    }, 1000);
+  }, [location]);
 
   const productPageUrl = useMemo(() => {
     let matchedUrl = "";
@@ -41,12 +49,6 @@ function App() {
     return matchedUrl;
   }, [location]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsTextLoader(false);
-    }, 4500);
-  }, [isTextLoader]);
-
   return (
     <>
       {isTextLoader && <BorderTextLoader text="REPL" />}
@@ -56,17 +58,70 @@ function App() {
           <TopContainer />
 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route
+              path="/"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Profile />{" "}
+                </Suspense>
+              }
+            />
             <Route
               path={productPageUrl}
-              element={<Product path={productPageUrl} />}
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Product path={productPageUrl} />
+                </Suspense>
+              }
             />
-            <Route path="/clients" element={<Client />} />
-            <Route path="/clients" element={<Client />} />
-            <Route path="/quality" element={<Quality />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/clients"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Client />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/clients"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Client />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/quality"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Quality />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/careers"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Careers />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                  <Contact />
+                </Suspense>
+              }
+            />
           </Routes>
           <Footer />
         </>

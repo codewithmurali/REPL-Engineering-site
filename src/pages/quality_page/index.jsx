@@ -9,7 +9,7 @@ import product1 from "./images/product1.jpeg";
 import product2 from "./images/product2.jpeg";
 import { ScrollToTop } from "../../components/scrollto_top";
 
-export const Quality = () => {
+export default function Quality() {
   ScrollToTop();
   return (
     <>
@@ -63,4 +63,4 @@ export const Quality = () => {
       </div>
     </>
   );
-};
+}

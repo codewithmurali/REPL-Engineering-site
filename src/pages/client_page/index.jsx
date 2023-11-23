@@ -5,7 +5,7 @@ import { CLIENTS_DATA } from "../home_page/constant";
 
 import styles from "./client.module.css";
 
-export const Client = () => {
+export default function Client() {
   ScrollToTop();
   return (
     <>
@@ -15,16 +15,17 @@ export const Client = () => {
       />
       <div className={styles.clientsWrapper}>
         <div className={styles.clientsContainer}>
-          { false && CLIENTS_DATA.map((item) => {
-            return (
-              <div className={styles.cardInfoContainer} key="client">
-                <img src={item.img} alt={item.name} />
-                <div className={styles.textInfo}>{item.name}</div>
-              </div>
-            );
-          })}
+          {false &&
+            CLIENTS_DATA.map((item) => {
+              return (
+                <div className={styles.cardInfoContainer} key="client">
+                  <img src={item.img} alt={item.name} />
+                  <div className={styles.textInfo}>{item.name}</div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </>
   );
-};
+}

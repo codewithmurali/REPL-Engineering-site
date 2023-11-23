@@ -3,7 +3,6 @@ import React from "react";
 import { Slider } from "../../components/slider";
 import { CORE_VALUES, CLIENTS_DATA } from "./constant";
 import { ScrollToTop } from "../../components/scrollto_top";
-import { GradiantAnimatedText } from "../../components/text/gradiant_animated";
 
 import styles from "./home.module.css";
 
@@ -12,7 +11,7 @@ import Img1989 from "./images/Img1989.jpeg";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
 
-export const Home = () => {
+export default function Home() {
   ScrollToTop();
   return (
     <>
@@ -205,16 +204,17 @@ export const Home = () => {
       <div className={styles.clientsWrapper}>
         <h1 className={styles.title}>OUR CLIENTS</h1>
         <div className={styles.clientsContainer}>
-          {false && CLIENTS_DATA.map((item) => {
-            return (
-              <div className={styles.cardInfoContainer} key="text">
-                <img src={item.img} alt={item.name} />
-                <div className={styles.textInfo}>{item.name}</div>
-              </div>
-            );
-          })}
+          {false &&
+            CLIENTS_DATA.map((item) => {
+              return (
+                <div className={styles.cardInfoContainer} key="text">
+                  <img src={item.img} alt={item.name} />
+                  <div className={styles.textInfo}>{item.name}</div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </>
   );
-};
+}

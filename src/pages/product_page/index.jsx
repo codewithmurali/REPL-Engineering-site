@@ -5,9 +5,9 @@ import { PRODUCT_PAGE_DATA, PRODUCT_PAGE_URL } from "./constant";
 import { ScrollToTop } from "../../components/scrollto_top";
 import ImageLayout from "../../components/image_layout";
 
-export const Product = ({ path }) => {
+export default function Product({ path }) {
   const [matchedData, setMatchedData] = useState("");
-  ScrollToTop();
+
   useEffect(() => {
     switch (path) {
       case PRODUCT_PAGE_URL.STEAM_GAS:
@@ -25,6 +25,7 @@ export const Product = ({ path }) => {
       default:
         setMatchedData(PRODUCT_PAGE_URL.DIES_TOOLS);
     }
+    window.scrollTo(0, 0);
   }, [path]);
 
   return (
@@ -57,4 +58,4 @@ export const Product = ({ path }) => {
       )}
     </>
   );
-};
+}
