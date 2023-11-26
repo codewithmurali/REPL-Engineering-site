@@ -11,7 +11,7 @@ export default function Client() {
     <>
       <SingleBanner
         bgImage="https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8"
-        content="Client"
+        content="CLIENTS"
       />
       <div className={styles.clientsWrapper}>
         <div className={styles.clientsContainer}>

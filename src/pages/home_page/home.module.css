@@ -1,8 +1,8 @@
 /* ------home-banner----- */
+
 .homeBannerContainer {
   width: 100%;
   height: 100vh;
-  color: var(--sui-color-white);
   position: relative;
 }
 .HomebannerTitleContainer {
@@ -12,16 +12,19 @@
 .HomebannerTitleContainer .title1 {
   font-size: 70px;
   margin-left: 50px;
-  font-weight: 300;
-  font-family: var(--sui-font-family-s200);
+  font-weight: 600;
+  font-family: var(--sui-font-family-c300);
+  color: var(--sui-color-white-400);
+  line-height: 80px;
+  letter-spacing: 2px;
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
   margin-left: 50px;
   font-size: 25px;
-  color: var(--sui-color-white-200);
+  color: var(--sui-color-white-400);
   font-weight: 200;
-  font-family: var(--sui-font-family-s200);
+  font-family: var(--sui-font-family-c300);
 }
 
 /* ------who-we-are------ */
@@ -50,7 +53,7 @@
 .whoWeAreSubContainer .contentContainer {
   font-size: 20px;
   font-family: var(--sui-font-family-s600);
-  font-weight: 300;
+  font-weight: 200;
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
@@ -87,6 +90,7 @@
 .tableWrapper {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .ourJourneySubContainer table {
@@ -95,7 +99,6 @@
 }
 .ourJourneySubContainer table tr td {
   padding-bottom: 50px;
-  font-weight: 600;
   line-height: var(--sui-line-height);
   letter-spacing: 1.5px;
 }
@@ -108,7 +111,7 @@
   line-height: var(--sui-line-height);
   font-size: 20px;
   letter-spacing: var(--sui-letter-spacing);
-  font-weight: 400;
+  font-weight: 200;
 }
 .ourJourneySubContainer table tr td:nth-child(1)::before {
   content: "";
@@ -130,7 +133,7 @@
   padding-left: 60px;
   color: var(--sui-color-white-300);
   font-family: var(--sui-font-family-s600);
-  font-weight: 400;
+  font-weight: 200;
   line-height: var(--sui-line-height);
   font-size: 21px;
   letter-spacing: var(--sui-letter-spacing);
@@ -165,7 +168,7 @@
 .ourVisionContainer .content1 {
   font-size: 20px;
   font-family: var(--sui-font-family-s600);
-  font-weight: 300;
+  font-weight: 200;
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
@@ -267,10 +270,10 @@
 }
 
 .coreValuesContainer .dataInfo .infoContent .content {
-  transform: skew(20deg);
+  transform: skew(20deg) !important;
   font-size: 19px;
   font-family: var(--sui-font-family-s500);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* ------clients------ */
@@ -401,9 +404,22 @@
   .ourJourneySubContainer table tr td:nth-child(2) img {
     width: 70%;
   }
+  .coreValuesContainer .dataInfo .infoContent .content {
+    margin: 0 15px;
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {
+  .HomebannerTitleContainer .title2 {
+    margin-top: 25px;
+    line-height: 30px;
+  }
+  .HomebannerTitleContainer .title1 {
+    font-size: 40px;  
+    line-height: 50px;
+  }
   .clientsWrapper {
     padding-bottom: 70px;
     padding-top: 70px;

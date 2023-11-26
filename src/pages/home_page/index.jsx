@@ -3,13 +3,16 @@ import React from "react";
 import { Slider } from "../../components/slider";
 import { CORE_VALUES, CLIENTS_DATA } from "./constant";
 import { ScrollToTop } from "../../components/scrollto_top";
+import { AOS_ANIMATION } from "../../constant/index";
 
 import styles from "./home.module.css";
+import "../../components/animista.css";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
+import { ColorChangeOnScroll } from "../../components/animista";
 
 export default function Home() {
   ScrollToTop();
@@ -24,8 +27,18 @@ export default function Home() {
         }}
       >
         <div className={styles.HomebannerTitleContainer}>
-          <div className={styles.title1}>Beyond Earth, Toward the Stars</div>
-          <div className={styles.title2}>
+          <div
+            className={styles.title1}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
+            BEYOND EARTH, TOWARD THE STARS
+          </div>
+          <div
+            className={styles.title2}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
             Shaping Aerospace and Space Innovation
           </div>
         </div>
@@ -34,23 +47,45 @@ export default function Home() {
       {/* ------who-we-are------ */}
       <div className={styles.whoWeAreContainer}>
         <div className={styles.whoWeAreSubContainer}>
-          <h1 className={styles.title}>WHO WE ARE</h1>
+          <h1
+            className={styles.title}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
+            WHO WE ARE
+          </h1>
 
           <div className={styles.contentContainer}>
-            <div className={styles.content1}>
+            <div
+              className={styles.content1}
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
               We manufacture precision assemblies and components for the aero
               space sector.
             </div>
-            <div className={styles.content1}>
+            <div
+              className={styles.content1}
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
               We have been here for nearly 4 decades and are one of the prime
               suppliers to the Defense and Aerospace establishments in India.
             </div>
-            <div className={styles.content1}>
+            <div
+              className={styles.content1}
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
               Strong work force with professionals who come from core
               manufacturing and designs background and have expanded creative
               potential of the company.
             </div>
-            <div className={styles.content2}>
+            <div
+              className={styles.content2}
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
               We acknowledge and accept that in pursuing our goals, never
               compromise on the quality. Sticking to delivery schedules is our
               priority
@@ -65,7 +100,13 @@ export default function Home() {
       {/* ------our journey------ */}
       <div className={styles.ourJourneyContainer}>
         <div className={styles.ourJourneySubContainer}>
-          <h1 className={styles.title}>OUR JOURNEY</h1>
+          <h1
+            className={styles.title}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
+            OUR JOURNEY
+          </h1>
 
           <div className={styles.tableWrapper}>
             <table>
@@ -74,8 +115,19 @@ export default function Home() {
                   <div className={styles.yearText}>1982</div>
                 </td>
                 <td>
-                  <span>Established in 1982 in Balanagar as SSI Unit.</span>
-                  <img src={Img1989} alt="Img1989" />
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
+                    Established in 1982 in Balanagar as SSI Unit.
+                  </span>
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
               <tr>
@@ -83,11 +135,20 @@ export default function Home() {
                   <div className={styles.yearText}>1996</div>
                 </td>
                 <td>
-                  <span>
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
                     Registered as Ancillary Unit to BDL, Ministry of defence in
                     1996.
                   </span>
-                  <img src={Img1989} alt="Img1989" />
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
               <tr>
@@ -95,8 +156,19 @@ export default function Home() {
                   <div className={styles.yearText}>1997</div>
                 </td>
                 <td>
-                  <span> Best Vendor award obtained from BHEL in 1997.</span>
-                  <img src={Img1989} alt="Img1989" />
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
+                    Best Vendor award obtained from BHEL in 1997.
+                  </span>
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
               <tr>
@@ -104,12 +176,20 @@ export default function Home() {
                   <div className={styles.yearText}>1998 1999 2000</div>
                 </td>
                 <td>
-                  <span>
-                    {" "}
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
                     Best import substitution award for the Products developed in
                     1998, 1999 & 2000 from Ministry of Defence.
                   </span>
-                  <img src={Img1989} alt="Img1989" />
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
               <tr>
@@ -117,10 +197,19 @@ export default function Home() {
                   <div className={styles.yearText}>2001 2002</div>
                 </td>
                 <td>
-                  <span>
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
                     Best key Vendor award obtained from HAL in 2001-02.
                   </span>
-                  <img src={Img1989} alt="Img1989" />{" "}
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    className="flip-2-ver-right-1"
+                    alt="Img1989"
+                  />
                 </td>
               </tr>
               <tr>
@@ -128,21 +217,41 @@ export default function Home() {
                   <div className={styles.yearText}>2008</div>
                 </td>
                 <td>
-                  <span>Prime vendor award obtained from GTRE in 2008.</span>
-                  <img src={Img1989} alt="Img1989" />
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
+                    Prime vendor award obtained from GTRE in 2008.
+                  </span>
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <div className={styles.yearText}>2015</div>
+                  <div className={styles.yearText}>201 5</div>
                 </td>
                 <td>
-                  <span>
+                  <span
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                  >
                     ISO 9001:2015 Quality Management Systems implemented.
                     Expansion in 2008 with additional facilities at Balanagar,
                     Hyderabad.
                   </span>
-                  <img src={Img1989} alt="Img1989" />
+                  <img
+                    data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    src={Img1989}
+                    alt="Img1989"
+                    className="flip-2-ver-right-1"
+                  />
                 </td>
               </tr>
             </table>
@@ -153,8 +262,18 @@ export default function Home() {
       {/* ------our vision------ */}
       <div className={styles.ourVisionContainer}>
         <div className={styles.ourVisionSubContainer}>
-          <h1 className={styles.title}>OUR VISION</h1>
-          <p className={styles.content1}>
+          <h1
+            className={styles.title}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
+            OUR VISION
+          </h1>
+          <p
+            className={styles.content1}
+            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+          >
             <img
               src={DoubleQuotesStartIcon}
               alt="double quotes"
@@ -177,7 +296,13 @@ export default function Home() {
       <div className={styles.coreValuesWrapper}>
         <div className={styles.coreValuesSubWrapper}>
           <div className={styles.titleContainer}>
-            <h1 className={styles.title}>CORE VALUES</h1>
+            <h1
+              className={styles.title}
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
+              CORE VALUES
+            </h1>
           </div>
 
           <div className={styles.coreValuesContainer}>
@@ -191,7 +316,13 @@ export default function Home() {
                     <img src={item.icon} alt="customerSuccessIcon" />
                   </div>
                   <div className={styles.infoContent}>
-                    <div className={styles.content}>{item.title}</div>
+                    <div
+                      className={styles.content}
+                      data-aos={AOS_ANIMATION.FADE_LEFT.TYPE}
+                      data-aos-duration={AOS_ANIMATION.FADE_LEFT.DURATION}
+                    >
+                      {item.title}
+                    </div>
                   </div>
                 </div>
               );
@@ -202,7 +333,13 @@ export default function Home() {
 
       {/* ------clients------ */}
       <div className={styles.clientsWrapper}>
-        <h1 className={styles.title}>OUR CLIENTS</h1>
+        <h1
+          className={styles.title}
+          data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+          data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+        >
+          OUR CLIENTS
+        </h1>
         <div className={styles.clientsContainer}>
           {false &&
             CLIENTS_DATA.map((item) => {

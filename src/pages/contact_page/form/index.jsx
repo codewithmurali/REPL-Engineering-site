@@ -1,5 +1,7 @@
 import { Button, Form, Input } from "antd";
 
+import { AOS_ANIMATION } from "../../../constant";
+
 import "./style.override.css";
 
 export const FormValidation = ({ className }) => {
@@ -25,6 +27,8 @@ export const FormValidation = ({ className }) => {
             message: "Please input your name!",
           },
         ]}
+        data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+        data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
       >
         <Input placeholder="First name" />
       </Form.Item>
@@ -38,6 +42,8 @@ export const FormValidation = ({ className }) => {
             type: "email",
           },
         ]}
+        data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+        data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
       >
         <Input placeholder="Email Id" />
       </Form.Item>
@@ -50,6 +56,8 @@ export const FormValidation = ({ className }) => {
             message: "Please enter your Phone number!",
           },
         ]}
+        data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+        data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
       >
         <Input placeholder="Phone number" />
       </Form.Item>
@@ -62,6 +70,8 @@ export const FormValidation = ({ className }) => {
             message: "Please enter your Subject!",
           },
         ]}
+        data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+        data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
       >
         <Input placeholder="Subject" />
       </Form.Item>
@@ -74,12 +84,19 @@ export const FormValidation = ({ className }) => {
             message: "Please enter your Message!",
           },
         ]}
+        data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+        data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
       >
         <Input.TextArea placeholder="Tell us about yourself..." />
       </Form.Item>
 
       <Form.Item className="btn">
-        <Button type="primary" htmlType="submit">
+        <Button
+          type="primary"
+          htmlType="submit"
+          data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+          data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+        >
           Submit
         </Button>
       </Form.Item>

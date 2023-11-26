@@ -18,22 +18,19 @@
 .dropdownItem {
   width: 100%;
 }
-.dropdownContainer a {
+.dropdownContainer .dropdownItem {
   color: var(--sui-color-white-200);
   font-family: var(--sui-font-family-s200);
   font-size: 15px;
   font-weight: 100;
   letter-spacing: 2.8px;
-  display: grid;
-  grid-template-columns: minmax(max-content, 1fr);
-}
-.dropdownContainer a .dropdownItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 21px 12px;
   border-bottom: 0.8px solid var(--sui-color-gray-500);
+  cursor: pointer;
 }
 .arrowIcon {
   color: var(--sui-color-gray-500);

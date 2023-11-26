@@ -144,8 +144,9 @@
   font-family: var(--sui-font-family-s600);
   letter-spacing: var(--sui-letter-spacing);
   font-weight: 300;
-  transition: all 0.5s;
   max-width: 208px;
+  scale: 1;
+  transition: scale 0.5s;
 }
 .menuLinksContainer .linkInfo:hover {
   color: var(--sui-color-blue-200);

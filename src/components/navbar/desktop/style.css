@@ -6,11 +6,11 @@
 
   --logoWidth: 100px;
   --logoFontSize: 32px;
-  --logoFontWeight: 500;
+  --logoFontWeight: 300;
   --logoColor: #397fe0;
 
   --menuItemFontSize: 16px;
-  --menuItemFontFamily: var(--sui-font-family-s200);
+  --menuItemFontFamily: var(--sui-font-family-c700);
   --menuItemFontWeight: 100;
   --menuItemColor: var(--sui-color-white-200);
   --menuItemHoverColor: var(--sui-color-blue-300);
@@ -20,10 +20,10 @@
 }
 
 .SUIDeskNavbarSubMenuLink {
-  --subMenuItemFontSize: 17px;
-  --subMenuFontFamily: var(--sui-font-family-c200);
+  --subMenuItemFontSize: 16px;
+  --subMenuFontFamily: var(--sui-font-family-c700);
   --subMenuItemFontWeight: 300;
-  --subMenuItemColor: var(--sui-color-white-200);
+  --subMenuItemColor: var(--sui-color-white-300);
   --subMenuItemHoverColor: var(--sui-color-blue-300);
 
   --subMenuDropdownBgColor: var(--sui-color-black-200);
@@ -32,7 +32,7 @@
 
 .SUIDeskNavbarLastMenuItem {
   --lastMenuItemBgColor: transparent;
-  --lastMenuItemColor: white;
+  --lastMenuItemColor: var(--sui-color-white-200);
   --lastMenuItemHoverColor: transparent;
   --lastMenuItemBorderColor: var(--sui-color-blue-300);
 }
@@ -134,6 +134,7 @@
 .SUIDeskNavbar .ant-menu-item-selected,
 .SUIDeskNavbar .ant-menu-item:hover {
   color: var(--menuItemHoverColor) !important;
+  /* scale: 1.2; */
 }
 
 /* sub-menu links */
@@ -149,7 +150,9 @@
 .SUIDeskNavbar .ant-menu-submenu-title:hover {
   color: var(--menuItemHoverColor) !important;
 }
-
+.SUIDeskNavbar .ant-menu-submenu-title svg {
+  display: none;
+}
 .SUIDeskNavbar .ant-menu-submenu:hover::after {
   border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
   border-radius: 25px;
@@ -204,7 +207,7 @@
 }
 
 .SUIDeskNavbarSubMenuContainer {
-  margin-top: -14px !important;
+  margin-top: -1px !important;
 }
 
 .SUIDeskNavbarSubMenuLink .ant-menu-item {

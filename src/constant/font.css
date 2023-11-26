@@ -1,0 +1,9 @@
+@font-face {
+  font-family: nulshock;
+  src: local("nulshock"), url(../components//custom_fonts/nulshock.ttf);
+}
+@font-face {
+  font-family: nulshock-regular;
+  src: local("nulshock-regular"),
+    url(../components//custom_fonts/nulshock-light.otf);
+}

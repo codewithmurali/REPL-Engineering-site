@@ -61,26 +61,27 @@ export const Footer = () => {
             </div>
             <div className={styles.slogan}>We make, so world can fly</div>
             <div className={styles.mediaIconContainer}>
-              {SOCIAL_MEDIA_LINKS.map((item) => {
+              {SOCIAL_MEDIA_LINKS.map((item, index) => {
                 return (
-                  <a href={item.link} key="social">
+                  <a href={item.link} key={index}>
                     {item.icon}
                   </a>
                 );
               })}
             </div>
+            ƒ
           </div>
 
-          {FOOTER_MENU_LINKS.map((item) => {
+          {FOOTER_MENU_LINKS.map((item, index) => {
             return (
-              <div className={styles.menuLinksContainer} key="links">
+              <div className={styles.menuLinksContainer} key={index}>
                 <div className={styles.title}>{item.title}</div>
-                {item["links"].map((data) => {
+                {item["links"].map((data, index) => {
                   return (
                     <a
                       className={styles.linkInfo}
                       href={data?.isUrl && data?.url}
-                      key="link"
+                      key={index}
                     >
                       {data.name}
                     </a>

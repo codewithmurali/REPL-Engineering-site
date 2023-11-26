@@ -22,27 +22,6 @@ export const Slider = ({ className = "" }) => {
     };
   }, []);
 
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  const handleTouchStart = (e) => {
-    touchStartX = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e) => {
-    touchEndX = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    if (touchEndX < touchStartX) {
-      handleControlClick(1); // Swiped left, move to the next slide
-    } else if (touchEndX > touchStartX) {
-      handleControlClick(-1); // Swiped right, move to the previous slide
-    }
-    touchStartX = 0;
-    touchEndX = 0;
-  };
-
   const startAutoPlay = () => {
     changeTO.current = setTimeout(() => {
       changeSlides(1);
@@ -69,9 +48,6 @@ export const Slider = ({ className = "" }) => {
       className={`${classNames("slider", {
         "s--ready": sliderReady,
       })} ${className}`}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
     >
       {/* <p className="slider__top-heading">Travelers</p> */}
       <div className="slider__slides">

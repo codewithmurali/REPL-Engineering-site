@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Gruppo&family=Montserrat:wght@100&family=NTR&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@100;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
-/* override the default value */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Gruppo&family=Montserrat:wght@100&family=NTR&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@100;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&family=Syncopate:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;300;400;600;700;800;900&family=Spinnaker&family=Syncopate:wght@400;700&display=swap");
+@import url("./font.css");
 
 body {
   margin: 0;
@@ -9,8 +13,22 @@ a {
   text-decoration: none !important;
   color: unset;
 }
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*  ---------ant override--------- */
 .ant-form-item-explain-error {
   color: var(--sui-color-red-100) !important;
+}
+
+/*  ---------aos override--------- */
+html:not(.no-js) [data-aos="fade-up"] {
+  transform: translate3d(0, 30px, 0);
+}
+html:not(.no-js) [data-aos="fade-left"] {
+  transform: translate3d(40px, 0, 0);
 }
 
 /*  ---------css variable--------- */
@@ -29,8 +47,12 @@ html {
   --sui-font-family-c300: "Gruppo", sans-serif;
   --sui-font-family-c400: "Audiowide", sans-serif;
   --sui-font-family-c500: "Montserrat", sans-serif;
+  --sui-font-family-c600: "Montserrat", sans-serif;
+  --sui-font-family-c700: "Spinnaker", sans-serif;
+  --sui-font-family-c800: "Lexend Zetta", sans-serif;
+  --sui-font-family-c900: nulshock-regular;
 
-  --sui-font-family-n100: "Saira", sans-serif;
+  --sui-font-family-n100: "Syncopate", sans-serif;
 
   /* --------spacings--------*/
   --sui-letter-spacing: 1px;

@@ -19,10 +19,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--sui-color-white-200);
+  color: var(--sui-color-white-300);
   font-size: 70px;
-  font-family: var(--sui-font-family-s500);
-  font-weight: 300;
+  font-family: var(--sui-font-family-c300);
+  font-weight: 800;
   letter-spacing: 2px;
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { GoArrowRight, GoArrowLeft } from "react-icons/go";
@@ -9,25 +9,28 @@ import "./csstransition.override.css";
 export const DropDown = ({ setIsOpen }) => {
   const [activeMenu, setActiveMenu] = useState("main");
 
-  function DropdownItem({ goToMenu, children, to }) {
+  function DropdownItem({ goToMenu, children, to = "" }) {
+    let LinkNode = useMemo(() => {
+      return to ? Link : "div";
+    }, [to]);
     const onClicked = () => {
       if (goToMenu === "backToMain") {
         goToMenu = "main";
       }
       goToMenu && setActiveMenu(goToMenu);
-      !goToMenu && goToMenu !== "backToMain" && setIsOpen(false);
+      if (to) {
+        setIsOpen(false);
+      }
     };
     return (
-      <Link to={to}>
-        <div className={styles.dropdownItem} onClick={onClicked}>
-          {children}
-          {goToMenu && goToMenu !== "backToMain" && (
-            <div className={styles.arrowIcon}>
-              <GoArrowRight />
-            </div>
-          )}
-        </div>
-      </Link>
+      <LinkNode to={to} className={styles.dropdownItem} onClick={onClicked}>
+        {children}
+        {goToMenu && goToMenu === "products" && (
+          <div className={styles.arrowIcon}>
+            <GoArrowRight />
+          </div>
+        )}
+      </LinkNode>
     );
   }
 
@@ -47,7 +50,9 @@ export const DropDown = ({ setIsOpen }) => {
           <DropdownItem to="quality">QUALITY</DropdownItem>
           <DropdownItem to="careers">CAREERS</DropdownItem>
           <div className={styles.lastMenuItemWrapper}>
-            <div className={styles.lastMenuItem}>CONTACT</div>
+          <Link to="contact">
+          <div className={styles.lastMenuItem}>CONTACT</div>
+          </Link>
           </div>
         </div>
       </CSSTransition>

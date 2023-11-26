@@ -1,9 +1,10 @@
 import { Fragment, useEffect, useState } from "react";
+
 import { SingleBanner } from "../../components/single_banner";
-import styles from "./product.module.css";
 import { PRODUCT_PAGE_DATA, PRODUCT_PAGE_URL } from "./constant";
-import { ScrollToTop } from "../../components/scrollto_top";
 import ImageLayout from "../../components/image_layout";
+
+import styles from "./product.module.css";
 
 export default function Product({ path }) {
   const [matchedData, setMatchedData] = useState("");

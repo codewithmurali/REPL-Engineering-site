@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background: #000;
-}
-
 .slider {
   overflow: hidden;
   position: relative;
@@ -68,8 +63,8 @@ body {
   transform: translateY(20px);
   opacity: 0;
   transition: 0.5s;
-  font-family: var(--sui-font-family-c200);
-  font-weight: 200;
+  font-family: var(--sui-font-family-c300);
+  font-weight: 700;
 }
 .slider__slide.s--active .slider__slide-subheading {
   transition-delay: 0.65s;
@@ -81,7 +76,7 @@ body {
   margin-bottom: 20px;
   font-size: 50px;
   letter-spacing: 3px;
-  font-family: var(--sui-font-family-c200);
+  font-family: var(--sui-font-family-c300);
 }
 .slider__slide-heading span {
   display: block;
@@ -387,7 +382,7 @@ body {
 }
 
 @media (max-width: 425px) {
-  .slider__slide-subheading{
+  .slider__slide-subheading {
     font-size: 17px;
   }
   .slider__slide-heading {

@@ -5,8 +5,11 @@ import { SUINavbar, TopContainer } from "./components/navbar";
 import { PRODUCT_PAGE_URL } from "./pages/product_page/constant";
 import { Footer } from "./components/footer";
 import { BorderTextLoader } from "./components/loader/border_text_loader";
+import { Loader } from "./components/loader/circle_loader";
 
-import "./style.constant.css";
+import "./constant/globalstyle.constant.css";
+import "./components/animista.css";
+import { ChatBotModel } from "./components/chat_bot";
 
 const Home = lazy(() => import("./pages/home_page"));
 const Profile = lazy(() => import("./pages/profile_page"));
@@ -19,13 +22,13 @@ const Contact = lazy(() => import("./pages/contact_page"));
 function App() {
   const location = useLocation();
 
-  const [isTextLoader, setIsTextLoader] = useState(false);
+  const [isLoader, setIsLoader] = useState(false);
 
   useEffect(() => {
-    setIsTextLoader(true);
+    setIsLoader(true);
     setTimeout(() => {
-      setIsTextLoader(false);
-    }, 1000);
+      setIsLoader(false);
+    }, 1500);
   }, [location]);
 
   const productPageUrl = useMemo(() => {
@@ -51,17 +54,18 @@ function App() {
 
   return (
     <>
-      {isTextLoader && <BorderTextLoader text="REPL" />}
-      {!isTextLoader && (
+      {isLoader && <Loader />}
+      {!isLoader && (
         <>
           <SUINavbar />
           <TopContainer />
+          <ChatBotModel />
 
           <Routes>
             <Route
               path="/"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Home />
                 </Suspense>
               }
@@ -69,15 +73,15 @@ function App() {
             <Route
               path="/profile"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
-                  <Profile />{" "}
+                <Suspense fallback={<Loader />}>
+                  <Profile />
                 </Suspense>
               }
             />
             <Route
               path={productPageUrl}
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Product path={productPageUrl} />
                 </Suspense>
               }
@@ -85,7 +89,7 @@ function App() {
             <Route
               path="/clients"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Client />
                 </Suspense>
               }
@@ -93,7 +97,7 @@ function App() {
             <Route
               path="/clients"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Client />
                 </Suspense>
               }
@@ -101,7 +105,7 @@ function App() {
             <Route
               path="/quality"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Quality />
                 </Suspense>
               }
@@ -109,7 +113,7 @@ function App() {
             <Route
               path="/careers"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Careers />
                 </Suspense>
               }
@@ -117,7 +121,7 @@ function App() {
             <Route
               path="/contact"
               element={
-                <Suspense fallback={<BorderTextLoader text="REPL" />}>
+                <Suspense fallback={<Loader />}>
                   <Contact />
                 </Suspense>
               }
