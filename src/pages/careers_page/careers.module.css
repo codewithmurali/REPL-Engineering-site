@@ -7,6 +7,10 @@
   background-size: cover;
   background-position: center;
 }
+.appointmentContainer{
+  display: grid;
+  justify-content: center;
+}
 .title {
   color: var(--sui-color-white-100);
   font-size: 45px;
@@ -25,7 +29,7 @@
 .FormWrapper {
   background-color: var(--sui-color-black-200);
   width: 100%;
-  padding: 70px 120px 60px 120px;
+  padding: 70px 60px 60px 60px;
 }
 
 /* ----------------media quries----------------

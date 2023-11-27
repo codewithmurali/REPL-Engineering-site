@@ -8,10 +8,11 @@
 .HomebannerTitleContainer {
   position: absolute;
   top: 13%;
+  margin: 0 50px;
 }
 .HomebannerTitleContainer .title1 {
   font-size: 70px;
-  margin-left: 50px;
+ 
   font-weight: 600;
   font-family: var(--sui-font-family-c300);
   color: var(--sui-color-white-400);
@@ -20,7 +21,7 @@
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
-  margin-left: 50px;
+ 
   font-size: 25px;
   color: var(--sui-color-white-400);
   font-weight: 200;
@@ -376,9 +377,11 @@
   }
   .HomebannerTitleContainer {
     padding: 0 10px;
+    margin: 0 20px;
   }
   .HomebannerTitleContainer .title1 {
     font-size: 50px;
+
   }
   .HomebannerTitleContainer .title2 {
     font-size: 21px;

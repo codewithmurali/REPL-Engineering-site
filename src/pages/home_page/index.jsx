@@ -234,7 +234,7 @@ export default function Home() {
               </tr>
               <tr>
                 <td>
-                  <div className={styles.yearText}>201 5</div>
+                  <div className={styles.yearText}>2015</div>
                 </td>
                 <td>
                   <span

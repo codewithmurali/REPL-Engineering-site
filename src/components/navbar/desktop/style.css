@@ -20,7 +20,7 @@
 }
 
 .SUIDeskNavbarSubMenuLink {
-  --subMenuItemFontSize: 16px;
+  --subMenuItemFontSize: 14.5px;
   --subMenuFontFamily: var(--sui-font-family-c700);
   --subMenuItemFontWeight: 300;
   --subMenuItemColor: var(--sui-color-white-300);

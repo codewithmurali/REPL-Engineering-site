@@ -1,82 +1,45 @@
 import React, { useState } from "react";
-import ChatBot from "react-simple-chatbot";
-import { ThemeProvider } from "styled-components";
+import { Modal, Button } from "antd";
 
-const theme = {
-  background: "#f5f8fb",
-  fontFamily: "Helvetica",
-  headerBgColor: "#00796B",
-  headerFontColor: "#fff",
-  headerFontSize: "15px",
-  botBubbleColor: "#e1ffc7",
-  botFontColor: "#000",
-  userBubbleColor: "#fff",
-  userFontColor: "#000",
-};
+import styles from "./style.module.css";
+import "./modal.override.css";
 
-export const ChatBotModel = () => {
-  function hanleEnd(props) {
-    console.log("data", props);
-  }
+import chatIcon from "./icons/chatIcon.png";
+import { SimpleChatBot } from "./chatbot";
 
-  const steps = [
- {
-    id: "1",
-    message: "Hi What's your name?",
-    trigger: "getName",
- },
- {
-    id: "getName",
-    user: true,
-    trigger: "triggerPhoneNumber",
- },
- {
-    id: "triggerPhoneNumber",
-    message: "Hi {previousValue}! Enter your Phone number",
-    trigger: "getPhoneNumber",
- },
- {
-    id: "getPhoneNumber",
-    user: true,
-    trigger: "triggerEmailId",
- },
- {
-    id: "triggerEmailId",
-    message: "Enter your Email Id",
-    trigger: "getEmailId",
- },
- {
-    id: "getEmailId",
-    user: true,
-    trigger: "triggerEnquiry",
- },
- {
-    id: "triggerEnquiry",
-    message: "What's your Enquiry?",
-    trigger: "getQuiry",
- },
- {
-    id: "getQuiry",
-    user: true,
-    trigger: "triggerMessage",
- },
- {
-    id: "triggerMessage",
-    message: "We got your requests and we will get back to you within 24 hours",
-    trigger: "triggerEnd",
- },
- {
-    id: "triggerEnd",
-    message: "Thank you for your visiting",
-    end: true,
- },
-];
+export const ChatBot = () => {
+  const [open, setOpen] = useState(false);
+
+  const buttonClicked = () => {
+    setOpen(!open);
+  };
+
+  const ChatBotModel = () => {
+    return (
+      <div className="chatBotContainer">
+        <Modal
+          open={open}
+          footer={null}
+          header={null}
+          maskclosable={true}
+        >
+          <SimpleChatBot />
+        </Modal>
+      </div>
+    );
+  };
 
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <ChatBot hanleEnd={hanleEnd} headerTitle="REPL Chatbot" steps={steps} />
+    <>
+      <ChatBotModel />
+      <div className={`${styles.buttonWrapper} `} onClick={buttonClicked}>
+        <img src={chatIcon} alt="chat with us" />
       </div>
-    </ThemeProvider>
+      <div className={styles.circleContainer}>
+        <div className={`${styles.cricle} ${styles.circle1}`}></div>
+        {/* <div className={`${styles.cricle} ${styles.circle2}`}></div> */}
+        <div className={`${styles.cricle} ${styles.circle3}`}></div>
+      </div>
+    </>
   );
 };

@@ -13,7 +13,7 @@ export default function Careers() {
         content="CAREERS"
         bgImage="https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8"
       />
-      <div className={styles.appointmentWrapper}>
+      <div className={styles.appointmentWrapper}> 
         <div className={styles.appointmentContainer}>
           <div className={styles.titleWrapper}>
             <div

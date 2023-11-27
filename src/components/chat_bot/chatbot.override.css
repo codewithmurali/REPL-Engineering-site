@@ -1,0 +1,56 @@
+.chatbotWrapper .rsc-header-title {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.chatbotWrapper .rsc-footer input {
+  font-family: var(--sui-font-family-s600);
+  color: #646464;
+  font-size: 14.7px;
+  
+}
+.chatbotWrapper .rsc-footer input::placeholder {
+  color: #898989;
+}
+.chatbotWrapper .rsc-footer svg {
+  fill: #175e76;
+}
+
+.chatbotWrapper .rsc-ts-bot .rsc-ts-image {
+  padding: 6px;
+}
+
+.chatbotWrapper .rsc-ts-user .rsc-ts-image {
+  padding: 6px !important;
+}
+.chatbotWrapper .rsc-submit-button {
+  background-color: #e5e5e58f;
+  fill: rgb(104 104 104);
+  border-radius: 25px;
+  padding: 7px 6px 6px 10px;
+  right: 5px;
+  top: 9px;
+}
+
+.chatbotWrapper .rsc-content {
+  overflow-y: hidden;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  margin-top: 0;
+}
+.chatbotWrapper .rsc-header{
+  border-radius: 20px 20px 0 0;
+  background-color: #175e76;
+  height: 70px ;
+  display: flex;
+  align-items: center;
+}
+.chatbotWrapper .rsc-footer{
+  background-color: white;
+}
+.chatbotWrapper .rsc-container{
+  background-color: #175e76;
+  border-radius: 20px;
+  height: 532px;
+}

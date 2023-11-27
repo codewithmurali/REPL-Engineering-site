@@ -9,7 +9,7 @@ import { Loader } from "./components/loader/circle_loader";
 
 import "./constant/globalstyle.constant.css";
 import "./components/animista.css";
-import { ChatBotModel } from "./components/chat_bot";
+import { ChatBot } from "./components/chat_bot";
 
 const Home = lazy(() => import("./pages/home_page"));
 const Profile = lazy(() => import("./pages/profile_page"));
@@ -57,9 +57,9 @@ function App() {
       {isLoader && <Loader />}
       {!isLoader && (
         <>
+          <ChatBot />
           <SUINavbar />
           <TopContainer />
-          <ChatBotModel />
 
           <Routes>
             <Route
