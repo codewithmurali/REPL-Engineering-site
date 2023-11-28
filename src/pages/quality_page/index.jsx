@@ -7,17 +7,15 @@ import styles from "./quality.module.css";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
 import Certifcate from "./images/certifcate.jpeg";
-import product1 from "./images/product1.jpeg";
+import product1 from "./images/product1.png";
 import product2 from "./images/product2.jpeg";
+import qualityBgImage from "./images/qualityBgImage.jpeg";
 
 export default function Quality() {
   ScrollToTop();
   return (
     <>
-      <SingleBanner
-        content="QUALITY"
-        bgImage="https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8"
-      />
+      <SingleBanner content="QUALITY" bgImage={qualityBgImage} />
       <div className={styles.overviewWrapper}>
         <div className={styles.overviewContainer}>
           <img src={Certifcate} alt="certificate" />

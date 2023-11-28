@@ -52,9 +52,9 @@
   letter-spacing: 2px;
 }
 .whoWeAreSubContainer .contentContainer {
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--sui-font-family-s600);
-  font-weight: 200;
+  font-weight: 300;
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
@@ -107,10 +107,10 @@
   border-right: 1px solid var(--sui-color-white-200);
   position: relative;
   min-width: 100px;
-  color: var(--sui-color-white);
+  color: var(--sui-color-white-300);
   font-family: var(--sui-font-family-n100);
   line-height: var(--sui-line-height);
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: var(--sui-letter-spacing);
   font-weight: 200;
 }
@@ -119,7 +119,7 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: var(--sui-color-white-400);
+  background-color: var(--sui-color-white-300);
   position: absolute;
   top: 0px;
   right: -18px;
@@ -134,9 +134,9 @@
   padding-left: 60px;
   color: var(--sui-color-white-300);
   font-family: var(--sui-font-family-s600);
-  font-weight: 200;
+  font-weight: 300;
   line-height: var(--sui-line-height);
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: var(--sui-letter-spacing);
 }
 .ourJourneySubContainer table tr td:nth-child(2) img {
@@ -167,9 +167,9 @@
 }
 
 .ourVisionContainer .content1 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--sui-font-family-s600);
-  font-weight: 200;
+  font-weight: 300;
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
@@ -272,9 +272,10 @@
 
 .coreValuesContainer .dataInfo .infoContent .content {
   transform: skew(20deg) !important;
-  font-size: 19px;
+  font-size: 18px;
   font-family: var(--sui-font-family-s500);
   font-weight: 300;
+  letter-spacing: var(--sui-letter-spacing);
 }
 
 /* ------clients------ */

@@ -1,6 +1,6 @@
 import stabilizer from "./images/stabilizerFin.webp";
 import wireTunnels from "./images/wireTunnels.jpeg";
-import gasTurbine from "./images/gasTurbine.jpeg";
+import gasTurbine from "./images/gasTurbine.png";
 import stabilizerFinsSourya from "./images/stabilizerFinsSourya.png";
 
 export const SLIDES_DATA = [
@@ -25,8 +25,8 @@ export const SLIDES_DATA = [
     img: stabilizerFinsSourya,
   },
   {
-    product: "Stabilizer fins",
-    name: "sourya",
+    product: "Engine chassis",
+    name: "sukoi-30",
     img:
       "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
   },

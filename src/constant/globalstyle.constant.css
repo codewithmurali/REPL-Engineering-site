@@ -55,7 +55,7 @@ html {
   --sui-font-family-n100: "Syncopate", sans-serif;
 
   /* --------spacings--------*/
-  --sui-letter-spacing: 1px;
+  --sui-letter-spacing: 0.8px;
   --sui-line-height: 40px;
 
   /* -------font color------------  */

@@ -38,7 +38,7 @@ export default function Product({ path }) {
             content={PRODUCT_PAGE_DATA[matchedData]["bannerContent"]}
           />
           <div className={styles.title}>
-            {PRODUCT_PAGE_DATA[matchedData]["title"]}
+           <h2> {PRODUCT_PAGE_DATA[matchedData]["title"]}</h2>
           </div>
           <div className={styles.productWrapper}>
             <div className={styles.productSubWrapper}>

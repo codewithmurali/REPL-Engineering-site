@@ -29,7 +29,7 @@
   line-height: var(--sui-line-height);
   letter-spacing: var(--sui-letter-spacing);
   color: var(--sui-color-white-300);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* ----------------media quries----------------
@@ -52,8 +52,11 @@
     font-size: 15px;
   }
 }
-@media (max-width: 425px){
-  .title{
+@media (max-width: 425px) {
+  .title {
     font-size: 30px;
+  }
+  .slider {
+    height: 350px;
   }
 }

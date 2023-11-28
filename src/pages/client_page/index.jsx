@@ -5,14 +5,13 @@ import { CLIENTS_DATA } from "../home_page/constant";
 
 import styles from "./client.module.css";
 
+import ClientImage from "./images/clientImage.jpeg";
+
 export default function Client() {
   ScrollToTop();
   return (
     <>
-      <SingleBanner
-        bgImage="https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8"
-        content="CLIENTS"
-      />
+      <SingleBanner bgImage={ClientImage} content="CLIENTS" />
       <div className={styles.clientsWrapper}>
         <div className={styles.clientsContainer}>
           {false &&

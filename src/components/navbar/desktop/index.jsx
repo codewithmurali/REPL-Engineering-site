@@ -18,12 +18,10 @@ export const SUIDeskNavbar = ({ className }) => {
   const navigate = useNavigate();
 
   const [navSize, setNavSize] = useState("");
-  const [navColor, setNavColor] = useState("transparent");
+  const [navColor, setNavColor] = useState("black");
 
   const listenScrollEvent = () => {
-    window.scrollY > 10
-      ? setNavColor("black")
-      : setNavColor("black");
+    window.scrollY > 10 ? setNavColor("black") : setNavColor("black");
     window.scrollY > 10 ? setNavSize("110px") : setNavSize("100px");
   };
 

@@ -8,7 +8,6 @@
   font-family: var(--sui-font-family-s600);
   color: #646464;
   font-size: 14.7px;
-  
 }
 .chatbotWrapper .rsc-footer input::placeholder {
   color: #898989;
@@ -34,23 +33,39 @@
 }
 
 .chatbotWrapper .rsc-content {
-  overflow-y: hidden;
   background-color: white;
   border-radius: 10px 10px 0 0;
   margin-top: 0;
 }
-.chatbotWrapper .rsc-header{
+.chatbotWrapper .rsc-header {
   border-radius: 20px 20px 0 0;
   background-color: #175e76;
-  height: 70px ;
+  height: 70px;
   display: flex;
   align-items: center;
 }
-.chatbotWrapper .rsc-footer{
+.chatbotWrapper .rsc-footer {
   background-color: white;
 }
-.chatbotWrapper .rsc-container{
+.chatbotWrapper .rsc-container {
   background-color: #175e76;
   border-radius: 20px;
-  height: 532px;
+  height: 537px;
+}
+
+@media (max-width: 768px) {
+  .chatbotWrapper .rsc-content,
+  .chatbotWrapper .rsc-container {
+    border-radius: 0 !important;
+    height: 100%;
+  }
+  .chatbotWrapper .rsc-footer {
+  background-color: white;
+  height: 66px;
+  }
+  .chatbotWrapper .rsc-container {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+  }
 }

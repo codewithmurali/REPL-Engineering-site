@@ -8,15 +8,14 @@ import styles from "./contact.module.css";
 import PhoneIcon from "./images/phoneIcon.png";
 import MailIcon from "./images/MailIcon.png";
 import GoogleMap from "../../components/map";
+import contactBannerImage from "./images/contactBannerImage.jpg";
+import worldMap from "./images/worldMap.png";
 
 export default function Contact() {
   ScrollToTop();
   return (
     <>
-      <SingleBanner
-        content="CONTACT"
-        bgImage="https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8"
-      />
+      <SingleBanner content="CONTACT" bgImage={worldMap} />
       <div className={styles.formWrapper}>
         <div className={styles.formDataContainer}>
           <div className={styles.topTitleWapper}>
