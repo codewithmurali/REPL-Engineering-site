@@ -20,18 +20,18 @@
   border-right: 1px solid black;
 }
 .corner2 {
-  width: 164px;
+  width: 164.26px;
   border-top: var(--sui-border-width) solid var(--sui-border-color);
   position: absolute;
-  top: 48px;
+  top: 51px;
   right: 0;
 }
 .corner3 {
   width: 178px;
-  height: 50px;
+  height: 52px;
   border-left: var(--sui-border-width) solid var(--sui-border-color);
   position: absolute;
-  top: 0px;
+  top: -1px;
   right: 0;
   transform: skew(29deg);
   background-color: black;

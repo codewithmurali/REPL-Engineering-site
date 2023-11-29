@@ -1,3 +1,14 @@
+// ----------banner images------------
+import steamGasTurbineBannerImage from "./images/banner_images/steamGabTurbineBannerImage.jpeg";
+import precisionBannerImage from "./images/banner_images/precisionBannerImage.jpeg";
+import heavyFabrication from "./images/banner_images/heavyFabrication.jpeg";
+import dieTools from "./images/banner_images/dieTools.jpeg";
+import aeroSubAssemblies from "./images/banner_images/aeroSubAssembly.jpeg";
+
+// ----------steam & gas turbines------------
+import steamImg1 from "./images/product_images/steam_gas_turbine/img1.jpg";
+import steamImg2 from "./images/product_images/steam_gas_turbine/img2.jpg";
+
 export const PRODUCT_PAGE_URL = {
   STEAM_GAS: "/products/steam-gas-turbine-blades",
   PRECISION_COMPONENTS: "/products/precision-components",
@@ -8,22 +19,19 @@ export const PRODUCT_PAGE_URL = {
 
 export const PRODUCT_PAGE_DATA = {
   [PRODUCT_PAGE_URL.STEAM_GAS]: {
-    bannerBgImage:
-      "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
+    bannerBgImage: steamGasTurbineBannerImage,
     bannerContent: "PRODUCTS",
     title: "Steam and Gas Turbine Blades",
     data: [
       {
         name: "Gas Turbine Blades",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg1,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Gas Turbine Locking Blades",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg2,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
@@ -58,8 +66,7 @@ export const PRODUCT_PAGE_DATA = {
     ],
   },
   [PRODUCT_PAGE_URL.PRECISION_COMPONENTS]: {
-    bannerBgImage:
-      "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
+    bannerBgImage: precisionBannerImage,
     bannerContent: "PRODUCTS",
     title: "Precision Components",
     data: [
@@ -113,7 +120,8 @@ export const PRODUCT_PAGE_DATA = {
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
-        name: "Precision Machined Component for areonautical spares Material Inconel 718",
+        name:
+          "Precision Machined Component for areonautical spares Material Inconel 718",
         image:
           "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
         content:
@@ -129,8 +137,7 @@ export const PRODUCT_PAGE_DATA = {
     ],
   },
   [PRODUCT_PAGE_URL.HEAVY_FABRICATION]: {
-    bannerBgImage:
-      "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
+    bannerBgImage: heavyFabrication,
     bannerContent: "PRODUCTS",
     title: "Heavy Fabrication",
     data: [
@@ -186,8 +193,7 @@ export const PRODUCT_PAGE_DATA = {
     ],
   },
   [PRODUCT_PAGE_URL.DIES_TOOLS]: {
-    bannerBgImage:
-      "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
+    bannerBgImage: dieTools,
     bannerContent: "PRODUCTS",
     title: "Dies and Tools",
     data: [
@@ -236,8 +242,7 @@ export const PRODUCT_PAGE_DATA = {
     ],
   },
   [PRODUCT_PAGE_URL.AERO_SUB_ASSEBLIES]: {
-    bannerBgImage:
-      "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img2.webp?alt=media&token=845251db-aa2d-4736-bf44-fe8e595020d8",
+    bannerBgImage: aeroSubAssemblies,
     bannerContent: "PRODUCTS",
     title: "Aero Sub Assemblies",
     data: [

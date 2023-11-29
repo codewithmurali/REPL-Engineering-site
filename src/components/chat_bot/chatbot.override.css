@@ -56,15 +56,15 @@
 @media (max-width: 768px) {
   .chatbotWrapper .rsc-content,
   .chatbotWrapper .rsc-container {
-    border-radius: 0 !important;
+    border-radius: 20px 20px 0 0 !important;
     height: 100%;
   }
   .chatbotWrapper .rsc-footer {
-  background-color: white;
-  height: 66px;
+    background-color: white;
+    height: 60px;
   }
   .chatbotWrapper .rsc-container {
-    height: 80vh;
+    height: 82vh;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
   }
