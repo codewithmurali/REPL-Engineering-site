@@ -8,6 +8,10 @@ import aeroSubAssemblies from "./images/banner_images/aeroSubAssembly.jpeg";
 // ----------steam & gas turbines------------
 import steamImg1 from "./images/product_images/steam_gas_turbine/img1.jpg";
 import steamImg2 from "./images/product_images/steam_gas_turbine/img2.jpg";
+import steamImg3 from "./images/product_images/steam_gas_turbine/img3.jpg";
+import steamImg4 from "./images/product_images/steam_gas_turbine/img4.jpg";
+import steamImg5 from "./images/product_images/steam_gas_turbine/img5.jpg";
+import steamImg6 from "./images/product_images/steam_gas_turbine/img6.jpg";
 
 export const PRODUCT_PAGE_URL = {
   STEAM_GAS: "/products/steam-gas-turbine-blades",
@@ -37,29 +41,25 @@ export const PRODUCT_PAGE_DATA = {
       },
       {
         name: "LP Moving Blades",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg3,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Gas Turbine Blades with 45Deg Twist Profile",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg4,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Investment Casting Dies for Gas Turbine Blade",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg5,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "120 mw Steam Turbine Blade Assembly",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
+        image: steamImg6,
         content:
           "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },

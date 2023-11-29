@@ -20,14 +20,14 @@
 .clientsContainer .cardInfoContainer {
   width: 200px;
   height: 245px;
-  background-color: var(--sui-color-white);
+  /* background-color: var(--sui-color-white); */
   border-radius: 7px;
   padding: 10px;
-  display: grid;
-  grid-template-rows: max-content;
+  display: flex;
+  align-items: center;
 }
 .clientsContainer .cardInfoContainer img {
-  width: 100%;
+  width: 200px;
 }
 .clientsContainer .cardInfoContainer .textInfo {
   text-align: center;
@@ -42,4 +42,12 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+@media (max-width: 425px) {
+  .clientsContainer {
+    gap: 10px;
+
+    margin-top: 70px;
+  }
 }
