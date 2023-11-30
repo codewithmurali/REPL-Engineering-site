@@ -1,5 +1,5 @@
 import { ScrollToTop } from "../../components/scrollto_top";
-import { Slider } from "../../components/slider";
+import { TextAnimatedSlider } from "../../components/slider/text_animated_slider";
 import { PROFILE_DATA } from "./constant";
 import { AOS_ANIMATION } from "../../constant";
 
@@ -9,7 +9,7 @@ export default function Profile() {
   ScrollToTop();
   return (
     <>
-      <Slider className={styles.slider} />
+      <TextAnimatedSlider className={styles.slider} />
       <div className={styles.profileWrapper}>
         <div className={styles.profileSubWrapper}>
           <div

@@ -10,10 +10,10 @@ import BDL from "./images/clients_logo/BDL.png";
 export const CLIENTS_DATA = [
   { img: DRDL, name: "REPL - DRDL" },
   { img: GTRE, name: "REPL - GTRE" },
-  { img: HAL, name: "REPL - HAL" },
   { img: IOF, name: "REPL - IOF" },
   { img: RCI, name: "REPL - RCI" },
   { img: BHEL, name: "REPL - BHEL" },
   { img: AVADI, name: "REPL - AVADI" },
+  { img: HAL, name: "REPL - HAL" },
   { img: BDL, name: "REPL - BDL" },
 ];

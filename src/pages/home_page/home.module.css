@@ -12,7 +12,7 @@
 }
 .HomebannerTitleContainer .title1 {
   font-size: 70px;
- 
+
   font-weight: 600;
   font-family: var(--sui-font-family-c300);
   color: var(--sui-color-white-400);
@@ -21,7 +21,7 @@
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
- 
+
   font-size: 25px;
   color: var(--sui-color-white-400);
   font-weight: 200;
@@ -280,40 +280,18 @@
 
 /* ------clients------ */
 .clientsWrapper {
-  display: grid;
+  display: flex;
   place-items: center;
   padding-bottom: 150px;
   padding-top: 70px;
   background-color: var(--sui-color-black);
+  flex-direction: column;
 }
-.clientsContainer {
-  width: 80%;
-}
+
 .clientsWrapper .title {
   margin-bottom: 80px;
 }
-.clientsContainer {
-  width: 100%;
-  /* background-color: var(--sui-color-white); */
-  /* border-radius: 7px; */
-  padding: 10px;
-}
-.clientsContainer img {
-  width:100px;
-  
-}
-.swiperSlider{
-  width: 100px;
-}
-.clientsContainer .textInfo {
-  text-align: center;
-  font-size: 17px;
-  margin-top: 15px;
-  line-height: 25px;
-  display: grid;
-  align-items: center;
-  color: var(--sui-color-blue-100);
-}
+
 
 /* ----------------media quries----------------
   --------------------------------------------- */
@@ -328,26 +306,6 @@
 }
 
 @media (max-width: 768px) {
-  .coreValuesContainer .dataInfo .infoContent {
-    height: auto;
-    padding: 17px 0;
-  }
-  .circleContainer {
-    width: 110px;
-    height: 110px;
-  }
-  .coreValuesContainer .dataInfo img {
-    width: 33px;
-    height: 33px;
-  }
-  .coreValuesContainer .dataInfo .circle1 {
-    width: 110px;
-    height: 110px;
-  }
-  .coreValuesContainer .dataInfo .circle2 {
-    width: 89px;
-    height: 89px;
-  }
   .doubleQuotesIcon {
     top: -1px;
   }
@@ -379,7 +337,6 @@
   }
   .HomebannerTitleContainer .title1 {
     font-size: 50px;
-
   }
   .HomebannerTitleContainer .title2 {
     font-size: 21px;
@@ -405,20 +362,61 @@
   .ourJourneySubContainer table tr td:nth-child(2) img {
     width: 70%;
   }
+  .coreValuesWrapper {
+    padding: 50px 0;
+  }
+  .coreValuesSubWrapper .title {
+    margin-bottom: 40px;
+  }
+  .ourJourneySubContainer table tr td:nth-child(2) img {
+    width: 90%;
+  }
+  .circleContainer {
+    width: 90px;
+    height: 90px;
+  }
+  .coreValuesContainer .dataInfo {
+    gap: 20px;
+    grid-template-columns: max-content 1fr;
+  }
+  .coreValuesContainer .dataInfo img {
+    width: 35px;
+    height: 35px;
+  }
+  .coreValuesContainer .dataInfo .circle1 {
+    width: 90px;
+    height: 90px;
+    border-width: 1.5px;
+  }
+  .coreValuesContainer .dataInfo .circle2 {
+    width: 75px;
+    height: 75px;
+    border-width: 1.5px;
+  }
+
   .coreValuesContainer .dataInfo .infoContent .content {
     margin: 0 15px;
     font-size: 15px;
     text-align: center;
   }
+  .coreValuesContainer .dataInfo .infoContent {
+    height: auto;
+    padding: 15px 0;
+  }
+  .coreValuesSubWrapper {
+    width: 90%;
+    padding-right: 3%;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
+ 
   .HomebannerTitleContainer .title2 {
     margin-top: 25px;
     line-height: 30px;
   }
   .HomebannerTitleContainer .title1 {
-    font-size: 40px;  
+    font-size: 40px;
     line-height: 50px;
   }
   .clientsWrapper {
@@ -487,5 +485,8 @@
   .coreValuesSubWrapper {
     width: 90%;
     padding-right: 3%;
+  }
+  .clientsWrapper .title {
+    margin-bottom: 30px;
   }
 }

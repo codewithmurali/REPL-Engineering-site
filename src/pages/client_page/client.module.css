@@ -1,53 +1,8 @@
 /* ------clients------ */
 .clientsWrapper {
-  display: grid;
+  display: flex;
   place-items: center;
   padding-bottom: 150px;
-  background-color: var(--sui-color-black);
-}
-.clientsWrapper .title {
-  color: var(--sui-color-white);
-  margin-bottom: 50px;
-}
-.clientsContainer {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 100px;
-}
-.clientsContainer .cardInfoContainer {
-  width: 200px;
-  height: 245px;
-  /* background-color: var(--sui-color-white); */
-  border-radius: 7px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-.clientsContainer .cardInfoContainer img {
-  width: 200px;
-}
-.clientsContainer .cardInfoContainer .textInfo {
-  text-align: center;
-  font-size: 17px;
-  margin-top: 15px;
-  line-height: 25px;
-  display: grid;
-  align-items: center;
-  color: var(--sui-color-blue-100);
-}
-.svgContainer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-@media (max-width: 425px) {
-  .clientsContainer {
-    gap: 10px;
-
-    margin-top: 70px;
-  }
+  padding-top: 70px;
+  flex-direction: column;
 }

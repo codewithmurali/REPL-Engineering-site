@@ -2,6 +2,7 @@ import MyComponent from "../../components/image_layout";
 import { ScrollToTop } from "../../components/scrollto_top";
 import { SingleBanner } from "../../components/single_banner";
 import { CLIENTS_DATA } from "./constant";
+import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
 
 import styles from "./client.module.css";
 
@@ -13,16 +14,7 @@ export default function Client() {
     <>
       <SingleBanner bgImage={clientBanner} content="CLIENTS" />
       <div className={styles.clientsWrapper}>
-        <div className={styles.clientsContainer}>
-          {CLIENTS_DATA.map((item) => {
-            return (
-              <div className={styles.cardInfoContainer} key="client">
-                <img src={item.img} alt={item.name} />
-                {/* <div className={styles.textInfo}>{item.name}</div> */}
-              </div>
-            );
-          })}
-        </div>
+        <SwiperJsSlider dataSource={CLIENTS_DATA} />
       </div>
     </>
   );

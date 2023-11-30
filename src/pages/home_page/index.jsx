@@ -1,7 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Slider } from "../../components/slider";
+import { TextAnimatedSlider } from "../../components/slider/text_animated_slider";
 import { CORE_VALUES } from "./constant";
 import { CLIENTS_DATA } from "../client_page/constant";
 import { ScrollToTop } from "../../components/scrollto_top";
@@ -10,11 +9,13 @@ import { AOS_ANIMATION } from "../../constant/index";
 import styles from "./home.module.css";
 import "../../components/animista.css";
 import "swiper/css";
+import "swiper/css/navigation";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
+import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
 
 export default function Home() {
   ScrollToTop();
@@ -97,7 +98,7 @@ export default function Home() {
       </div>
 
       {/* ------slider------ */}
-      <Slider />
+      <TextAnimatedSlider />
 
       {/* ------our journey------ */}
       <div className={styles.ourJourneyContainer}>
@@ -342,27 +343,8 @@ export default function Home() {
         >
           OUR CLIENTS
         </h1>
-        {/* <div className={styles.clientsContainer}>
-          {CLIENTS_DATA.map((item) => {
-            return (
-              <div className={styles.cardInfoContainer} key="text">
-                <img src={item.img} alt={item.name} />
-                <div className={styles.textInfo}>{item.name}</div>
-              </div>
-            );
-          })}
-        </div> */}
-        {/* <div className={styles.clientsContainer}>
-          <Swiper slidesPerView={4} spaceBetween={30}>
-            {CLIENTS_DATA.map((item) => {
-              return (
-                <SwiperSlide className={styles.swiperSlider}>
-                  <img src={item.img} alt={item.name} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div> */}
+
+        <SwiperJsSlider dataSource={CLIENTS_DATA} />
       </div>
     </>
   );
