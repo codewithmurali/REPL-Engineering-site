@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e15f4f51.css",
+    "main.css": "/static/css/main.044e8964.css",
     "main.js": "/static/js/main.0ec37363.js",
     "static/css/670.5b1fd9a2.chunk.css": "/static/css/670.5b1fd9a2.chunk.css",
     "static/js/670.42add1ca.chunk.js": "/static/js/670.42add1ca.chunk.js",
@@ -73,7 +73,7 @@
     "static/media/MailIcon.png": "/static/media/MailIcon.1a5d557198fc594d3bc6.png",
     "static/media/chatIcon3.png": "/static/media/chatIcon3.d58cc1336691f333fef7.png",
     "index.html": "/index.html",
-    "main.e15f4f51.css.map": "/static/css/main.e15f4f51.css.map",
+    "main.044e8964.css.map": "/static/css/main.044e8964.css.map",
     "main.0ec37363.js.map": "/static/js/main.0ec37363.js.map",
     "670.5b1fd9a2.chunk.css.map": "/static/css/670.5b1fd9a2.chunk.css.map",
     "670.42add1ca.chunk.js.map": "/static/js/670.42add1ca.chunk.js.map",
@@ -93,7 +93,7 @@
     "111.20ec1ac4.chunk.js.map": "/static/js/111.20ec1ac4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e15f4f51.css",
+    "static/css/main.044e8964.css",
     "static/js/main.0ec37363.js"
   ]
 }
