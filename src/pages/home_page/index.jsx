@@ -5,6 +5,7 @@ import { CORE_VALUES } from "./constant";
 import { CLIENTS_DATA } from "../client_page/constant";
 import { ScrollToTop } from "../../components/scrollto_top";
 import { AOS_ANIMATION } from "../../constant/index";
+import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
 
 import styles from "./home.module.css";
 import "../../components/animista.css";
@@ -13,22 +14,39 @@ import "swiper/css/navigation";
 
 import HomeBgBanner from "./images/HomeBgBanner.svg";
 import Img1989 from "./images/Img1989.jpeg";
+import earthWide from "./videos/earthWide.mp4";
+import earthPortrait from "./videos/earthPortrait.mp4"
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
-import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
+
 
 export default function Home() {
   ScrollToTop();
   return (
     <>
       {/* ------home-banner----- */}
-      <div
-        className={styles.homeBannerContainer}
-        style={{
-          backgroundImage: `url(${HomeBgBanner})`,
-          backgroundSize: "cover",
-        }}
+      <div className={styles.homeBannerContainer}
       >
+        <video
+          width="100%"
+          height="100%"
+          src={earthWide}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles.homeEarthVideoWide}
+        ></video>
+        <video
+          width="100%"
+          height="100%"
+          src={earthPortrait}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles.homeEarthVideoPortrait}
+        ></video>
         <div className={styles.HomebannerTitleContainer}>
           <div
             className={styles.title1}

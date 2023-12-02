@@ -1,8 +1,12 @@
 /* ------home-banner----- */
 
+.homeEarthVideoPortrait {
+  display: none;
+}
+
 .homeBannerContainer {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 .HomebannerTitleContainer {
@@ -305,6 +309,13 @@
 }
 
 @media (max-width: 768px) {
+  .homeEarthVideoWide {
+    display: none;
+  }
+  .homeEarthVideoPortrait {
+    display: block;
+  }
+
   .doubleQuotesIcon {
     top: -1px;
   }
