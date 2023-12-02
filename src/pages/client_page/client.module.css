@@ -1,8 +1,8 @@
 /* ------clients------ */
 .clientsWrapper {
   display: flex;
-  place-items: center;
-  padding-bottom: 150px;
-  padding-top: 70px;
   flex-direction: column;
+  padding-bottom: 150px;
+  padding-top: 141px;
+  place-items: center;
 }

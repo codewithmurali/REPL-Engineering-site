@@ -292,7 +292,6 @@
   margin-bottom: 80px;
 }
 
-
 /* ----------------media quries----------------
   --------------------------------------------- */
 
@@ -410,7 +409,6 @@
 }
 
 @media (max-width: 500px) {
- 
   .HomebannerTitleContainer .title2 {
     margin-top: 25px;
     line-height: 30px;

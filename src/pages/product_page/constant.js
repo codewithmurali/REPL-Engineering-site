@@ -13,6 +13,33 @@ import steamImg4 from "./images/product_images/steam_gas_turbine/img4.jpg";
 import steamImg5 from "./images/product_images/steam_gas_turbine/img5.jpg";
 import steamImg6 from "./images/product_images/steam_gas_turbine/img6.jpg";
 
+// ----------precision components------------
+import precisionImg1 from "./images/product_images/precision_components/img1.jpg";
+import precisionImg2 from "./images/product_images/precision_components/img2.jpg";
+import precisionImg3 from "./images/product_images/precision_components/img3.jpg";
+import precisionImg4 from "./images/product_images/precision_components/img4.jpg";
+import precisionImg5 from "./images/product_images/precision_components/img5.jpg";
+import precisionImg6 from "./images/product_images/precision_components/img6.jpg";
+import precisionImg7 from "./images/product_images/precision_components/img7.jpg";
+import precisionImg8 from "./images/product_images/precision_components/img8.jpg";
+
+// ----------aero sub assemblies components------------
+import aeroSubAssembliesImg1 from "./images/product_images/aero_sub_assemblies/img1.jpg";
+import aeroSubAssembliesImg2 from "./images/product_images/aero_sub_assemblies/img2.jpg";
+import aeroSubAssembliesImg3 from "./images/product_images/aero_sub_assemblies/img3.jpg";
+
+// ----------dies adn tools components------------
+import diesAndToolsImg1 from "./images/product_images/die_and_tools/img1.jpg";
+import diesAndToolsImg2 from "./images/product_images/die_and_tools/img2.jpg";
+import diesAndToolsImg3 from "./images/product_images/die_and_tools/img3.jpg";
+import diesAndToolsImg4 from "./images/product_images/die_and_tools/img4.jpg";
+
+// ----------heavy fabrication components------------
+import heavyFabricationImg1 from "./images/product_images/heavy_fabrication/img1.jpg";
+import heavyFabricationImg2 from "./images/product_images/heavy_fabrication/img2.jpg";
+import heavyFabricationImg3 from "./images/product_images/heavy_fabrication/img3.jpg";
+import heavyFabricationImg4 from "./images/product_images/heavy_fabrication/img4.jpg";
+
 export const PRODUCT_PAGE_URL = {
   STEAM_GAS: "/products/steam-gas-turbine-blades",
   PRECISION_COMPONENTS: "/products/precision-components",
@@ -30,38 +57,26 @@ export const PRODUCT_PAGE_DATA = {
       {
         name: "Gas Turbine Blades",
         image: steamImg1,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Gas Turbine Locking Blades",
         image: steamImg2,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "LP Moving Blades",
         image: steamImg3,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Gas Turbine Blades with 45Deg Twist Profile",
         image: steamImg4,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "Investment Casting Dies for Gas Turbine Blade",
         image: steamImg5,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
       {
         name: "120 mw Steam Turbine Blade Assembly",
         image: steamImg6,
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
       },
     ],
   },
@@ -72,68 +87,42 @@ export const PRODUCT_PAGE_DATA = {
     data: [
       {
         name: "Aluminum Casting for Aero application",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg1,
       },
       {
         name: "Ring for Compressor Blade Assembly Material Titanium",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg2,
       },
       {
         name: "Precision Component for Missile Wing Material - MDN 138",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg3,
       },
       {
         name: "Diffuser Vane Material Inconel 718",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg4,
       },
       {
         name: "RSP High Precision Component for Helicopter",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg5,
       },
       {
         name: "NRSP High Precision Component for Helicopter",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg6,
       },
+
       {
         name: "Beam for Aircraft Engine Material Titanium",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: precisionImg7,
       },
       {
-        name:
-          "Precision Machined Component for areonautical spares Material Inconel 718",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        name: " Impeller for Power Generation",
+        image: precisionImg8,
       },
-      {
-        name: "Impeller for Power Generation",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
+      // {
+      //   name:
+      //     "Precision Machined Component for areonautical spares Material Inconel 718",
+      //   image: precisionImg7,
+      // },
     ],
   },
   [PRODUCT_PAGE_URL.HEAVY_FABRICATION]: {
@@ -142,53 +131,20 @@ export const PRODUCT_PAGE_DATA = {
     title: "Heavy Fabrication",
     data: [
       {
-        name: "Cattle Guard for Railways",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Charge Carrler for Ordnance Factory",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Charge Carrier for Ordnance Factory",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        name: "Mockup for Agnl 3",
+        image: heavyFabricationImg1,
       },
       {
         name: "Mockup for Agnl 3",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: heavyFabricationImg2,
       },
       {
-        name: "Mockup for Agnl 3",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        name: "Assembly Jig For Agnl 2",
+        image: heavyFabricationImg3,
       },
       {
         name: "Load Test Rig for Agnl 2",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Assembly Jig for Agnl 2",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: heavyFabricationImg4,
       },
     ],
   },
@@ -198,46 +154,20 @@ export const PRODUCT_PAGE_DATA = {
     title: "Dies and Tools",
     data: [
       {
-        name: "Press Tools for 650 Tons",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Investment Casting Tool for HAL",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Turbine Exhaust Casting Mould for HAl Koraput",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
-      },
-      {
-        name: "Pressure DIE Casting DIE",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        name: "1600 Ton Press Tool",
+        image: diesAndToolsImg1,
       },
       {
         name: "650 Ton Press Tool",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: diesAndToolsImg2,
       },
       {
-        name: "1600 Ton Press Tool",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        name: "Investment Casting Tool for HAL",
+        image: diesAndToolsImg3,
+      },
+      {
+        name: "Turbine Exhaust Casting Mould for HAl Koraput",
+        image: diesAndToolsImg4,
       },
     ],
   },
@@ -248,24 +178,15 @@ export const PRODUCT_PAGE_DATA = {
     data: [
       {
         name: "Fin Assembly For Missiles",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: aeroSubAssembliesImg1,
       },
       {
         name: "Control Surface Assesmbly for K-4 Missiles",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: aeroSubAssembliesImg2,
       },
       {
         name: "Nose Cone Assesmbly",
-        image:
-          "https://firebasestorage.googleapis.com/v0/b/repl-f5b12.appspot.com/o/Img1.webp?alt=media&token=b179d5a7-b62c-4d04-86b9-b98afb97d3b9",
-        content:
-          "the gas turbine uses hot gases as working fluid, while a steam turbine uses high pressure steam to produce the rotation of turbine",
+        image: aeroSubAssembliesImg3,
       },
     ],
   },
