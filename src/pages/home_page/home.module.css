@@ -16,10 +16,9 @@
 }
 .HomebannerTitleContainer .title1 {
   font-size: 70px;
-
   font-weight: 600;
   font-family: var(--sui-font-family-c300);
-  color: var(--sui-color-white-400);
+  color: var(--sui-color-white-200);
   line-height: 80px;
   letter-spacing: 2px;
 }
@@ -27,8 +26,8 @@
   margin-top: 45px;
 
   font-size: 25px;
-  color: var(--sui-color-white-400);
-  font-weight: 200;
+  color: var(--sui-color-white-300);
+  font-weight: 800;
   font-family: var(--sui-font-family-c300);
 }
 

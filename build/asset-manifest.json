@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.044e8964.css",
-    "main.js": "/static/js/main.c8e49200.js",
-    "static/css/182.2b5f04a6.chunk.css": "/static/css/182.2b5f04a6.chunk.css",
+    "main.js": "/static/js/main.dc2c4b1c.js",
+    "static/css/182.deb502fa.chunk.css": "/static/css/182.deb502fa.chunk.css",
     "static/js/182.7c8fef69.chunk.js": "/static/js/182.7c8fef69.chunk.js",
     "static/css/150.8fc5aa19.chunk.css": "/static/css/150.8fc5aa19.chunk.css",
     "static/js/150.6ac5b6bd.chunk.js": "/static/js/150.6ac5b6bd.chunk.js",
@@ -76,8 +76,8 @@
     "static/media/chatIcon3.png": "/static/media/chatIcon3.d58cc1336691f333fef7.png",
     "index.html": "/index.html",
     "main.044e8964.css.map": "/static/css/main.044e8964.css.map",
-    "main.c8e49200.js.map": "/static/js/main.c8e49200.js.map",
-    "182.2b5f04a6.chunk.css.map": "/static/css/182.2b5f04a6.chunk.css.map",
+    "main.dc2c4b1c.js.map": "/static/js/main.dc2c4b1c.js.map",
+    "182.deb502fa.chunk.css.map": "/static/css/182.deb502fa.chunk.css.map",
     "182.7c8fef69.chunk.js.map": "/static/js/182.7c8fef69.chunk.js.map",
     "150.8fc5aa19.chunk.css.map": "/static/css/150.8fc5aa19.chunk.css.map",
     "150.6ac5b6bd.chunk.js.map": "/static/js/150.6ac5b6bd.chunk.js.map",
@@ -96,6 +96,6 @@
   },
   "entrypoints": [
     "static/css/main.044e8964.css",
-    "static/js/main.c8e49200.js"
+    "static/js/main.dc2c4b1c.js"
   ]
 }
