@@ -9,8 +9,8 @@
   padding: 0px !important;
   background-color: transparent !important;
 }
-.ant-modal-close{
-    display: none;
+.ant-modal-close {
+  display: none;
 }
 
 @media (max-width: 768px) {

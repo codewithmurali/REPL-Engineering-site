@@ -1,7 +1,7 @@
 .chatbotWrapper .rsc-header-title {
   font-weight: 400;
   letter-spacing: 0.5px;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .chatbotWrapper .rsc-footer input {
@@ -36,11 +36,12 @@
   background-color: white;
   border-radius: 10px 10px 0 0;
   margin-top: 0;
+  overflow: auto;
 }
 .chatbotWrapper .rsc-header {
   border-radius: 20px 20px 0 0;
   background-color: #175e76;
-  height: 70px;
+  height: 90px;
   display: flex;
   align-items: center;
 }
@@ -50,14 +51,29 @@
 .chatbotWrapper .rsc-container {
   background-color: #175e76;
   border-radius: 20px;
-  height: 532px;
+  height: 559px;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  height: 8px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
 }
 
 @media (max-width: 768px) {
+  .chatbotWrapper .rsc-header {
+    height: 90px;
+  }
   .chatbotWrapper .rsc-content,
   .chatbotWrapper .rsc-container {
     border-radius: 20px 20px 0 0 !important;
     height: 100%;
+    width: 100%;
   }
   .chatbotWrapper .rsc-footer {
     background-color: white;

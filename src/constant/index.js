@@ -1,10 +1,10 @@
 export const AOS_ANIMATION = {
   FADE_UP: {
-    DURATION: "1000",
+    DURATION: "2000",
     TYPE: "fade-up",
   },
   FADE_LEFT: {
-    DURATION: "500",
+    DURATION: "2000",
     TYPE: "fade-left",
   },
   FADE_RIGHT: {

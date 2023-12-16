@@ -146,11 +146,11 @@
   font-weight: 300;
   max-width: 208px;
   scale: 1;
-  transition: scale 0.5s;
 }
 .menuLinksContainer .linkInfo:hover {
   color: var(--sui-color-blue-200);
   scale: 1.1;
+  transition: scale 0.5s !important;
 }
 .copyRightsContainer {
   display: flex;

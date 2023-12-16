@@ -10,6 +10,7 @@ import { Loader } from "./components/loader/circle_loader";
 import "./constant/globalstyle.constant.css";
 import "./components/animista.css";
 import { ChatBot } from "./components/chat_bot";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Home = lazy(() => import("./pages/home_page"));
 const Profile = lazy(() => import("./pages/profile_page"));
@@ -53,7 +54,7 @@ function App() {
   }, [location]);
 
   return (
-    <>
+    <ParallaxProvider>
       {isLoader && <Loader />}
       {!isLoader && (
         <>
@@ -130,7 +131,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </ParallaxProvider>
   );
 }
 
