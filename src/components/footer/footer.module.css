@@ -118,7 +118,13 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: all 2s;
 }
+.mediaIconContainer a:hover {
+  background-color: var(--sui-color-blue-200);
+  transition: all 0.7s !important;
+}
+
 .mediaIconContainer a svg {
   font-size: 20px;
 }

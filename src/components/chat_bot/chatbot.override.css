@@ -80,7 +80,7 @@
     height: 60px;
   }
   .chatbotWrapper .rsc-container {
-    height: 82vh;
+    height: 86vh;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
   }

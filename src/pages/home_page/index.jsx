@@ -24,51 +24,56 @@ export default function Home() {
   ScrollToTop();
   return (
     <>
-      {/* <ParallaxBanner
+      <ParallaxBanner
         layers={[
           {
-            image: { HomeBgBanner },
+            // translateY: [0, 50],
+            opacity: [1, 0.3],
+            scale: [1, 0.8, "easeOutCubic"],
+            shouldAlwaysCompleteAnimation: true,
+            children: (
+              <div className={styles.homeBannerContainer}>
+                <video
+                  width="100%"
+                  height="100%"
+                  src={earthWide}
+                  autoPlay
+                  muted
+                  playsInline
+                  className={styles.homeEarthVideoWide}
+                ></video>
+                <video
+                  width="100%"
+                  height="100%"
+                  src={earthPortrait}
+                  autoPlay
+                  muted
+                  playsInline
+                  className={styles.homeEarthVideoPortrait}
+                ></video>
+                <div className={styles.HomebannerTitleContainer}>
+                  <div
+                    className={styles.title1}
+                    data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+                  >
+                    BEYOND EARTH, TOWARD THE STARS
+                  </div>
+                  <div
+                    className={styles.title2}
+                    data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+                  >
+                    Shaping Aerospace and Space Innovation
+                  </div>
+                </div>
+              </div>
+            ),
           },
         ]}
-        style={{ width: "900px", height: "500px" }}
-      /> */}
+        style={{ height: "calc(100vh - 100px)" }} // Set the height as needed
+      />
       {/* ------home-banner----- */}
-      <div className={styles.homeBannerContainer}>
-        <video
-          width="100%"
-          height="100%"
-          src={earthWide}
-          autoPlay
-          muted
-          playsInline
-          className={styles.homeEarthVideoWide}
-        ></video>
-        <video
-          width="100%"
-          height="100%"
-          src={earthPortrait}
-          autoPlay
-          muted
-          playsInline
-          className={styles.homeEarthVideoPortrait}
-        ></video>
-        <div className={styles.HomebannerTitleContainer}>
-          <div
-            className={styles.title1}
-            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
-            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
-          >
-            BEYOND EARTH, TOWARD THE STARS
-          </div>
-          <div
-            className={styles.title2}
-            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
-            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
-          >
-            Shaping Aerospace and Space Innovation
-          </div>
-        </div>
-      </div>
 
       {/* ------who-we-are------ */}
       <div className={styles.whoWeAreContainer}>
