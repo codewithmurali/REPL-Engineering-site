@@ -10,6 +10,7 @@
   --logoColor: #397fe0;
 
   --menuItemFontSize: 16px;
+  --menuItem-animation-delay: 0.4s;
   --menuItemFontFamily: var(--sui-font-family-c700);
   --menuItemFontWeight: 100;
   --menuItemColor: var(--sui-color-white-200);
@@ -33,7 +34,7 @@
 .SUIDeskNavbarLastMenuItem {
   --lastMenuItemBgColor: transparent;
   --lastMenuItemColor: var(--sui-color-white-200);
-  --lastMenuItemHoverColor: transparent;
+  --lastMenuItemHoverColor: var(--sui-color-blue-300);
   --lastMenuItemBorderColor: var(--sui-color-blue-300);
 }
 
@@ -134,13 +135,13 @@
 
 .SUIDeskNavbar .ant-menu-item {
   scale: 1;
-  transition: scale 0.5s;
+  transition: scale var(--menuItem-animation-delay);
 }
 
 .SUIDeskNavbar .ant-menu-item-selected,
 .SUIDeskNavbar .ant-menu-item:hover {
   color: var(--menuItemHoverColor) !important;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 /* sub-menu links */
@@ -218,6 +219,7 @@
 
 .SUIDeskNavbarSubMenuLink .ant-menu-item {
   margin-right: 15px !important;
+  color: var(--lastMenuItemColor) !important;
 }
 
 .SUIDeskNavbarSubMenuLink .ant-menu-item:hover {
@@ -245,7 +247,6 @@
 .SUIDeskNavbarLastMenuItem span {
   background-color: var(--lastMenuItemBgColor) !important;
   border-radius: 25px !important;
-  color: var(--lastMenuItemColor);
   padding: 10px 17px !important;
   border: 2px solid var(--lastMenuItemBorderColor);
 }
@@ -257,7 +258,7 @@
 
 .SUIDeskNavbarLastMenuItem.ant-menu-item:hover {
   color: var(--lastMenuItemHoverColor) !important;
-  scale: 1;
+ 
 }
 
 .SUIDeskNavbarLastMenuItem.ant-menu-item-selected {

@@ -15,11 +15,14 @@
 }
 .HomebannerTitleContainer {
   position: absolute;
-
   top: calc(50% - 60px);
   transform: translateY(calc(-50% + 60px));
-  margin: 0 90px;
   text-align: center;
+  width: 100%;
+  scale: 1 !important;
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
 }
 .HomebannerTitleContainer .title1 {
   font-size: 70px;
@@ -349,7 +352,7 @@
   }
   .HomebannerTitleContainer {
     padding: 0 10px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
   }
   .HomebannerTitleContainer .title1 {
     font-size: 50px;
