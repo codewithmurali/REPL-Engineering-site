@@ -25,7 +25,7 @@ export const FormValidation = ({ className }) => {
           rules={[
             {
               required: true,
-              message: "Please input your username!",
+              message: "Please enter your username!",
             },
           ]}
           data-aos={AOS_ANIMATION.FADE_UP.TYPE}
@@ -39,7 +39,7 @@ export const FormValidation = ({ className }) => {
           rules={[
             {
               required: true,
-              message: "Please input your password!",
+              message: "Please enter your password!",
             },
           ]}
           data-aos={AOS_ANIMATION.FADE_UP.TYPE}

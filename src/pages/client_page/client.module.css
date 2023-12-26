@@ -1,8 +1,18 @@
 /* ------clients------ */
-.clientsWrapper {
+/* .clientsWrapper {
   display: flex;
   flex-direction: column;
   padding-bottom: 150px;
   padding-top: 141px;
   place-items: center;
+} */
+
+.clientsWrapper {
+  display: flex;
+  place-items: center;
+  /* padding-bottom: 150px;
+  padding-top: 70px; */
+  padding-block : 150px;
+  background-color: var(--sui-color-black);
+  flex-direction: column;
 }
