@@ -145,18 +145,10 @@ export const Footer = () => {
           })}
         </div>
         <div className={styles.copyRightsContainer}>
-          <div
-            className={styles.leftInfo}
-            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
-            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
-          >
+          <div className={styles.leftInfo}>
             All Rights Reserved Revathi Engineering
           </div>
-          <div
-            className={styles.rightInfo}
-            data-aos={AOS_ANIMATION.FADE_UP.TYPE}
-            data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
-          >
+          <div className={styles.rightInfo}>
             <span>Designed by</span>
             <a href="https://skynoveau.in/"> Skynoveau Technology</a>
           </div>

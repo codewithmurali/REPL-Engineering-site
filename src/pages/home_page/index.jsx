@@ -19,6 +19,7 @@ import earthWide from "./videos/earthWide.mp4";
 import earthPortrait from "./videos/earthPortrait.mp4";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
+import { RocketAnimation } from "../../components/rocket_animation";
 
 export default function Home() {
   ScrollToTop();
@@ -126,7 +127,8 @@ export default function Home() {
       </div>
 
       {/* ------slider------ */}
-      <TextAnimatedSlider />
+      {/* <TextAnimatedSlider /> */}
+      <RocketAnimation/>
 
       {/* ------our journey------ */}
       <div className={styles.ourJourneyContainer}>

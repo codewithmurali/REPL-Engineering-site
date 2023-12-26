@@ -43,6 +43,7 @@
   height: auto;
   border-top: none;
   border: 1px solid var(--sui-color-white-500);
+  border-top: none;
   font-family: var(--sui-font-family-s600);
   font-weight: 300;
   font-size: 18px;

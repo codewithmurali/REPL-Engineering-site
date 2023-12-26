@@ -8,6 +8,7 @@
 body {
   margin: 0;
   background-color: var(--sui-color-black);
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none !important;

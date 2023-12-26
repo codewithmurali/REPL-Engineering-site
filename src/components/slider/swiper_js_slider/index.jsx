@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 
 import styles from "./swiper.module.css";
+import 'swiper/css';
 import "./swiper.override.css";
 
 export const SwiperJsSlider = ({ dataSource }) => {
