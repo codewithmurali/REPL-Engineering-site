@@ -7,6 +7,7 @@
   background-color: #595959bd;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .seperatedRocket {
@@ -116,6 +117,34 @@
     opacity: 0;
     transform: scale(1.6);
   }
+}
+
+.textImgWrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  height: 100%;
+  width: 100%;
+}
+
+.textImgWrapperScale img {
+  padding-top: 50px;
+  scale: 0.9 !important;
+}
+
+.textImgWrapper img {
+  width: 100%;
+  scale: 2;
+  transition: all 2s;
+}
+
+.emptyText {
+  position: absolute;
+  top: 36%;
+  /* right: 91px; */
+  width: 5px;
+  height: 5px;
+  /* background-color: red; */
 }
 
 @media (max-width: 768px) {

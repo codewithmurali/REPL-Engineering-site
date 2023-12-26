@@ -5,10 +5,13 @@ import styles from "./rocketAnimation.module.css";
 import leftFin from "./images/leftFin.png";
 import rightFin from "./images/rightFin.png";
 import seperatedRocket from "./images/seperatedRocket.png";
+import textImg from "./images/textImg.png";
 
 export const RocketAnimation = () => {
   const targetRef = useRef(null);
+  const emptyTarget = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isEmptyVisible, setIsEmptyVisible] = useState(false);
 
   useEffect(() => {
     const options = {
@@ -17,30 +20,44 @@ export const RocketAnimation = () => {
       threshold: 1.0,
     };
 
-    let isUpdate = false;
+    let isTargetUpdate = false;
+    let isEmptyTargetUpdate = false;
 
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
-      //   setTimeout(() => {
-      setIsVisible(entry.isIntersecting);
-      //   }, 0);
-      isUpdate = true;
-      console.log("in 1111 ", isVisible);
+
+      isTargetUpdate = entry.isIntersecting;
+      isEmptyTargetUpdate = entry.isIntersecting;
+      if (targetRef.current) {
+        setIsVisible(isTargetUpdate);
+      }
+      if (emptyTarget.current) {
+        setIsEmptyVisible(isEmptyTargetUpdate);
+      }
     }, options);
 
     if (targetRef.current) {
       observer.observe(targetRef.current);
-      //   setIsVisible(isUpdate);
+    }
+    if (emptyTarget.current) {
+      observer.observe(emptyTarget.current);
     }
 
     return () => {
       if (targetRef.current) observer.unobserve(targetRef.current);
     };
   }, []);
-  console.log("out 1111 ", isVisible);
+
   return (
     <div className={styles.rocketWrapper}>
+      <div
+        className={`${styles.textImgWrapper} ${isEmptyVisible &&
+          styles.textImgWrapperScale}`}
+      >
+        <img src={textImg} alt="" className={styles.textImg} />
+      </div>
       <div className={styles.imageContainer}>
+        <span className={styles.emptyText} ref={emptyTarget}></span>
         <img
           src={leftFin}
           className={`${styles.leftFin} ${isVisible && styles.leftFinScale}`}
