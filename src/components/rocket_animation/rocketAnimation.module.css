@@ -5,8 +5,8 @@
 
 .rocketWrapper {
   background-color: #595959bd;
-  padding-block-start: 100px;
-  padding-left: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 .seperatedRocket {
@@ -50,46 +50,44 @@
   position: relative;
 }
 
-.arrow {
-  position: absolute;
-  top: -209px;
-  right: -107px;
-  height: 86px;
-  width: 131px;
-  border-left: 3.5px dashed;
-  border-top: 2px dashed;
-  border-color: var(--sui-color-blue-300);
-  transform: skew(317deg);
-  /* animation: borderColorAnimation 5s infinite linear; */
+.partMentionContainer {
+  position: relative;
+  top: -217px;
+  right: 7px;
 }
 
-/* .arrow::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--sui-color-blue-300);
-  position: relative;
-  top: 72px;
-  right: 14px;
-  transform: skew(-317deg);
-  display: block;
-} */
+.arrow {
+  position: absolute;
+  top: 1px;
+  height: 86px;
+  width: 80px;
+  border-left: 2px dashed;
+  border-top: 1.6px dashed;
+  border-color: var(--sui-color-blue-300);
+  transform: skew(317deg);
+}
+
+.highlightedPartName {
+  position: absolute;
+  top: -9px;
+  left: 127px;
+  color: var(--sui-color-blue-300);
+  font-family: var(--sui-font-family-s600);
+}
 
 .circleContainer {
-  position: relative;
-  bottom: 126px;
-  right: 54px;
+  position: absolute;
+  bottom: -79px;
+  right: 27px;
   width: 22px;
   height: 22px;
   border-radius: 50%;
   z-index: 1000;
-  display: inline-block;
+  display: block;
 }
 .cricle {
   animation: growAndFade 3s infinite ease-out;
   background-color: var(--sui-color-blue-300);
-  /* background-color: var(--sui-color-white-100); */
   border-radius: 50%;
   opacity: 0;
   position: absolute;
@@ -117,5 +115,41 @@
   100% {
     opacity: 0;
     transform: scale(1.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    top: 1px;
+    height: 86px;
+    width: 35px;
+    transform: skew(336deg);
+  }
+
+  .highlightedPartName {
+    left: 59px;
+    top: -8px;
+    font-size: 14px;
+  }
+  .circleContainer {
+    right: 6px;
+  }
+  .partMentionContainer {
+    position: relative;
+    top: -217px;
+    right: 27px;
+  }
+}
+
+@media (max-width: 396px) {
+  .partMentionContainer {
+    position: relative;
+    top: -217px;
+    right: 27px;
+  }
+  .highlightedPartName {
+    left: 33px;
+    top: 3px;
+    font-size: 14px;
   }
 }
