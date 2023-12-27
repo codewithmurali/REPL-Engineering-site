@@ -11,7 +11,8 @@
 }
 
 .seperatedRocket {
-  height: 700px;
+  /* height: 700px; */
+  height: 80vh;
 }
 
 .rightFin {
