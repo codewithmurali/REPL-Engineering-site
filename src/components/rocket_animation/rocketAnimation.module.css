@@ -58,7 +58,7 @@
   right: 7px;
 }
 
-.arrow {
+/* .arrow {
   position: absolute;
   top: 1px;
   height: 86px;
@@ -67,6 +67,71 @@
   border-top: 1.6px dashed;
   border-color: var(--sui-color-blue-300);
   transform: skew(317deg);
+} */
+
+.leftArrowContainer {
+  position: absolute;
+  height: 86px;
+  width: 80px;
+  top: 1px;
+  transform: skew(317deg);
+  transition: 0.1ms;
+}
+.leftArrowContainer .innerArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-color: var(--sui-color-blue-300);
+  border-left: 2px dashed var(--sui-color-blue-300);
+  border-top: 1.6px dashed var(--sui-color-blue-300);
+  animation: leftArrowFlow 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.topArrowContainer {
+  position: absolute;
+  height: 86px;
+  width: 80px;
+  top: 0px;
+  left: 0;
+  transform: skew(317deg);
+  transition: 0.1ms;
+}
+.topArrowContainer .innerArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-color: var(--sui-color-blue-300);
+  border-top: 1.6px dashed var(--sui-color-blue-300);
+  animation: topArrowFlow 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes topArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .highlightedPartName {
@@ -75,8 +140,20 @@
   left: 127px;
   color: var(--sui-color-blue-300);
   font-family: var(--sui-font-family-s600);
+  animation: partName 1s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
+@keyframes partName {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .circleContainer {
   position: absolute;
   bottom: -79px;
@@ -84,7 +161,7 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  z-index: 1000;
+  /* z-index: 1000; */
   display: block;
 }
 .cricle {
@@ -149,7 +226,13 @@
 }
 
 @media (max-width: 768px) {
-  .arrow {
+  .topArrowContainer {
+    top: 1px;
+    height: 86px;
+    width: 35px;
+    transform: skew(336deg);
+  }
+  .leftArrowContainer {
     top: 1px;
     height: 86px;
     width: 35px;
