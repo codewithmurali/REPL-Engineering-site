@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import { SingleBanner } from "../../components/single_banner";
 import { PRODUCT_PAGE_DATA, PRODUCT_PAGE_URL } from "./constant";
 import ImageLayout from "../../components/image_layout";
+import { AOS_ANIMATION } from "../../constant";
 
 import styles from "./product.module.css";
 
@@ -38,13 +39,23 @@ export default function Product({ path }) {
             content={PRODUCT_PAGE_DATA[matchedData]["bannerContent"]}
           />
           <div className={styles.title}>
-           <h2> {PRODUCT_PAGE_DATA[matchedData]["title"]}</h2>
+            <h2
+              data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+              data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+            >
+              {PRODUCT_PAGE_DATA[matchedData]["title"]}
+            </h2>
           </div>
           <div className={styles.productWrapper}>
             <div className={styles.productSubWrapper}>
               {PRODUCT_PAGE_DATA[matchedData]["data"].map((data) => {
                 return (
-                  <div className={styles.itemWrapper} key="product">
+                  <div
+                    className={styles.itemWrapper}
+                    key="product"
+                    data-aos={AOS_ANIMATION.FADE_UP.TYPE}
+                    data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
+                  >
                     <ImageLayout
                       image={data["image"]}
                       className={styles.imageLayout}

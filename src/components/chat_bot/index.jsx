@@ -6,7 +6,7 @@ import { SimpleChatBot } from "./chatbot";
 import styles from "./style.module.css";
 import "./modal.override.css";
 
-import chatIcon from "./icons/chatIcon.png";
+import chatIcon from "./icons/chatIcon.svg";
 import chatIcon3 from "./icons/chatIcon3.png";
 
 export const ChatBot = () => {
@@ -38,7 +38,7 @@ export const ChatBot = () => {
       <ChatBotModel />
       <div className={`${isShow ? "" : styles.buttonHide}`}>
         <div className={`${styles.buttonWrapper} `} onClick={buttonClicked}>
-          <img src={chatIcon3} alt="chat with us" />
+          <img src={chatIcon} alt="chat with us" />
         </div>
         <div className={styles.circleContainer}>
           <div className={`${styles.cricle} ${styles.circle1}`}></div>
