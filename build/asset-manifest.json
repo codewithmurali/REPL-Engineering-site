@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0741685.css",
-    "main.js": "/static/js/main.745ec7ca.js",
+    "main.css": "/static/css/main.3015d381.css",
+    "main.js": "/static/js/main.20b2f7a2.js",
     "static/css/675.c41248ff.chunk.css": "/static/css/675.c41248ff.chunk.css",
     "static/js/675.810df5cb.chunk.js": "/static/js/675.810df5cb.chunk.js",
     "static/css/150.8fc5aa19.chunk.css": "/static/css/150.8fc5aa19.chunk.css",
     "static/js/150.6d198d65.chunk.js": "/static/js/150.6d198d65.chunk.js",
     "static/css/760.69c1520f.chunk.css": "/static/css/760.69c1520f.chunk.css",
-    "static/js/760.6942d25f.chunk.js": "/static/js/760.6942d25f.chunk.js",
+    "static/js/760.68d09da9.chunk.js": "/static/js/760.68d09da9.chunk.js",
     "static/css/576.5d998cca.chunk.css": "/static/css/576.5d998cca.chunk.css",
-    "static/js/576.92cb5245.chunk.js": "/static/js/576.92cb5245.chunk.js",
+    "static/js/576.d19508c5.chunk.js": "/static/js/576.d19508c5.chunk.js",
     "static/css/636.6c69f67b.chunk.css": "/static/css/636.6c69f67b.chunk.css",
     "static/js/636.12961b87.chunk.js": "/static/js/636.12961b87.chunk.js",
     "static/css/273.deeb3efd.chunk.css": "/static/css/273.deeb3efd.chunk.css",
@@ -61,7 +61,6 @@
     "static/media/product2.jpeg": "/static/media/product2.9358880034e6e47da95f.jpeg",
     "static/media/textImg.png": "/static/media/textImg.731575344fdcdd6a9dfd.png",
     "static/media/Logo.svg": "/static/media/Logo.d7294d4313e038f9430b597ed8f6bd3c.svg",
-    "static/media/chatIcon.png": "/static/media/chatIcon.6a9d2157701120f246bd.png",
     "static/media/img6.jpg": "/static/media/img6.24ad0eb8a9ebd12315c9.jpg",
     "static/media/img5.jpg": "/static/media/img5.c9a8e2f5119cb83cf9a8.jpg",
     "static/media/BDL.png": "/static/media/BDL.23e0e6779ea4a754fe91.png",
@@ -78,17 +77,18 @@
     "static/media/doubleQuotesStartIcon.png": "/static/media/doubleQuotesStartIcon.2c3cd848b32847cb2be7.png",
     "static/media/MailIcon.png": "/static/media/MailIcon.1a5d557198fc594d3bc6.png",
     "static/media/chatIcon3.png": "/static/media/chatIcon3.d58cc1336691f333fef7.png",
+    "static/media/chatIcon.svg": "/static/media/chatIcon.31ca5aadea6ba99e7ad96f179edd833b.svg",
     "index.html": "/index.html",
-    "main.a0741685.css.map": "/static/css/main.a0741685.css.map",
-    "main.745ec7ca.js.map": "/static/js/main.745ec7ca.js.map",
+    "main.3015d381.css.map": "/static/css/main.3015d381.css.map",
+    "main.20b2f7a2.js.map": "/static/js/main.20b2f7a2.js.map",
     "675.c41248ff.chunk.css.map": "/static/css/675.c41248ff.chunk.css.map",
     "675.810df5cb.chunk.js.map": "/static/js/675.810df5cb.chunk.js.map",
     "150.8fc5aa19.chunk.css.map": "/static/css/150.8fc5aa19.chunk.css.map",
     "150.6d198d65.chunk.js.map": "/static/js/150.6d198d65.chunk.js.map",
     "760.69c1520f.chunk.css.map": "/static/css/760.69c1520f.chunk.css.map",
-    "760.6942d25f.chunk.js.map": "/static/js/760.6942d25f.chunk.js.map",
+    "760.68d09da9.chunk.js.map": "/static/js/760.68d09da9.chunk.js.map",
     "576.5d998cca.chunk.css.map": "/static/css/576.5d998cca.chunk.css.map",
-    "576.92cb5245.chunk.js.map": "/static/js/576.92cb5245.chunk.js.map",
+    "576.d19508c5.chunk.js.map": "/static/js/576.d19508c5.chunk.js.map",
     "636.6c69f67b.chunk.css.map": "/static/css/636.6c69f67b.chunk.css.map",
     "636.12961b87.chunk.js.map": "/static/js/636.12961b87.chunk.js.map",
     "273.deeb3efd.chunk.css.map": "/static/css/273.deeb3efd.chunk.css.map",
@@ -99,7 +99,7 @@
     "75.d6532e10.chunk.js.map": "/static/js/75.d6532e10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0741685.css",
-    "static/js/main.745ec7ca.js"
+    "static/css/main.3015d381.css",
+    "static/js/main.20b2f7a2.js"
   ]
 }
