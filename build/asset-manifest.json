@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3015d381.css",
-    "main.js": "/static/js/main.20b2f7a2.js",
+    "main.js": "/static/js/main.81867775.js",
     "static/css/675.c41248ff.chunk.css": "/static/css/675.c41248ff.chunk.css",
     "static/js/675.810df5cb.chunk.js": "/static/js/675.810df5cb.chunk.js",
     "static/css/150.8fc5aa19.chunk.css": "/static/css/150.8fc5aa19.chunk.css",
@@ -68,6 +68,7 @@
     "static/media/DRDL.png": "/static/media/DRDL.a6550adba61a7b73ffdd.png",
     "static/media/img1.png": "/static/media/img1.a410a389cc213a722478.png",
     "static/media/dependabilityIcon.png": "/static/media/dependabilityIcon.ca5f6b40afd4a0ce8fb6.png",
+    "static/media/botIcon1.png": "/static/media/botIcon1.03d3517cf13d6e065d7e.png",
     "static/media/commitment.png": "/static/media/commitment.4f492db015945e0b3277.png",
     "static/media/customerSuccessIcon.png": "/static/media/customerSuccessIcon.d075c0b2676683b8f5d3.png",
     "static/media/service.png": "/static/media/service.1c188a2e3134a1b2876c.png",
@@ -80,7 +81,7 @@
     "static/media/chatIcon.svg": "/static/media/chatIcon.31ca5aadea6ba99e7ad96f179edd833b.svg",
     "index.html": "/index.html",
     "main.3015d381.css.map": "/static/css/main.3015d381.css.map",
-    "main.20b2f7a2.js.map": "/static/js/main.20b2f7a2.js.map",
+    "main.81867775.js.map": "/static/js/main.81867775.js.map",
     "675.c41248ff.chunk.css.map": "/static/css/675.c41248ff.chunk.css.map",
     "675.810df5cb.chunk.js.map": "/static/js/675.810df5cb.chunk.js.map",
     "150.8fc5aa19.chunk.css.map": "/static/css/150.8fc5aa19.chunk.css.map",
@@ -100,6 +101,6 @@
   },
   "entrypoints": [
     "static/css/main.3015d381.css",
-    "static/js/main.20b2f7a2.js"
+    "static/js/main.81867775.js"
   ]
 }
