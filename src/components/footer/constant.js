@@ -1,12 +1,13 @@
 import { CgFacebook } from "react-icons/cg";
-import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
+import { RiTwitterXFill } from "react-icons/ri";
 
 export const SOCIAL_MEDIA_LINKS = [
   { icon: <CgFacebook />, link: "" },
   { icon: <AiFillInstagram />, link: "" },
   { icon: <BiLogoLinkedin />, link: "" },
-  { icon: <AiOutlineTwitter />, link: "" },
+  { icon: <RiTwitterXFill />, link: "" },
 ];
 
 export const FOOTER_MENU_LINKS = [
