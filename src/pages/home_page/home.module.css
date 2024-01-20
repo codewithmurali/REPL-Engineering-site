@@ -12,7 +12,7 @@
 
 .homeBannerContainer video {
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
 }
 .HomebannerTitleContainer {
   position: absolute;
