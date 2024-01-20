@@ -26,10 +26,12 @@ function App() {
   const [isLoader, setIsLoader] = useState(false);
 
   useEffect(() => {
-    setIsLoader(true);
-    setTimeout(() => {
-      setIsLoader(false);
-    }, 1500);
+    if (location.pathname !== "/#visibleContainer") {
+      setIsLoader(true);
+      setTimeout(() => {
+        setIsLoader(false);
+      }, 1500);
+    }
   }, [location]);
 
   const productPageUrl = useMemo(() => {
