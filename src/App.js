@@ -26,7 +26,7 @@ function App() {
   const [isLoader, setIsLoader] = useState(false);
 
   useEffect(() => {
-    if (location.pathname !== "/#visibleContainer") {
+    if ("#visibleContainer" !== location.hash) {
       setIsLoader(true);
       setTimeout(() => {
         setIsLoader(false);
