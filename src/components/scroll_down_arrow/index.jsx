@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { SlArrowDown } from "react-icons/sl";
+import { IoIosArrowForward } from "react-icons/io";
 
 import styles from "./style.module.css";
 
@@ -18,17 +18,26 @@ export const ScrollDownArrow = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Run the effect only once on component mount
+  }, []);
 
   return (
     <>
-      <a
-        href="#visibleContainer"
-        className={`${styles.arrow} ${styles.animated} ${styles.bounce} ${
-          isScrolled ? styles.fade : ""
-        }`}
-      >
-        <SlArrowDown className={styles.icon} />
+      <a href="#visibleContainer" className={`${styles.centerCon} ${isScrolled && styles.fade}`}>
+        <div className={`${styles.round}`}>
+          <div className={styles.cta}>
+            <span
+              className={`${styles.arrow} ${styles.primera} ${styles.next} `}
+            >
+              <IoIosArrowForward className={styles.arrowIcon} />
+            </span>
+            <span
+              className={`${styles.arrow} ${styles.segunda} ${styles.next} `}
+            >
+              <IoIosArrowForward className={styles.arrowIcon} />
+            </span>
+          </div>
+        </div>
+        <p className={styles.text}>Scroll</p>
       </a>
     </>
   );
