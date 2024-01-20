@@ -6,7 +6,7 @@ a {
 .centerCon {
   display: block;
   position: absolute;
-  bottom: 60px;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -14,8 +14,8 @@ a {
 .round {
   position: absolute;
   border: 1.8px solid #fff;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   rotate: 90deg;
 }
@@ -27,7 +27,7 @@ a {
 }
 
 .cta .arrow {
-  left: 15%;
+  left: 21%;
 }
 .arrow {
   position: absolute;
@@ -36,7 +36,7 @@ a {
   width: 12px;
   height: 12px;
   background-size: contain;
-  top: 9.5px;
+  top: 14.5px;
 }
 .segunda {
   margin-left: 8px;
@@ -51,9 +51,11 @@ a {
 .text {
   color: var(--sui-color-white-200);
   position: relative;
-  top: 35px;
+  top: 42px;
   font-family: var(--sui-font-family-s600);
   font-weight: 200;
+  margin-left: 3px;
+  letter-spacing: 1px;
 }
 
 @keyframes bounceAlpha {

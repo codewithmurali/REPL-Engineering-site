@@ -15,8 +15,8 @@
 }
 .HomebannerTitleContainer {
   position: absolute;
-  top: calc(50% - 60px);
-  transform: translateY(calc(-50% + 60px));
+  top: calc(42% - 60px);
+  transform: translateY(calc(-42% + 60px));
   text-align: center;
   width: 100%;
   scale: 1 !important;
