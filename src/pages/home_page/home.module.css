@@ -438,8 +438,9 @@
     line-height: 30px;
   }
   .HomebannerTitleContainer .title1 {
-    font-size: 40px;
+    font-size: 31px;
     line-height: 50px;
+    width: 90%;
   }
   .clientsWrapper {
     padding-bottom: 70px;
