@@ -58,15 +58,15 @@ export default function Home() {
                     data-aos={AOS_ANIMATION.FADE_UP.TYPE}
                     data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
                   >
-                    BEYOND EARTH, TOWARD THE STARS
+                    WE OPEN ACCESS TO SPACE TO IMPROVE LIFE ON EARTH
                   </div>
-                  <div
+                  {/* <div
                     className={styles.title2}
                     data-aos={AOS_ANIMATION.FADE_UP.TYPE}
                     data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
                   >
-                    Shaping Aerospace and Space Innovation
-                  </div>
+ 
+                  </div> */}
                 </div>
                 <span id="visibleContainer"></span>
                 <ScrollDownArrow />
