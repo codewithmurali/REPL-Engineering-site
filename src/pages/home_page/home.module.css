@@ -12,25 +12,29 @@
 
 .homeBannerContainer video {
   object-fit: cover;
+  filter: brightness(0.7);
 }
 .HomebannerTitleContainer {
   position: absolute;
-  top: calc(50% - 60px);
-  transform: translateY(calc(-50% + 60px));
+  top: calc(42% - 60px);
+  transform: translateY(calc(-42% + 60px));
   text-align: center;
   width: 100%;
   scale: 1 !important;
   display: grid;
-  justify-content: center;
+  justify-items: center;
   flex-direction: column;
 }
 .HomebannerTitleContainer .title1 {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 600;
   font-family: var(--sui-font-family-c300);
   color: var(--sui-color-white-200);
-  line-height: 80px;
+  line-height: 90px;
   letter-spacing: 2px;
+  word-spacing: 10px;
+  width: 70%;
+  text-align: center;
 }
 .HomebannerTitleContainer .title2 {
   margin-top: 45px;
@@ -434,8 +438,9 @@
     line-height: 30px;
   }
   .HomebannerTitleContainer .title1 {
-    font-size: 40px;
+    font-size: 31px;
     line-height: 50px;
+    width: 90%;
   }
   .clientsWrapper {
     padding-bottom: 70px;

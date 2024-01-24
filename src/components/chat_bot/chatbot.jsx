@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import "./chatbot.override.css";
 
 import botIcon from "./icons/botIcon.png";
+import botIcon1 from "./icons/botIcon1.png";
 import userIcon from "./icons/userIcon.png";
 
 const theme = {
@@ -81,7 +82,7 @@ export const SimpleChatBot = () => {
     <ThemeProvider theme={theme}>
       <div className="chatbotWrapper">
         <ChatBot
-          botAvatar={botIcon}
+          botAvatar={botIcon1}
           userAvatar={userIcon}
           hanleEnd={hanleEnd}
           headerTitle="Chat with us now"

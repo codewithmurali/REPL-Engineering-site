@@ -105,8 +105,8 @@
   position: absolute;
   height: 86px;
   width: 80px;
-  top: 0px;
-  left: 0;
+  top: -1px;
+  left: 2.03px;
   transform: skew(317deg);
   transition: 0.1ms;
 }
@@ -117,7 +117,7 @@
   left: 0;
   top: 0;
   border-color: var(--sui-color-blue-300);
-  border-top: 1.6px dashed var(--sui-color-blue-300);
+  border-top: 2px dashed var(--sui-color-blue-300);
   animation: topArrowFlow 1s;
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
@@ -136,7 +136,7 @@
 
 .highlightedPartName {
   position: absolute;
-  top: -9px;
+  top: -13px;
   left: 127px;
   color: var(--sui-color-blue-300);
   font-family: var(--sui-font-family-s600);
@@ -227,7 +227,7 @@
 
 @media (max-width: 768px) {
   .topArrowContainer {
-    top: 1px;
+    top: 0px;
     height: 86px;
     width: 35px;
     transform: skew(336deg);
