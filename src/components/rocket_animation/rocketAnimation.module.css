@@ -368,10 +368,11 @@
     left: -159px;
   }
   .leftPartContainer .highlightedPartName {
-    top: -19px;
+    top: -21px;
     left: -189px;
     width: 100px;
     font-size: 20px;
+    line-height: 21px;
   }
 }
 
