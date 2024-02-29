@@ -6,7 +6,7 @@ import { DropDown } from "./dropdown";
 import styles from "./navbar.module.css";
 import "./hamburger.override.css";
 
-import Logo from "../images/Logo.svg";
+import Logo from "../../../common/Logo/Logo.svg";
 import { Link } from "react-router-dom";
 
 export const SUIMobileNavbar = () => {

@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import "./style.css";
 
-import Logo from "../images/Logo.svg";
+import Logo from "../../../common/Logo/Logo.svg";
 
 export const SUIDeskNavbar = ({ className }) => {
   const [current, setCurrent] = useState("home");

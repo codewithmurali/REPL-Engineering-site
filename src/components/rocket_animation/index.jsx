@@ -50,32 +50,58 @@ export const RocketAnimation = () => {
 
   return (
     <div className={styles.rocketWrapper}>
+      {/* background animated text as image */}
       <div
         className={`${styles.textImgWrapper} ${isEmptyVisible &&
           styles.textImgWrapperScale}`}
       >
         <img src={textImg} alt="" className={styles.textImg} />
       </div>
+
       <div className={styles.imageContainer}>
         <span className={styles.emptyText} ref={emptyTarget}></span>
-        <img
-          src={leftFin}
-          className={`${styles.leftFin} ${isVisible && styles.leftFinScale}`}
-          alt=""
-          ref={targetRef}
-        />
+
+        {/* rocket left part */}
+        <span className={styles.leftPartContainer}>
+          <img
+            src={leftFin}
+            className={`${styles.leftFinImage} ${emptyTarget &&
+              styles.leftFinScale}`}
+            alt=""
+          />
+          {emptyTarget && (
+            <>
+              <span className={styles.partMentionContainer}>
+                <span className={`${styles.leftArrowContainer}`}>
+                  <span className={styles.innerArrow}></span>
+                </span>
+                <span className={`${styles.topArrowContainer}`}>
+                  <span className={styles.innerArrow}></span>
+                </span>
+                <span className={styles.circleContainer}>
+                  <span className={`${styles.cricle} ${styles.circle1}`}></span>
+                  <span className={`${styles.cricle} ${styles.circle3}`}></span>
+                </span>
+                <span className={styles.highlightedPartName}>Missile Sourya</span>
+              </span>
+            </>
+          )}
+        </span>
+
+        {/* rocket center part */}
         <img src={seperatedRocket} className={styles.seperatedRocket} alt="" />
-        <span className={styles.finImgContainer}>
+
+        {/* rocket right part */}
+        <span className={styles.rightPartContainer}>
           <img
             src={rightFin}
-            className={`${styles.rightFin} ${isVisible &&
+            className={`${styles.rightFinImage} ${emptyTarget &&
               styles.rightFinScale}`}
             alt=""
           />
-          {isVisible && (
+          {emptyTarget && (
             <>
               <span className={styles.partMentionContainer}>
-                {/* <span className={`${styles.arrow}`}></span> */}
                 <span className={`${styles.leftArrowContainer}`}>
                   <span className={styles.innerArrow}></span>
                 </span>
