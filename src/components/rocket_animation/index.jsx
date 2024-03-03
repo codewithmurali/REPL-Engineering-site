@@ -8,10 +8,8 @@ import seperatedRocket from "./images/seperatedRocket.png";
 import textImg from "./images/textImg.png";
 
 export const RocketAnimation = () => {
-  const targetRef = useRef(null);
-  const emptyTarget = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const [isEmptyVisible, setIsEmptyVisible] = useState(false);
+  const textImgTargetRef = useRef(null);
+  const [isEmptyVisible, setIsTextImgVisible] = useState(false);
 
   useEffect(() => {
     const options = {
@@ -20,32 +18,25 @@ export const RocketAnimation = () => {
       threshold: 1.0,
     };
 
-    let isTargetUpdate = false;
     let isEmptyTargetUpdate = false;
 
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
 
-      isTargetUpdate = entry.isIntersecting;
       isEmptyTargetUpdate = entry.isIntersecting;
-      if (targetRef.current) {
-        setIsVisible(isTargetUpdate);
-      }
-      if (emptyTarget.current) {
-        setIsEmptyVisible(isEmptyTargetUpdate);
+
+      if (textImgTargetRef.current) {
+        setIsTextImgVisible(isEmptyTargetUpdate);
       }
     }, options);
 
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-    if (emptyTarget.current) {
-      observer.observe(emptyTarget.current);
+    if (textImgTargetRef.current) {
+      observer.observe(textImgTargetRef.current);
     }
 
-    return () => {
-      if (targetRef.current) observer.unobserve(targetRef.current);
-    };
+    // return () => {
+    //   if (targetRef.current) observer.unobserve(targetRef.current);
+    // };
   }, []);
 
   return (
@@ -59,17 +50,17 @@ export const RocketAnimation = () => {
       </div>
 
       <div className={styles.imageContainer}>
-        <span className={styles.emptyText} ref={emptyTarget}></span>
+        <span className={styles.emptyText} ref={textImgTargetRef}></span>
 
         {/* rocket left part */}
         <span className={styles.leftPartContainer}>
           <img
             src={leftFin}
-            className={`${styles.leftFinImage} ${emptyTarget &&
+            className={`${styles.leftFinImage} ${isEmptyVisible &&
               styles.leftFinScale}`}
             alt=""
           />
-          {emptyTarget && (
+          {isEmptyVisible && (
             <>
               <span className={styles.partMentionContainer}>
                 <span className={`${styles.leftArrowContainer}`}>
@@ -82,7 +73,9 @@ export const RocketAnimation = () => {
                   <span className={`${styles.cricle} ${styles.circle1}`}></span>
                   <span className={`${styles.cricle} ${styles.circle3}`}></span>
                 </span>
-                <span className={styles.highlightedPartName}>Missile Sourya</span>
+                <span className={styles.highlightedPartName}>
+                  Missile Sourya
+                </span>
               </span>
             </>
           )}
@@ -95,23 +88,24 @@ export const RocketAnimation = () => {
         <span className={styles.rightPartContainer}>
           <img
             src={rightFin}
-            className={`${styles.rightFinImage} ${emptyTarget &&
+            className={`${styles.rightFinImage} ${isEmptyVisible &&
               styles.rightFinScale}`}
             alt=""
           />
-          {emptyTarget && (
+          {isEmptyVisible && (
             <>
               <span className={styles.partMentionContainer}>
+                <span className={styles.circleContainer}>
+                  <span className={`${styles.cricle} ${styles.circle1}`}></span>
+                  <span className={`${styles.cricle} ${styles.circle3}`}></span>
+                </span>
                 <span className={`${styles.leftArrowContainer}`}>
                   <span className={styles.innerArrow}></span>
                 </span>
                 <span className={`${styles.topArrowContainer}`}>
                   <span className={styles.innerArrow}></span>
                 </span>
-                <span className={styles.circleContainer}>
-                  <span className={`${styles.cricle} ${styles.circle1}`}></span>
-                  <span className={`${styles.cricle} ${styles.circle3}`}></span>
-                </span>
+
                 <span className={styles.highlightedPartName}>Fin</span>
               </span>
             </>

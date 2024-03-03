@@ -46,19 +46,15 @@
 /*===============rocket right part ==============
 =================================================*/
 
+.rightPartContainer {
+  position: relative;
+}
+
 .rightFinImage {
   height: 241.5px;
   position: relative;
-  left: -3px;
-  transition: all 2s;
+  transition: all 4s;
   rotate: 0.5deg;
-}
-
-.leftFin {
-  height: 242.5px;
-  position: relative;
-  right: -8px;
-  transition: all 2s;
 }
 
 .rightFinScale {
@@ -68,10 +64,6 @@
   left: -2px;
   /* top: -24px; */
   rotate: 0.5deg;
-}
-
-.rightPartContainer {
-  position: relative;
 }
 
 .rightPartContainer .partMentionContainer {
@@ -101,6 +93,17 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes leftArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
 .rightPartContainer .topArrowContainer {
   position: absolute;
   height: 86px;
@@ -118,9 +121,20 @@
   top: 0;
   border-color: var(--sui-color-blue-300);
   border-top: 2px dashed var(--sui-color-blue-300);
-  animation: topArrowFlow 1s;
+  animation: topArrowFlow 2s;
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
+}
+
+@keyframes topArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .rightPartContainer .highlightedPartName {
@@ -134,6 +148,15 @@
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+}
+
+@keyframes partName {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .rightPartContainer .circleContainer {
@@ -157,48 +180,6 @@
   transition: all 2s;
 }
 
-.rightPartContainer .circle1 {
-  animation-delay: 1s;
-  opacity: 1;
-}
-.rightPartContainer .circle2 {
-  animation-delay: 2s;
-}
-.rightPartContainer .circle3 {
-  animation-delay: 3s;
-}
-
-@keyframes topArrowFlow {
-  0% {
-    height: 0%;
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes leftArrowFlow {
-  0% {
-    height: 0%;
-    width: 0%;
-  }
-
-  100% {
-    height: 100%;
-  }
-}
-
-@keyframes partName {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes growAndFade {
   0% {
     opacity: 0.6;
@@ -210,6 +191,17 @@
   }
 }
 
+.rightPartContainer .circle1 {
+  animation-delay: 1s;
+  opacity: 1;
+}
+.rightPartContainer .circle2 {
+  animation-delay: 2s;
+}
+.rightPartContainer .circle3 {
+  animation-delay: 3s;
+}
+
 /*===============rocket left part ==============
 =================================================*/
 
@@ -217,7 +209,7 @@
   height: 241.5px;
   position: relative;
   left: 6px;
-  transition: all 2s;
+  transition: all 4s;
   rotate: 0.5deg;
 }
 
@@ -262,13 +254,24 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes leftArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
 .leftPartContainer .topArrowContainer {
   position: absolute;
   height: 86px;
   width: 80px;
   top: -1px;
   left: -225px;
-  transform: skew(317deg);
+  transform: skew(137deg);
   transition: 0.1ms;
 }
 .leftPartContainer .topArrowContainer .innerArrow {
@@ -277,11 +280,23 @@
   height: 0;
   left: 0;
   top: 0;
+  transform: rotate(180deg);
   border-color: var(--sui-color-blue-300);
   border-top: 2px dashed var(--sui-color-blue-300);
-  animation: topArrowFlow 1s;
+  animation: topArrowFlow 2s;
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
+}
+
+@keyframes topArrowFlow {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .leftPartContainer .highlightedPartName {
@@ -295,6 +310,15 @@
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+}
+
+@keyframes partName {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .leftPartContainer .circleContainer {
@@ -316,6 +340,17 @@
   width: 100%;
   height: 100%;
   transition: all 2s;
+}
+
+@keyframes growAndFade {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
 }
 
 .leftPartContainer .circle1 {

@@ -1,13 +1,14 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 
-import { CORE_VALUES } from "./constant";
+import { CORE_VALUES, PRODUCTS_DATA } from "./constant";
 import { CLIENTS_DATA } from "../client_page/constant";
 import { ScrollToTop } from "../../components/scrollto_top";
 import { AOS_ANIMATION } from "../../constant/index";
 import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
 import { RocketAnimation } from "../../components/rocket_animation";
 import { ScrollDownArrow } from "../../components/scroll_down_arrow";
+import { SwiperJsSliderVariant } from "../../components/slider/swiper_js_slider_variant";
 
 import styles from "./home.module.css";
 import "../../components/animista.css";
@@ -19,6 +20,7 @@ import earthWide from "./videos/earthWide.mp4";
 import earthPortrait from "./videos/earthPortrait.mp4";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
+import imageGalley from "./images/imageGallery.png";
 
 export default function Home() {
   ScrollToTop();
@@ -129,6 +131,11 @@ export default function Home() {
       </div>
 
       {/* ------slider------ */}
+      {/* <div className={styles.galleryContainer}>
+        <img src={imageGalley} alt="gallery" />
+      </div> */}
+      <SwiperJsSliderVariant dataSource={PRODUCTS_DATA} />
+
       {/* <TextAnimatedSlider /> */}
       <RocketAnimation />
 

@@ -3,7 +3,9 @@ import dependabilityIcon from "./images/core_values/dependabilityIcon.png";
 import commitment from "./images/core_values/commitment.png";
 import service from "./images/core_values/service.png";
 import reliability from "./images/core_values/reliability.png";
-import client1 from "./images/our_clients/img1.png";
+
+import sukoi30 from "./images/products/sukoi30.png";
+import gasTurbine from "./images/products/gasTurbine.png";
 
 export const CORE_VALUES = [
   {
@@ -25,5 +27,14 @@ export const CORE_VALUES = [
   {
     title: " Service",
     icon: service,
+  },
+];
+
+export const PRODUCTS_DATA = [
+  {
+    image: sukoi30,
+  },
+  {
+    image: gasTurbine,
   },
 ];
