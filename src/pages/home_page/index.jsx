@@ -62,7 +62,7 @@ export default function Home() {
                     data-aos={AOS_ANIMATION.FADE_UP.TYPE}
                     data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
                   >
-                  INNOVATING AEROSPACE WITH PRECISION ENGINEERING MASTERY
+                    INNOVATING AEROSPACE WITH PRECISION ENGINEERING MASTERY
                   </div>
                   {/* <div
                     className={styles.title2}
