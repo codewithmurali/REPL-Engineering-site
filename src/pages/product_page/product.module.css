@@ -71,6 +71,9 @@
     font-size: 16px;
     padding: 17px 13px;
   }
+  .itemWrapper {
+    width: 100%;
+  }
 }
 @media (max-width: 425px) {
   .title {

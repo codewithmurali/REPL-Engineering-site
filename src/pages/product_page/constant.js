@@ -24,9 +24,16 @@ import precisionImg7 from "./images/product_images/precision_components/img7.jpg
 import precisionImg8 from "./images/product_images/precision_components/img8.jpg";
 
 // ----------aero sub assemblies components------------
-import aeroSubAssembliesImg1 from "./images/product_images/aero_sub_assemblies/img1.jpg";
+import aeroSubAssembliesImg1 from "./images/product_images/aero_sub_assemblies/img1.png";
 import aeroSubAssembliesImg2 from "./images/product_images/aero_sub_assemblies/img2.jpg";
 import aeroSubAssembliesImg3 from "./images/product_images/aero_sub_assemblies/img3.jpg";
+import aeroSubAssembliesImg4 from "./images/product_images/aero_sub_assemblies/img4.png";
+import aeroSubAssembliesImg5 from "./images/product_images/aero_sub_assemblies/img5.png";
+import aeroSubAssembliesImg6 from "./images/product_images/aero_sub_assemblies/img6.png";
+import aeroSubAssembliesImg7 from "./images/product_images/aero_sub_assemblies/img7.png";
+import aeroSubAssembliesImg8 from "./images/product_images/aero_sub_assemblies/img8.png";
+import aeroSubAssembliesImg9 from "./images/product_images/aero_sub_assemblies/img9.png";
+import aeroSubAssembliesImg10 from "./images/product_images/aero_sub_assemblies/img10.png";
 
 // ----------dies adn tools components------------
 import diesAndToolsImg1 from "./images/product_images/die_and_tools/img1.jpg";
@@ -177,12 +184,42 @@ export const PRODUCT_PAGE_DATA = {
     title: "Aero Sub Assemblies",
     data: [
       {
+        name: "Stabilizer Fins",
+        image: aeroSubAssembliesImg5,
+      },
+      {
+        name: "Folding Type Control Surface",
+        image: aeroSubAssembliesImg4,
+      },
+      {
+        name: "Stabilizer Fins",
+        image: aeroSubAssembliesImg6,
+      },
+      {
         name: "Fin Assembly For Missiles",
         image: aeroSubAssembliesImg1,
       },
       {
+        name: "Foldable Stabilizer Fins for TORPEDO",
+        image: aeroSubAssembliesImg7,
+      },
+      {
+        name: "Air Diverter ASSLY",
+        image: aeroSubAssembliesImg8,
+      },
+      {
         name: "Control Surface Assesmbly for K-4 Missiles",
         image: aeroSubAssembliesImg2,
+      },
+
+      {
+        name: "Seeker Mounting Frame ASSLY",
+        image: aeroSubAssembliesImg9,
+      },
+
+      {
+        name: "Seeker Mounting Frame ASSLY",
+        image: aeroSubAssembliesImg10,
       },
       {
         name: "Nose Cone Assesmbly",
