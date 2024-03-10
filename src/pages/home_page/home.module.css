@@ -26,14 +26,14 @@
   flex-direction: column;
 }
 .HomebannerTitleContainer .title1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   font-family: var(--sui-font-family-c300);
   color: var(--sui-color-white-200);
-  line-height: 90px;
+  line-height: 70px;
   letter-spacing: 2px;
   word-spacing: 10px;
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 .HomebannerTitleContainer .title2 {
@@ -334,6 +334,9 @@
     grid-template-columns: 1fr;
     gap: 0px;
   }
+  .HomebannerTitleContainer .title1 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -374,7 +377,7 @@
     /* margin: 0 20px; */
   }
   .HomebannerTitleContainer .title1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .HomebannerTitleContainer .title2 {
     font-size: 21px;

@@ -51,7 +51,7 @@
 
 /* ----------------media quries----------------
   --------------------------------------------- */
-@media (min-width: 1023.5px) {
+@media (min-width: 1050px) {
   .navbrWrapper {
     display: none;
   }
