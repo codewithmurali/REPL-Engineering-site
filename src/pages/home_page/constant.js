@@ -4,11 +4,9 @@ import commitment from "./images/core_values/commitment.png";
 import service from "./images/core_values/service.png";
 import reliability from "./images/core_values/reliability.png";
 
-import sukoi30 from "./images/products/sukoi30.png";
+import img5 from "./images/products/img5.png";
 import gasTurbine from "./images/products/gasTurbine.png";
 import stabalizerFin from "./images/products/stabalizerFin.png";
-import ULPGM from "./images/products/ULPGM.png";
-
 export const CORE_VALUES = [
   {
     title: "Our Commitment to Customer Success",
@@ -38,8 +36,8 @@ export const PRODUCTS_DATA = [
     name: "Stabalizer Fin",
   },
   {
-    image: sukoi30,
-    name: "Sukoi 30",
+    image: img5,
+    name: "Stabilizer Fins",
   },
   {
     image: gasTurbine,
