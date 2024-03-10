@@ -40,6 +40,7 @@ export default function Home() {
                   height="100%"
                   src={earthWide}
                   autoPlay
+                  loop
                   muted
                   playsInline
                   className={styles.homeEarthVideoWide}
@@ -50,6 +51,7 @@ export default function Home() {
                   src={earthPortrait}
                   autoPlay
                   muted
+                  loop
                   playsInline
                   className={styles.homeEarthVideoPortrait}
                 ></video>
@@ -60,7 +62,7 @@ export default function Home() {
                     data-aos={AOS_ANIMATION.FADE_UP.TYPE}
                     data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
                   >
-                    WE OPEN ACCESS TO SPACE TO IMPROVE LIFE ON EARTH
+                  INNOVATING AEROSPACE WITH PRECISION ENGINEERING MASTERY
                   </div>
                   {/* <div
                     className={styles.title2}
