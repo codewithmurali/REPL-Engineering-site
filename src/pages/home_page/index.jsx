@@ -14,13 +14,13 @@ import styles from "./home.module.css";
 import "../../components/animista.css";
 import "swiper/css";
 import "swiper/css/navigation";
+import "./demo.css";
 
 import Img1989 from "./images/Img1989.jpeg";
 import earthWide from "./videos/earthWide.mp4";
 import earthPortrait from "./videos/earthPortrait.mp4";
 import DoubleQuotesStartIcon from "../../components/icons/doubleQuotesStartIcon.png";
 import DoubleQuotesEndIcon from "../../components/icons/doubleQuotesEndIcon.png";
-import imageGalley from "./images/imageGallery.png";
 
 export default function Home() {
   ScrollToTop();

@@ -50,13 +50,13 @@
   display: flex;
   justify-content: center;
   background-color: var(--sui-color-black);
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .whoWeAreSubContainer {
   width: 80%;
   display: grid;
   gap: 35px;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .title {
   width: max-content;
@@ -360,7 +360,7 @@
     right: -10px;
   }
   .whoWeAreContainer {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
   .whoWeAreSubContainer .contentContainer {
     font-size: 14px;

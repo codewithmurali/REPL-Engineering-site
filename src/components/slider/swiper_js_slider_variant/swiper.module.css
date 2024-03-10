@@ -1,34 +1,36 @@
 .clientsContainer {
-  height: 700px;
-  background-color: var(--sui-color-gray-200);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--sui-color-black-200);
 }
-
 .swiperSlider {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
   justify-content: center;
+  align-items: center;
+  background-color: var(--sui-color-black-200);
+  padding: 100px 0;
 }
-
-.image {
-  width: 800px;
-  height: 100%;
-  object-fit: cover;
-
-  scale: 4;
+.swiperSlider img {
+  height: 400px;
+  width: 80%;
+  object-fit: contain;
 }
-
-.imageScale {
-  scale: 1;
-  transition: all 2s;
+.swiperSlider .text {
+  color: var(--sui-color-white-300);
+  font-family: var(--sui-font-family-s600);
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 425px) {
-  .swiperSlider img {
-    width: 400px;
+  .swiperSlider {
+    padding: 80px 0;
+    gap: 25px;
   }
-  .clientsContainer {
-    height: 500px;
+  .swiperSlider img {
+    width: 100%;
+    height: 200px;
   }
 }

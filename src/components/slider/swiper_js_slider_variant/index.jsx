@@ -1,58 +1,57 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
 import styles from "./swiper.module.css";
 import "swiper/css";
 import "./swiper.override.css";
-import { useEffect, useState, useRef } from "react";
+import AnimatedText from "../../../pages/home_page/demo";
+import { useState } from "react";
 
 export const SwiperJsSliderVariant = ({ dataSource }) => {
-  const [dataCount, setDataCount] = useState(0);
-  const [prevDataCount, setPrevDataCount] = useState(0); // State to store the previous index
-  const [isNewImageEntered, setIsNewImageEntered] = useState(false);
-  const timeoutRef = useRef(null);
+  const [preNode, setPreNode] = useState(null);
 
-  useEffect(() => {
-    timeoutRef.current = setInterval(() => {
-      setDataCount((prevDataCount) => {
-        setPrevDataCount(prevDataCount); // Set the previous index before updating to the new one
-        return (prevDataCount + 1) % dataSource.length;
-      });
-    }, 5000);
+  const handleSlideChange = (swiper) => {
+    const activeSlideIndex = swiper.activeIndex;
+    const prevSlideIndex = swiper.previousIndex;
 
-    return () => {
-      clearInterval(timeoutRef.current);
-    };
-  }, [dataSource.length]);
-
-  useEffect(() => {
-    // Check if the current index is different from the previous one
-    if (dataCount !== prevDataCount) {
-      setIsNewImageEntered(true);
-    } else {
-      setIsNewImageEntered(false);
+    if (preNode) {
+      preNode.childNodes[1]?.classList.remove("ml12");
     }
 
-    // Reset isNewImageEntered after a short delay
-    const delay = 5000; // Adjust delay as needed
-    const timer = setTimeout(() => {
-      setIsNewImageEntered(false);
-    }, delay);
+    const activeNode = swiper.slides[activeSlideIndex];
+    const prevNode = swiper.slides[prevSlideIndex];
 
-    return () => clearTimeout(timer);
-  }, [dataCount, prevDataCount]);
+    if (activeNode) {
+      setPreNode(activeNode);
+      activeNode.childNodes[1]?.classList.add("ml12");
+    }
+
+    if (prevNode) {
+      setPreNode(prevNode);
+    }
+  };
 
   return (
-    <>
-      {dataCount < dataSource.length && (
-        <div className={styles.clientsContainer}>
-          <div className={styles.swiperSlider}>
-            <img
-              src={dataSource[dataCount].image}
-              alt="product-name"
-              className={`${styles.image} ${isNewImageEntered &&
-                styles.imageScale}`}
-            />
-          </div>
-        </div>
-      )}
-    </>
+    <div className={styles.clientsContainer}>
+      <Swiper
+        loop={true}
+        navigation={true}
+        slidesPerView={1}
+        spaceBetween={10}
+        onSlideChange={(swiper) => handleSlideChange(swiper)}
+      >
+        {dataSource.map((item, index) => {
+          return (
+            <SwiperSlide className={styles.swiperSlider} key={index}>
+              <img src={item.image} alt="slider" />
+              <AnimatedText
+                text={item.name}
+                className={styles.text}
+                slideChanged={preNode}
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 };

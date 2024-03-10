@@ -6,6 +6,8 @@ import reliability from "./images/core_values/reliability.png";
 
 import sukoi30 from "./images/products/sukoi30.png";
 import gasTurbine from "./images/products/gasTurbine.png";
+import stabalizerFin from "./images/products/stabalizerFin.png";
+import ULPGM from "./images/products/ULPGM.png";
 
 export const CORE_VALUES = [
   {
@@ -32,9 +34,24 @@ export const CORE_VALUES = [
 
 export const PRODUCTS_DATA = [
   {
+    image: stabalizerFin,
+    name: "Stabalizer Fin",
+  },
+  {
     image: sukoi30,
+    name: "Sukoi 30",
   },
   {
     image: gasTurbine,
+    name: "Gas Turbine",
   },
+  {
+    image: sukoi30,
+    name: "Sukoi 30 4th",
+  },
+
+  // {
+  //   image: ULPGM,
+  //   name: "ULPGM",
+  // },
 ];
