@@ -45,13 +45,4 @@ export const PRODUCTS_DATA = [
     image: gasTurbine,
     name: "Gas Turbine",
   },
-  {
-    image: sukoi30,
-    name: "Sukoi 30 4th",
-  },
-
-  // {
-  //   image: ULPGM,
-  //   name: "ULPGM",
-  // },
 ];
