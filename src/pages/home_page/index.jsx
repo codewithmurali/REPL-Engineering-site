@@ -1,18 +1,20 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 
-import { CORE_VALUES } from "./constant";
+import { CORE_VALUES, PRODUCTS_DATA } from "./constant";
 import { CLIENTS_DATA } from "../client_page/constant";
 import { ScrollToTop } from "../../components/scrollto_top";
 import { AOS_ANIMATION } from "../../constant/index";
 import { SwiperJsSlider } from "../../components/slider/swiper_js_slider";
 import { RocketAnimation } from "../../components/rocket_animation";
 import { ScrollDownArrow } from "../../components/scroll_down_arrow";
+import { SwiperJsSliderVariant } from "../../components/slider/swiper_js_slider_variant";
 
 import styles from "./home.module.css";
 import "../../components/animista.css";
 import "swiper/css";
 import "swiper/css/navigation";
+import "./demo.css";
 
 import Img1989 from "./images/Img1989.jpeg";
 import earthWide from "./videos/earthWide.mp4";
@@ -38,6 +40,7 @@ export default function Home() {
                   height="100%"
                   src={earthWide}
                   autoPlay
+                  loop
                   muted
                   playsInline
                   className={styles.homeEarthVideoWide}
@@ -48,6 +51,7 @@ export default function Home() {
                   src={earthPortrait}
                   autoPlay
                   muted
+                  loop
                   playsInline
                   className={styles.homeEarthVideoPortrait}
                 ></video>
@@ -58,7 +62,7 @@ export default function Home() {
                     data-aos={AOS_ANIMATION.FADE_UP.TYPE}
                     data-aos-duration={AOS_ANIMATION.FADE_UP.DURATION}
                   >
-                    WE OPEN ACCESS TO SPACE TO IMPROVE LIFE ON EARTH
+                    INNOVATING AEROSPACE WITH PRECISION ENGINEERING MASTERY
                   </div>
                   {/* <div
                     className={styles.title2}
@@ -129,6 +133,11 @@ export default function Home() {
       </div>
 
       {/* ------slider------ */}
+      {/* <div className={styles.galleryContainer}>
+        <img src={imageGalley} alt="gallery" />
+      </div> */}
+      <SwiperJsSliderVariant dataSource={PRODUCTS_DATA} />
+
       {/* <TextAnimatedSlider /> */}
       <RocketAnimation />
 

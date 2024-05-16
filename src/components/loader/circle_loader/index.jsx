@@ -1,5 +1,8 @@
-import styles from "./loader.module.css";
 import { FadedText } from "./text";
+
+import Logo from "../../../common/Logo/Logo.svg";
+
+import styles from "./loader.module.css";
 
 export const Loader = () => {
   return (
@@ -11,7 +14,8 @@ export const Loader = () => {
           </div>
         </div>
       </div>
-      <FadedText />
+      {/* <FadedText /> */}
+      <img src={Logo} alt="logo" />
     </div>
   );
 };
